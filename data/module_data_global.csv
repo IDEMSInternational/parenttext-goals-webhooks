@@ -1,0 +1,81 @@
+ID,topic_ID,priority_in_topic,age,child_gender,name.eng,name.zul
+take_a_pause,take_a_pause,,2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,xxx,yyy
+one_on_one_yc,one_on_one,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+one_on_one_teen,one_on_one,,10|11|12|13|14|15|16|17,male|female
+kind_to_myself_yc,kind_to_myself,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+kind_to_myself_teen,kind_to_myself,,10|11|12|13|14|15|16|17,male|female
+give_praise_yc,give_praise,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+praise_teen,give_praise,,10|11|12|13|14|15|16|17,male|female
+talk_feelings_yc,talk_feelings,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+talk_feelings_teen,talk_feelings,,10|11|12|13|14|15|16|17,male|female
+spirituality_yc,spirituality,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+care_myself_teen,care_myself,,10|11|12|13|14|15|16|17,male|female
+language_yc,language,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+reading1_4to6_yc,reading,1,4 | 5 | 6,male|female
+reading2_4to6_yc,reading,2,4 | 5 | 6,male|female
+maths1_4to6_yc,maths,1,4 | 5 | 6,male|female
+maths2_4to6_yc,maths,2,4 | 5 | 6,male|female
+reading_2to3_yc,reading,,2|3,male|female
+maths_2to3_yc,maths,,2|3,male|female
+engage_school_3to6_yc,engage_school,,3| 4 | 5 | 6,male|female
+fun_learning_teen,fun_learning,,10|11|12|13|14|15|16|17,male|female
+help_teen_learn_teen,help_learn,,10|11|12|13|14|15|16|17,male|female
+positive_learning_teen,positive_learning,,10|11|12|13|14|15|16|17,male|female
+learning_mistakes_teen,learning_mistakes,,10|11|12|13|14|15|16|17,male|female
+learning_with_people_teen,learning_with_people,,10|11|12|13|14|15|16|17,male|female
+play_yc,play,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+learn_experience_yc,learn_experience,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+toddler_change_yc,toddler_change,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+young_child_change_yc,young_child_change,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+child_change_yc,child_change,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+mental_changes_teen,mental_changes_teen,,10|11|12|13|14|15|16|17,male|female
+social_changes_teen,social_changes_teen,,10|11|12|13|14|15|16|17,male|female
+physical_changes_teen,physical_changes_teen,,10|11|12|13|14|15|16|17,male|female
+manage_my_stress_yc,manage_my_stress,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+keeping_it_positive_yc,keeping_it_positive,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+create_routines_yc,create_routines,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+routines_teen,create_routines,,10|11|12|13|14|15|16|17,male|female
+create_family_rules_yc,create_family_rules,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+rules_teen,create_family_rules,,10|11|12|13|14|15|16|17,male|female
+know_role_yc,know_role,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+redirect_yc,redirect,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+misbehave_teen,misbehave,,10|11|12|13|14|15|16|17,male|female
+ignore_demanding_yc,ignore_demanding,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+managing_anger_yc,managing_anger,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+manage_stress_teen,manage_stress,,10|11|12|13|14|15|16|17,male|female
+teach_consequences_yc,teach_consequences,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+consequences_teen,teach_consequences,,10|11|12|13|14|15|16|17,male|female
+solve_problems_yc,solve_problems,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+solve_problems_teen,solve_problems,,10|11|12|13|14|15|16|17,male|female
+safe_touch_2to5_yc_m,safe_touch,,2|3| 4 | 5,male
+safe_touch_2to5_yc_f,safe_touch,,2|3| 4 | 5,female
+safe_touch_6to9_yc,safe_touch,, 6 | 7 | 8 | 9,male|female
+com_safety_2to4_yc,com_safety,,2|3| 4,male|female
+com_safety_5to9_yc,com_safety,, 5|6 | 7 | 8 | 9,male|female
+community_safety_teen,com_safety,,10|11|12|13|14|15|16|17,male|female
+crises_2to6_yc,crises,,2|3| 4 | 5 | 6,male|female
+crises_7to9_yc,crises,,7 | 8 | 9,male|female
+crises_teen,crises,,10|11|12|13|14|15|16|17,male|female
+online_safety_yc,online_safety,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+online_safety_teen,online_safety,,10|11|12|13|14|15|16|17,male|female
+self_defence_teen,self_defence,,10|11|12|13|14|15|16|17,male|female
+sex_violence_teen,sex_violence,,10|11|12|13|14|15|16|17,male|female
+habits_trust_online_yc,habits_online,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+habits_online_teen,habits_online,,10|11|12|13|14|15|16|17,male|female
+nutrition_health_yc,nutrition_health,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+ipv_equals,ipv_equals,,2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female
+ipv_supportive,ipv_supportive,,2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female
+ipv_sharing,ipv_sharing,,2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female
+ipv_conflicts,ipv_conflicts,,2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female
+ipv_listen,ipv_listen,,2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female
+budget_needs_yc,budget_needs,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+budget_expenses_yc,budget_expenses,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+budget_monthly_yc,budget_monthly,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+budget_savings_yc,budget_savings,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female
+budget_needs_teen,budget_needs,,10|11|12|13|14|15|16|17,male|female
+budget_expenses_teen,budget_expenses,,10|11|12|13|14|15|16|17,male|female
+budget_monthly_teen,budget_monthly,,10|11|12|13|14|15|16|17,male|female
+budget_savings_teen,budget_savings,,10|11|12|13|14|15|16|17,male|female
+stress_teen,stress,,10|11|12|13|14|15|16|17,male|female
+show_kindness_teen,show_kindness,,10|11|12|13|14|15|16|17,male|female
+stress_signs_teen,stress_signs,,10|11|12|13|14|15|16|17,male|female
