@@ -17,7 +17,7 @@ class TestGetGoalsList(unittest.TestCase):
 
     def test_filter(self):
         request = """{
-            "filter_expression": "relationship != 'yes'"
+            "filter_expression": "'no' in relationship"
         }"""
         expected = "relation develop learning structure behave safety budget wellbeing"
         self.check_case(request, expected)
@@ -30,16 +30,27 @@ class TestGetModulesList(unittest.TestCase):
         self.assertEqual(out[0]["text"], expected)
 
     def test_filter_only(self):
-        # TODO: This filter_expression is a hack.
         request = """{
             "goal_id_column": "goal_id_c",
             "goal_priority_column": "priority_in_goal_c",
             "goal_id": "relation",
-            "filter_expression": "child_gender == 'male|female' and age == '2|3| 4 | 5 | 6 | 7 | 8 | 9'",
+            "filter_expression": "'female' in child_gender and 7 in age",
             "sort_columns": ["priority_in_topic"]
         }"""
 
         expected = "one_on_one_yc kind_to_myself_yc give_praise_yc talk_feelings_yc spirituality_yc"
+        self.check_case(request, expected)
+
+    def test_filter_and_sort(self):
+        request = '''{
+            "goal_id_column": "goal_id_c",
+            "goal_priority_column": "priority_in_goal_c",
+            "goal_id": "learning",
+            "filter_expression": "'female' in child_gender and 6 in age",
+            "sort_columns": ["priority_in_topic"]
+        }'''
+
+        expected = "language_yc reading1_4to6_yc reading2_4to6_yc maths1_4to6_yc maths2_4to6_yc engage_school_3to6_yc"
         self.check_case(request, expected)
 
     def test_get_general_topicids(self):
@@ -52,6 +63,8 @@ class TestGetModulesList(unittest.TestCase):
         topicids = get_general_topicids(request_json)
         exp = ["language", "reading", "maths", "engage_school"]
         self.assertEqual(topicids, exp)
+
+
 
 class TestGetGoalName(unittest.TestCase):
     def check_case(self, json_str, expected):
