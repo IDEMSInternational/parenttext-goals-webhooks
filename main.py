@@ -1,4 +1,4 @@
-from requests import get_goals_list, get_goal_name, get_module_name, get_modules_list
+from hooks import get_goals_list, get_goal_name, get_module_name, get_modules_list
 import functions_framework
 import uuid
 import math

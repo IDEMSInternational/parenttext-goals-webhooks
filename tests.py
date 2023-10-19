@@ -1,6 +1,6 @@
 import unittest
 import json
-from requests import (
+from hooks import (
     get_goals_list,
     get_goal_name,
     get_module_name,
