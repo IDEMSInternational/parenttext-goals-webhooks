@@ -3,9 +3,12 @@ import json
 from hooks import (
     get_goals_list,
     get_goal_name,
+    get_numbered_goal_names,
     get_module_name,
+    get_numbered_module_names,
     get_modules_list,
     get_general_topicids,
+    get_ltp_activities_list,
 )
 
 
@@ -20,6 +23,20 @@ class TestGetGoalsList(unittest.TestCase):
             "filter_expression": "'no' in relationship"
         }"""
         expected = "relation develop learning structure behave safety budget wellbeing"
+        self.check_case(request, expected)
+
+
+class TestGetLTPActivitiesList(unittest.TestCase):
+    def check_case(self, json_str, expected):
+        request_json = json.loads(json_str)
+        out = get_ltp_activities_list(request_json)
+        self.assertEqual(out[0]["text"], expected)
+
+    def test_filter(self):
+        request = """{
+            "filter_expression": "'Calm' in act_type and 17 in act_age"
+        }"""
+        expected = "friendly_chat reflect_positive checkin_chat"
         self.check_case(request, expected)
 
 
@@ -66,33 +83,59 @@ class TestGetModulesList(unittest.TestCase):
 
 
 
-class TestGetGoalName(unittest.TestCase):
-    def check_case(self, json_str, expected):
-        request_json = json.loads(json_str)
-        out = get_goal_name(request_json)
-        self.assertEqual(out[0]["text"], expected)
+class TestGetGoalNames(unittest.TestCase):
 
     def test_basic(self):
         request = """{
             "column": "name_c",
             "language": "eng",
-            "goal_id": "safety"
+            "id": "safety"
         }"""
         expected = "Keep My Child Safe & Healthy"
-        self.check_case(request, expected)
-
-
-class TestGetModuleName(unittest.TestCase):
-    def check_case(self, json_str, expected):
-        request_json = json.loads(json_str)
-        out = get_module_name(request_json)
+        request_json = json.loads(request)
+        out = get_goal_name(request_json)
         self.assertEqual(out[0]["text"], expected)
+
+    def test_numbered(self):
+        request = """{
+            "column": "name_c",
+            "language": "eng",
+            "ids": "safety learning develop"
+        }"""
+        expected = (
+            "1. Keep My Child Safe & Healthy\n"
+            "2. Prepare My Child for Success in School\n"
+            "3. Support My Child's Development"
+        )
+        request_json = json.loads(request)
+        out = get_numbered_goal_names(request_json)
+        self.assertEqual(out[0]["text"], expected)
+
+
+class TestGetModuleNames(unittest.TestCase):
 
     def test_basic(self):
         request = """{
             "column": "name",
             "language": "zul",
-            "goal_id": "take_a_pause"
+            "id": "take_a_pause"
         }"""
         expected = "yyy"
-        self.check_case(request, expected)
+        request_json = json.loads(request)
+        out = get_module_name(request_json)
+        self.assertEqual(out[0]["text"], expected)
+
+
+    def test_numbered(self):
+        request = """{
+            "column": "name",
+            "language": "eng",
+            "ids": "take_a_pause one_on_one_yc"
+        }"""
+        expected = (
+            "1. xxx\n"
+            "2. One on One"
+        )
+        request_json = json.loads(request)
+        out = get_numbered_module_names(request_json)
+        self.assertEqual(out[0]["text"], expected)

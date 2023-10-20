@@ -27,3 +27,10 @@ class ModuleDataGlobal(DataRowModel):
     age: List[int] = []
     child_gender: List[str] = []
     name: Language = Language()
+
+class LTPActivities(DataRowModel):
+    name: str = ""
+    text: str = ""
+    act_type: List[str] = []
+    act_age: List[int] = []
+    use_in_demo: str = ""

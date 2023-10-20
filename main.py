@@ -29,9 +29,13 @@ def serve(request):
         return get_goals_list(request_json)
     if path == "get_goal_name":
         return get_goal_name(request_json)
+    if path == "get_numberd_goal_names":
+        return get_numberd_goal_names(request_json)
     if path == "get_module_name":
         return get_module_name(request_json)
-    if path == "get_modules_list":
-        return get_modules_list(request_json)
+    if path == "get_numbered_module_names":
+        return get_numbered_module_names(request_json)
+    if path == "get_ltp_activities_list":
+        return get_ltp_activities_list(request_json)
     else:
         return {"error": "Invalid path"}, 200

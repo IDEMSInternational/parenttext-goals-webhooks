@@ -4,7 +4,7 @@ from rpft.parsers.common.rowparser import RowParser, ParserModel
 from rpft.parsers.sheets.csv_sheet_reader import CSVSheetReader
 from rpft.parsers.sheets.xlsx_sheet_reader import XLSXSheetReader
 
-from models import GoalDataGlobal, GoalModuleLinkGlobal, ModuleDataGlobal
+from models import GoalDataGlobal, GoalModuleLinkGlobal, ModuleDataGlobal, LTPActivities
 
 def get_sheet(name, model):
     reader = CSVSheetReader(f"data/{name}.csv")
@@ -23,13 +23,5 @@ def get_goal_module_link_global_sheet():
 def get_goal_data_global_sheet():
     return get_sheet("goal_data_global", GoalDataGlobal)
 
-
-
-# def get_sheet(name):
-#     outdata = {}
-#     with open(f"data/{name}.csv", newline="") as csvfile:
-#         reader = csv.DictReader(csvfile)
-#         headers = reader.fieldnames
-#         for row in reader:
-#             outdata[row["ID"]] = row
-#         return headers, outdata
+def get_ltp_activities_sheet():
+    return get_sheet("ltp_activities", LTPActivities)

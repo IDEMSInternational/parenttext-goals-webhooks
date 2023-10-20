@@ -9,9 +9,19 @@ https://docs.google.com/document/d/1so5KrKuHwFyoLVpis2isWIh2eo0n4f90dPeqVIaKMqw/
 Query URLs support the following paths:
 
 - `get_goals_list`: #1 from above
+	Get list of goal IDs, filtered by `filter_expression` and sorted by `sort_columns`.
+- `get_modules_list`: #2 from above
+	Description: see [here](https://docs.google.com/document/d/1so5KrKuHwFyoLVpis2isWIh2eo0n4f90dPeqVIaKMqw/edit)
 - `get_goal_name`: #3 from above
 - `get_module_name`: #4 from above
-- `get_modules_list`: #2 from above
+- `get_numbered_goal_names`: #6 from above
+- `get_numbered_module_names`: #7 from above
+- `get_ltp_activities`: #5 from above
+	Get list of LTP activity IDs, filtered by `filter_expression` and sorted by `sort_columns`.
+
+For examples, see `tests.py`
+
+Each webhook returns a json with the main results in the `text` field.
 
 ## How to deploy
 

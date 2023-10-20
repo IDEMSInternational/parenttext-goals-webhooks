@@ -1,7 +1,7 @@
 import csv
 import copy
 
-from sheets import get_module_data_global_sheet, get_goal_module_link_global_sheet, get_goal_data_global_sheet
+from sheets import get_module_data_global_sheet, get_goal_module_link_global_sheet, get_goal_data_global_sheet, get_ltp_activities_sheet
 
 
 def get_modules_list(request_json):
@@ -19,7 +19,7 @@ def get_explicit_topicids(request_json, topicsid_list):
         topics = [m for m in module_data.values() if m.topic_ID == topic_id]
         new_subtopics = filter_and_sort(request_json, topics)
         all_topics += new_subtopics
-    return get_ids_list(all_topics)
+    return map_ids(all_topics)
 
 
 def get_general_topicids(request_json):
@@ -33,16 +33,11 @@ def get_general_topicids(request_json):
         if getattr(row, goal_id_column) == goal_id:
             topics_list.append(row)
     topics_list = sort_rows([goal_priority_column], topics_list)
-    return get_ids_list(topics_list)
+    return map_ids(topics_list)
 
 
-def get_ids_list(rows):
+def map_ids(rows):
     return list(map(lambda x: x.ID, rows))
-
-
-def get_ids_string(rows):
-    ids = get_ids_list(rows)
-    return " ".join(ids)
 
 
 def filter_rows(filter_expression, rows):
@@ -79,26 +74,64 @@ def filter_and_sort(request_json, rows):
 
 def get_goals_list(request_json):
     goal_data = get_goal_data_global_sheet()
-    output = goal_data.values()
+    return get_ids_list(request_json, goal_data)
+
+
+def get_ltp_activities_list(request_json):
+    ltp_data = get_ltp_activities_sheet()
+    return get_ids_list(request_json, ltp_data)
+
+
+def get_ids_list(request_json, data):
+    output = data.values()
     output = filter_and_sort(request_json, output)
-    text = get_ids_string(output)
+    goals = map_ids(output)
+    text = ' '.join(goals)
+    return {"text": text}, 200
+
+
+def get_goals_names_list_txt(request_json):
+    goals = get_goals_list(request_json)
+    text = ' '.join(goals)
     return {"text": text}, 200
 
 
 def get_goal_name(request_json):
     goal_data = get_goal_data_global_sheet()
-    return get_name(request_json, goal_data)
+    text = get_name(request_json, goal_data)
+    return {"text": text}, 200
+
+
+def get_numbered_names(request_json, data):
+    ids = request_json["ids"].split()
+    names = [get_name(request_json, data, goal_id) for goal_id in ids]
+    numbered_names = [f"{i+1}. {name}" for i, name in enumerate(names)]
+    numbered = '\n'.join(numbered_names)
+    return numbered
+
+
+def get_numbered_module_names(request_json):
+    module_data = get_module_data_global_sheet()
+    text = get_numbered_names(request_json, module_data)
+    return {"text": text}, 200
+
+
+def get_numbered_goal_names(request_json):
+    goal_data = get_goal_data_global_sheet()
+    text = get_numbered_names(request_json, goal_data)
+    return {"text": text}, 200
 
 
 def get_module_name(request_json):
     module_data = get_module_data_global_sheet()
-    return get_name(request_json, module_data)
+    text = get_name(request_json, module_data)
+    return {"text": text}, 200
 
 
-def get_name(request_json, data):
+def get_name(request_json, data, goal_id=None):
     column_base = request_json["column"]
     language = request_json["language"]
-    goal_id = request_json["goal_id"]
+    goal_id = goal_id or request_json["id"]
     row = data[goal_id]
     string = getattr(getattr(row, column_base), language)
-    return {"text": string}, 200
+    return string
