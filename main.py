@@ -27,10 +27,12 @@ def serve(request):
     path = request.path.strip("/")
     if path == "get_goals_list":
         return get_goals_list(request_json)
+    if path == "get_modules_list":
+        return get_modules_list(request_json)
     if path == "get_goal_name":
         return get_goal_name(request_json)
     if path == "get_numberd_goal_names":
-        return get_numberd_goal_names(request_json)
+        return get_numbered_goal_names(request_json)
     if path == "get_module_name":
         return get_module_name(request_json)
     if path == "get_numbered_module_names":
