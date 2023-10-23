@@ -1,4 +1,4 @@
-from hooks import get_goals_list, get_goal_name, get_module_name, get_modules_list
+from hooks import get_goals_list, get_modules_list, get_goal_name, get_numbered_goal_names, get_module_name, get_numbered_module_names, get_ltp_activities_list
 import functions_framework
 import uuid
 import math
@@ -31,7 +31,7 @@ def serve(request):
         return get_modules_list(request_json)
     if path == "get_goal_name":
         return get_goal_name(request_json)
-    if path == "get_numberd_goal_names":
+    if path == "get_numbered_goal_names":
         return get_numbered_goal_names(request_json)
     if path == "get_module_name":
         return get_module_name(request_json)
@@ -40,4 +40,4 @@ def serve(request):
     if path == "get_ltp_activities_list":
         return get_ltp_activities_list(request_json)
     else:
-        return {"error": "Invalid path"}, 200
+        return {"error": "Invalid path"}, 404

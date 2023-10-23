@@ -141,7 +141,7 @@ Output:
 {"text" : "1. xxx\n2. One on One"}
 ```
 
-### `get_ltp_activities`: #5 from above
+### `get_ltp_activities_list`: #5 from above
 
 Get list of LTP activity IDs, filtered by `filter_expression` and sorted by `sort_columns`.
 
