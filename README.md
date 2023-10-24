@@ -163,7 +163,23 @@ Output:
 
 For up-to-date examples, see `tests.py`
 
-## How to deploy
+## Deployment process
+
+For initial setup for deployment, see next section.
+
+After making any changes, it is recommended to run tests to ensure
+nothing is broken.
+
+1. Run tests: `python -m unittest`. This runs
+    - `tests.py`: Functionality tests with `test_data`
+    - `test_integrity.py`: Runs integrity checks for the data in the `data` folder
+2. Run `./deploy-testing.sh` to deploy to testing server
+3. Execute `python run_webhooks.py --testing` and ensure that all calls succeed
+4. Run `./deploy.sh` to deploy to production server
+5. Execute `python run_webhooks.py` and ensure that all calls succeed
+
+
+### Google Cloud Deployment
 
 https://cloud.google.com/functions/docs/deploy
 

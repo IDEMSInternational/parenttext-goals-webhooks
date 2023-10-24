@@ -1,21 +1,12 @@
 import unittest
 import json
-from hooks import (
-    get_goals_list,
-    get_goal_name,
-    get_numbered_goal_names,
-    get_module_name,
-    get_numbered_module_names,
-    get_modules_list,
-    get_general_topicids,
-    get_ltp_activities_list,
-)
+from hooks import Hooks
 
 
 class TestGetGoalsList(unittest.TestCase):
     def check_case(self, json_str, expected):
         request_json = json.loads(json_str)
-        out = get_goals_list(request_json)
+        out = Hooks(True).get_goals_list(request_json)
         self.assertEqual(out[0]["text"], expected)
 
     def test_filter(self):
@@ -29,7 +20,7 @@ class TestGetGoalsList(unittest.TestCase):
 class TestGetLTPActivitiesList(unittest.TestCase):
     def check_case(self, json_str, expected):
         request_json = json.loads(json_str)
-        out = get_ltp_activities_list(request_json)
+        out = Hooks(True).get_ltp_activities_list(request_json)
         self.assertEqual(out[0]["text"], expected)
 
     def test_filter(self):
@@ -43,7 +34,7 @@ class TestGetLTPActivitiesList(unittest.TestCase):
 class TestGetModulesList(unittest.TestCase):
     def check_case(self, json_str, expected):
         request_json = json.loads(json_str)
-        out = get_modules_list(request_json)
+        out = Hooks(True).get_modules_list(request_json)
         self.assertEqual(out[0]["text"], expected)
 
     def test_filter_only(self):
@@ -77,10 +68,9 @@ class TestGetModulesList(unittest.TestCase):
             "goal_id": "learning"
         }"""
         request_json = json.loads(request)
-        topicids = get_general_topicids(request_json)
+        topicids = Hooks(True).get_general_topicids(request_json)
         exp = ["language", "reading", "maths", "engage_school"]
         self.assertEqual(topicids, exp)
-
 
 
 class TestGetGoalNames(unittest.TestCase):
@@ -93,7 +83,7 @@ class TestGetGoalNames(unittest.TestCase):
         }"""
         expected = "Keep My Child Safe & Healthy"
         request_json = json.loads(request)
-        out = get_goal_name(request_json)
+        out = Hooks(True).get_goal_name(request_json)
         self.assertEqual(out[0]["text"], expected)
 
     def test_numbered(self):
@@ -108,7 +98,7 @@ class TestGetGoalNames(unittest.TestCase):
             "3. Support My Child's Development"
         )
         request_json = json.loads(request)
-        out = get_numbered_goal_names(request_json)
+        out = Hooks(True).get_numbered_goal_names(request_json)
         self.assertEqual(out[0]["text"], expected)
 
 
@@ -122,9 +112,8 @@ class TestGetModuleNames(unittest.TestCase):
         }"""
         expected = "yyy"
         request_json = json.loads(request)
-        out = get_module_name(request_json)
+        out = Hooks(True).get_module_name(request_json)
         self.assertEqual(out[0]["text"], expected)
-
 
     def test_numbered(self):
         request = """{
@@ -137,5 +126,5 @@ class TestGetModuleNames(unittest.TestCase):
             "2. One on One"
         )
         request_json = json.loads(request)
-        out = get_numbered_module_names(request_json)
+        out = Hooks(True).get_numbered_module_names(request_json)
         self.assertEqual(out[0]["text"], expected)
