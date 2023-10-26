@@ -11,10 +11,10 @@
 # from your .gitignore file, remove the corresponding line
 # below:
 .git
-.gitignore
 .github
-deploy*.sh
+.gitignore
+LICENSE
+README.md
+run_webhooks.py
 test*.py
 test_data
-run_webhooks.py
-LICENSE
