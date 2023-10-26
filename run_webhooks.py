@@ -12,15 +12,13 @@ import json
 
 class WebhookTester:
 
-    def __init__(self, testing=False):
+    def __init__(self, url):
         self.successes = 0
         self.total = 0
-        self.baseurl = "https://europe-west2-glossy-attic-237012.cloudfunctions.net/parenttext-individualize-module-list"
-        if testing:
-            self.baseurl = "https://europe-west2-glossy-attic-237012.cloudfunctions.net/parenttext-individualize-module-list-testing"
+        self.base_url = url
 
     def run_test(self, path, request):
-        url = self.baseurl + '/' + path
+        url = self.base_url + '/' + path
         data = json.loads(request)
         response = requests.post(url, json=data)
         if response.status_code == 200:
@@ -38,8 +36,8 @@ class WebhookTester:
         print(f"{self.successes} out of {self.total} successful")
 
 
-def run_tests(testing):
-    wt = WebhookTester(testing)
+def run_tests(url):
+    wt = WebhookTester(url)
 
     path = "get_goals_list"
     request = """{
@@ -101,20 +99,18 @@ def run_tests(testing):
 def main():
     parser = argparse.ArgumentParser(
         description=(
-            "Send requests to testing/deployment server to ensure they work"
+            "Send requests to deployed app to ensure they work"
         ),
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument(
-        "--testing",
-        help="Call webhooks on testing server",
-        action='store_true',
+        "url",
+        help="The base URL of the service to test",
     )
 
     args = parser.parse_args()
-    run_tests(args.testing)
+    run_tests(args.url)
 
 
 if __name__ == "__main__":
     main()
-

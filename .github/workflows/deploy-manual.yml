@@ -12,6 +12,5 @@ jobs:
     with:
       function_name: ${{ inputs.testing && vars.GCP_FUNCTION_NAME_TEST || vars.GCP_FUNCTION_NAME_PROD }}
       region: ${{ vars.GCP_REGION }}
-      testing: ${{ inputs.testing }}
     secrets: inherit
 

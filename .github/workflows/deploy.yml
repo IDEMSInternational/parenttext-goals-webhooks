@@ -8,9 +8,6 @@ on:
       region:
         required: true
         type: string
-      testing:
-        required: true
-        type: boolean
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -26,6 +23,7 @@ jobs:
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v1
       - name: Deploy to testing environment
+        id: deploy
         run: |
           gcloud functions deploy ${{ inputs.function_name }} \
             --gen2 \
@@ -37,4 +35,4 @@ jobs:
       - name: Run post-deployment health check
         run: |
           pip install requests
-          python -m run_webhooks ${{ inputs.testing && '--testing' || '' }}
+          python -m run_webhooks https://${{ inputs.region}}-${{ env.GCP_PROJECT }}.cloudfunctions.net/${{ inputs.function_name }}
