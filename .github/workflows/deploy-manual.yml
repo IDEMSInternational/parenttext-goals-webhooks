@@ -1,0 +1,17 @@
+name: Manual deployment
+on:
+  workflow_dispatch:
+    inputs:
+      testing:
+        required: true
+        type: boolean
+        default: true
+jobs:
+  deploy:
+    uses: ./.github/workflows/deploy.yml
+    with:
+      function_name: ${{ inputs.testing && vars.GCP_FUNCTION_NAME_TEST || vars.GCP_FUNCTION_NAME_PROD }}
+      region: ${{ vars.GCP_REGION }}
+      testing: ${{ inputs.testing }}
+    secrets: inherit
+
