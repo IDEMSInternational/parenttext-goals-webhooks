@@ -1,52 +1,33 @@
 # ParentText Goals Webhooks
 
-Webhooks for parent text to compose lists of goals and
-modules satisfying certain criteria.
+Webhooks for parent text to compose lists of goals and modules satisfying certain criteria.
 
 ## Setup
 
-### Development
+```
+python -m venv .venv
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-`pip install -r requirements.txt`
+## Testing
 
-To run tests: `python -m unittest`
+```
+python -m unittest
+```
 
-### Deployment on Google Cloud Platform
+This runs:
+- `tests.py`: Functionality tests with `test_data`
+- `test_integrity.py`: Runs integrity checks for the data in the `data` folder
 
-- Install `gcloud`:
-    - https://cloud.google.com/sdk/docs/install
-    - https://cloud.google.com/sdk/docs/initializing
-- Ensure you have access to the correct GCP project
-    (IDEMS General, a.k.a `glossy-attic-237012`)
-    - Including permissions to deploy cloud functions
-- Run `deploy.sh`
-    - On windows, you may have to create a batch file containing something like
+## Recommended deployment process
 
-    ```
-    gcloud config set project glossy-attic-237012
-    gcloud functions deploy parenttext-individualize-module-list \
-    --gen2 \
-    --region=europe-west2 \
-    --runtime=python311 \
-    --source=. \
-    --entry-point=serve \
-    --trigger-http
-    ```
-
-    Also see: https://cloud.google.com/functions/docs/deploy
-
-## Recommended Deployment Process
-
-After making any changes, it is recommended to run tests to ensure
-nothing is broken.
-
-1. Run tests: `python -m unittest`. This runs
-    - `tests.py`: Functionality tests with `test_data`
-    - `test_integrity.py`: Runs integrity checks for the data in the `data` folder
-2. Run `./deploy-testing.sh` to deploy to testing server
-3. Execute `python run_webhooks.py --testing` and ensure that all calls succeed
-4. Run `./deploy.sh` to deploy to production server
-5. Execute `python run_webhooks.py` and ensure that all calls succeed
+1. Create a Pull Request that targets the 'master' branch
+2. Unit tests will automatically run against the newly created PR; make sure they pass
+3. It is highly recommended to ask someone to review your PR
+4. If everything is ok, merge the PR.
+5. Pushing/merging into the 'master' branch will trigger the tests to run again, and if successful, a deployment to the testing environment
+6. When satisfied, [trigger a manual deployment] to the production environment
 
 ## Functionality
 
@@ -208,3 +189,6 @@ Output:
 ```
 
 For up-to-date examples, see `tests.py`
+
+
+[trigger a manual deployment]: https://github.com/IDEMSInternational/parenttext-goals-webhooks/actions/workflows/deploy-manual.yml
