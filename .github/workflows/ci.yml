@@ -6,41 +6,9 @@ on:
   pull_request:
     branches:
       - master
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: 'read'
-      id-token: 'write'
-    steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.11
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Run unit tests
-        run: python -m unittest
-      - name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v1
-        with:
-          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
-      - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@v1
-      - name: Deploy to testing environment
-        run: |
-          gcloud functions deploy ${{ vars.GCP_FUNCTION_NAME_TEST }} \
-            --gen2 \
-            --region=${{ vars.GCP_REGION }} \
-            --runtime=python311 \
-            --source=. \
-            --entry-point=serve \
-            --trigger-http
-      - name: Run post-deployment health check
-        run: |
-          pip install requests
-          python -m run_webhooks --testing
+  test:
+    uses: ./.github/workflows/test.yml
+  deploy:
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit
