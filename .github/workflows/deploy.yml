@@ -35,4 +35,4 @@ jobs:
       - name: Run post-deployment health check
         run: |
           pip install requests
-          python -m run_webhooks https://${{ inputs.region}}-${{ GCP_PROJECT }}.cloudfunctions.net/${{ inputs.function_name }}
+          python -m run_webhooks https://${{ inputs.region}}-${{ env.GCP_PROJECT }}.cloudfunctions.net/${{ inputs.function_name }}
