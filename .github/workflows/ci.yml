@@ -29,10 +29,14 @@ jobs:
         uses: google-github-actions/auth@v1
         with:
           credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
       - name: Deploy to testing environment
-        uses: google-github-actions/deploy-cloud-functions@v1
-        with:
-          name: ${{ vars.GCP_FUNCTION_NAME_TEST }}
-          runtime: python311
-          entry_point: serve
-          region: ${{ vars.GCP_REGION }}
+        run: |
+          gcloud functions deploy ${{ vars.GCP_FUNCTION_NAME_TEST }} \
+            --gen2 \
+            --region=${{ vars.GCP_REGION }} \
+            --runtime=python311 \
+            --source=. \
+            --entry-point=serve \
+            --trigger-http
