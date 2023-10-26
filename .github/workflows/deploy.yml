@@ -1,8 +1,18 @@
 name: Deploy to Google Cloud Functions
 on:
   workflow_call:
+    inputs:
+      function_name:
+        required: true
+        type: string
+      region:
+        required: true
+        type: string
+      testing:
+        required: true
+        type: boolean
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
@@ -17,9 +27,9 @@ jobs:
         uses: google-github-actions/setup-gcloud@v1
       - name: Deploy to testing environment
         run: |
-          gcloud functions deploy ${{ vars.GCP_FUNCTION_NAME_TEST }} \
+          gcloud functions deploy ${{ inputs.function_name }} \
             --gen2 \
-            --region=${{ vars.GCP_REGION }} \
+            --region=${{ inputs.region }} \
             --runtime=python311 \
             --source=. \
             --entry-point=serve \
@@ -27,4 +37,4 @@ jobs:
       - name: Run post-deployment health check
         run: |
           pip install requests
-          python -m run_webhooks --testing
+          python -m run_webhooks ${{ inputs.testing && '--testing' || '' }}

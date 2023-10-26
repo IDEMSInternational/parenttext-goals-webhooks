@@ -11,4 +11,7 @@ jobs:
     uses: ./.github/workflows/test.yml
   deploy:
     uses: ./.github/workflows/deploy.yml
+    with:
+      function_name: ${{ vars.GCP_FUNCTION_NAME_TEST }}
+      region: ${{ vars.GCP_REGION }}
     secrets: inherit
