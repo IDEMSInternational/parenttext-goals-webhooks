@@ -1,25 +1,16 @@
-name: Project Tests
+name: CI/CD
 on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.11
-      - name: Install dependencies
-        run: |
-          cd $GITHUB_WORKSPACE
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Run unittests
-        run: python -m unittest
+  test:
+    uses: ./.github/workflows/test.yml
+  deploy:
+    needs: test
+    uses: ./.github/workflows/deploy.yml
+    with:
+      function_name: ${{ vars.GCP_FUNCTION_NAME_TEST }}
+      region: ${{ vars.GCP_REGION }}
+      testing: true
+    secrets: inherit
