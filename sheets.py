@@ -1,8 +1,7 @@
 from rpft.parsers.common.sheetparser import SheetParser
 from rpft.parsers.common.cellparser import CellParser
 from rpft.parsers.common.rowparser import RowParser, ParserModel
-from rpft.parsers.sheets.csv_sheet_reader import CSVSheetReader
-from rpft.parsers.sheets.xlsx_sheet_reader import XLSXSheetReader
+from rpft.parsers.sheets import CSVSheetReader, XLSXSheetReader
 
 from models import GoalDataGlobal, GoalModuleLinkGlobal, ModuleDataGlobal, LTPActivities
 
