@@ -22,7 +22,7 @@ jobs:
           credentials_json: ${{ secrets.GCP_CREDENTIALS }}
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v1
-      - name: Deploy to testing environment
+      - name: Deploy to environment
         id: deploy
         run: |
           gcloud functions deploy ${{ inputs.function_name }} \
