@@ -7,9 +7,11 @@ class Language(ParserModel):
     eng: str = ""
     zul: str = ""
     hau: str = ""
+    msa: str = ""
 
 class GoalDataGlobal(DataRowModel):
     priority_c: str = ""
+    priority_p: str = ""
     priority_t: str = ""
     relationship: List[str] = []
     name_c: Language = Language()
@@ -18,6 +20,8 @@ class GoalDataGlobal(DataRowModel):
 class GoalModuleLinkGlobal(DataRowModel):
     goal_id_c: str = ""
     priority_in_goal_c: str = ""
+    goal_id_p: str = ""
+    priority_in_goal_p: str = ""
     goal_id_t: str = ""
     priority_in_goal_t: str = ""
 
@@ -27,6 +31,7 @@ class ModuleDataGlobal(DataRowModel):
     age: List[int] = []
     child_gender: List[str] = []
     name: Language = Language()
+    name_c: Language = Language()
 
 class LTPActivities(DataRowModel):
     name: str = ""

@@ -21,7 +21,7 @@ def get_module_data_global_sheet(testing=False):
     return get_sheet("module_data_global", ModuleDataGlobal, testing)
 
 def get_goal_module_link_global_sheet(testing=False):
-    return get_sheet("goal_module_link_global", GoalModuleLinkGlobal, testing)
+    return get_sheet("goal_topic_link_global", GoalModuleLinkGlobal, testing)
 
 def get_goal_data_global_sheet(testing=False):
     return get_sheet("goal_data_global", GoalDataGlobal, testing)
