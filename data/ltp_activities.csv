@@ -1,59 +1,274 @@
-ID,name,text,act_type,act_age,use_in_demo
-friendly_chat,A friendly chat,"Talk to your teen about something that they are interested in! 😃
+ID,name,text,act_type,act_age
+cooking_with_maths,Cooking with Maths,"Cooking can help your child start learning maths!
+💚 Invite your child to help you cook for your family, or to choose something they would like to cook
+;
+🍅 Ask your child to count different ingredients. Help them if it’s difficult!
 
-⚽ An easy way to start talking to your teen is to ask them about something they are interested in. For example, you could talk about sports, books, movies, friends, music, celebrities, or school.
+🔟 Help your child to understand adding and subtracting quantities 
 
-👂 You may not find everything your teen shares to be interesting, but it’s important to show enthusiasm and an eagerness to learn. ",Quick|Calm ,10|11|12|13|14|15|16|17,
-create_recipe,Create your own Recipe,"Let your teen come up with a new meal idea! 
+📝 Encourage your child to recognise numbers on packaging
 
-🍚 Create a new dish with Your Teen using ingredients they love!
+ 👀 Ask your child about the different sizes of ingredients - e.g. which is bigger/biggest?
+;
+🔄 Think about when you will cook together again! You can also practise understanding numbers and quantities during other activities like shopping or building/making things",Active,3| 4 | 5 | 6
+follow_instructions,Following Instructions,"👂 Play a game in which your child listens to and tries to remember strings of instructions.
+This will be useful in school, at home, and later in life!
+;
+Start with just one instruction using an object in your home. For example “touch the red ball” 🔴
 
-🔵 Together, choose two ingredients, and ask your teen to prepare a meal using them. For example: chicken and spinach, tomatoes and rice, maize and pumpkin.
+Slowly add more instructions (e.g “then pick up the cup ☕), but tell your child that they can only start once you’ve finished giving the instructions.
+See how many your child can follow without forgetting!
+;
+🔄 Now swap roles! It’s your child’s turn to give you instructions! They can use the same objects if they want.
+You can also try this game with a group of children! Make sure they take turns :)",Calm | Quick | Group,3 | 4 | 5
+one_on_one_time,One-on-One Time,"💚 Spending time just with your child and taking an interest in them can improve your relationship 
 
-📝 If you enjoy the meal, make it something your family eats weekly, and ask your teen to write it down for you. Give the meal a name and explain how to make it. 
+;
+👀 When you child is playing alone or occupying themselves quietly, join them and show interest in what they are doing
 
-✨ If your teen notices that you are learning from their cooking, it will boost their confidence!",Active,10|11|12|13|14|15|16|17,demo
-reflect_positive,Reflect on the positive,"Spread Positivity! 🌈
+👂Ask questions about their activity, and listen to them
 
-💡 Together, take a minute to think about all the things you did today. 
+Let your child lead the activity, follow them to build their confidence and autonomy 😃
 
-☀️ Take turns sharing one positive or fun thing that happened. This could be something small, like feeling good because you cleaned the house, or something big, like spending time with family and friends. 
+👀 Say what you see - describing everything and supporting your child’s actions
+;
+Be positive, praise your child, and enjoy spending this time with them 😃💚",Calm,2| 3 | 4 | 5 | 6 | 7 | 8 | 9
+play_books_4to6,Playtime with Books,"📖 Book sharing will help your child learn and is a fun, playful activity to spend quality time together
 
-⏰ Try doing this every day - even more on the days it feels like you have not done anything special. ",Calm|Quick,10|11|12|13|14|15|16|17,
-whats_new,What’s new?,"Learning is fun! 🎓
+⏰ Choose a time when you won’t be disturbed, and try to stop any distractions - e.g. turn off the TV and put away phones
 
-❓ Ask your teen to think of a new, fun skill you could learn together. 
-For example: keeping a ball in the air with your foot, juggling, making soup, moonwalking, whistling, saying the alphabet backwards, learning all the countries in Africa. 
+📖 If your child wants to choose a book, that’s fine, otherwise choose for them
+;
 
-🔄 Take turns trying out the new skill.  Make sure to praise each other and learn and play together!
+💚 Sit close together and follow your child attention and lead 
+Point at things, name and repeat words. Help your child learn more about what interests them in the book 👀 
+If there are words or numbers in the book, ask and help your child recognise letters numbers, and simple words 💡 
 
-💛 Approach learning the skill in a kind and fun way, and do not judge your teen or yourself for your ability in the skill. ",Active,10|11|12|13|14|15|16|17,
-dance_moves,Dance moves,"Let's get moving! 👋 Dancing is a great way to exercise, have fun, and bond with your teen at the same time! You both get to express yourselves in a fun, relaxed way.  🎵 
+Link things in the books to your child life, and use words about emotions and talk about them! 😃
+;
+🔄 If possible, start a regular routine to read together when your child isn’t too tired or hungry
+Reading together is one of the best ways to help your child learn and prepare for success in school! 🎓",Calm,4 | 5 | 6 
+play_books_2to3,Playtime with Books,"📖 Book sharing will help your child learn and is a fun, playful activity to spend quality time together
 
-This game can be played in pairs or a group with everyone taking turns being the leader:
+⏰ Choose a time when you won’t be disturbed, and try to stop any distractions - e.g. turn off the TV and put away phones
 
-📱 Let your teen choose a song they like and create a set of dance moves.
+📖 If your child wants to choose a book, that’s fine, otherwise choose for them
+;
 
-👀 First person does a dance move and everyone else copies it.
+💚 Sit close together and follow your child attention and lead 
+Point at things, name and repeat words. Help your child learn more about what interests them in the book 👀 
 
-☀️ Don’t worry about perfecting the dance moves, it’s all about having fun together!
+Link things in the books to your child's life, and use words about emotions and talk about them! 😃
+;
+🔄 If possible, start a regular routine to read together when your child isn’t too tired or hungry
+Reading together is one of the best ways to help your child learn and prepare for success in school! 🎓",Calm,2 | 3 |
+i_spy,I Spy!,"👀 I spy is a fun game to play with your child that will help them learn about letters and words!
+;
 
-💡 If you want to, you can perform your dance for the household!",Quick|Active|Group,10|11|12|13|14|15|16|17,demo
-dance_activity,Dance Activity,"Try something new and learn a dance challenge with your teen! ✨ Have fun!
+Choose an object or a thing around you, and don’t tell your child what it is. It should be something that your child knows the word for. For example “ball” ⚽
 
-⭐ Dancing is a great way to have fun together while being creative and moving your body!
+👀 Then say “I spy with my little eye, something beginning with *and then say the first letter of the word* which in this case is “b”
 
-📱 If your teen uses the app TikTok, suggest doing a dance challenge together.
+Your child should look around and guess what the object is. When they guess it right, praise them and swap roles! If they can’t get it, give them some clues, like “it’s round” or “it’s black and white”. ✅
+;
 
-😃 Ask your teen to choose their favourite dance and learn it with them.
+Play this game with as many objects as possible and as many different letters! Help your child to learn about the different letters and sounds in words. This will help them learn to read at home and school. 🎓",Calm | Quick | Group,4 | 5 | 6 | 7 | 8 | 9
+categorise_organise,Categorising and Organising,"Help your child to learn by sorting objects and things! 🔵🔷
 
-🎉 It’s okay if you can’t dance well, have fun and try not to take it too seriously! 
+Your child will learn by understanding how things fit and group together (eg, bear = animal, mango = fruit, blue = colour) 🧸
 
-💡 You do not have to post the video to learn the dance. You can keep it as a memory between you and your teen. ",Quick|Active,10|11|12|13|14|15|16|17,
-checkin_chat,Check-in chat,"Actively checking in on one another helps to keep relationships healthy! ⭐
+Find a book with different pictures and help your child to find things in a particular category (e.g. “Find all of the animals”) 👀
 
-Ask each other questions: “What made you happy today?” 👂 “What was difficult today?” 👂 “How can I help you?” 👂
+Find safe objects in the house, get your child to group them by colour, size, or types of object (cups, plates). Then make more complicated categories (e.g. small cups, big cups) ☕
+;
+🔄 You can play the categorising game anywhere! Just look around and ask your child to find things from the category you say!",Quick | Group,2 | 3 | 4 | 5
+what_letter_is_this,What Letter is This?,"Playing games with letters can help your child learn the alphabet and how letters are put together to make words.
 
-For this to help, your teen needs to feel safe while sharing things with you. Be open to their responses. 💚 Teens tend to be more honest when they trust that what they say will not be used against them later.
+📝 Write a letter on a piece of card or paper (e.g. “p”)
 
-Go easy on yourself if your teen does not want to share their problems with you. 💙 Often, teens are afraid to share as they are scared they will get in trouble. Getting upset with them won’t help - keep showing you love them and give them time! 🌷",Quick|Calm,10|11|12|13|14|15|16|17,
+👂 Say the letter out loud and ask your child to say it too!
+
+Ask your child to say some words that begin with the letter “p”, give them clues like “What starts with “p”? Plant… what else? 🌱
+
+👀 Ask your child to look for objects in your house that begin with a letter (eg “p” for plate). Help them find things.
+;
+🔄 Try a new letter every day!",Quick | Group,3 | 4 | 5
+riddles,Riddles Help Children Learn,"Riddles and puzzles are a fun way to build thinking skills! 💡
+;
+
+Do you remember any riddles from your childhood? If you can’t then make one up, they can be very simple! 😃
+Like “What can you see at night but not in the day” Answer: “The moon” 🌙
+
+If your child is finding them difficult, try an easy one like: “What is round, bouncy and can be thrown or kicked?” Answer: “A ball” ⚽
+
+Your child can also try making riddles! 💡
+;
+You can have fun with riddles anywhere at any time - like travelling on a bus or in a car 🚗",Quick | Group | Calm,3 | 4 | 5 | 6 | 7 | 8 | 9
+whats_new_child,What's New?,"Learning is fun! 🎓
+
+❓ Ask your child to think of a new, fun skill you could learn together. 
+For example: keeping a ball in the air with your foot, juggling, making soup, moonwalking, whistling, saying the alphabet backwards, learning all the states in Malaysia. 
+
+🔄 Take turns trying out the new skill. Make sure to praise each other and learn and play together!
+
+💛 Approach learning the skill in a kind and fun way, and do not judge your child or yourself for your ability in the skill. 
+
+😃 Once you have mastered the skill, choose another skill to learn together.",Active,5| 6 | 7 | 8 | 9
+make_story_child,Make up a Story,"Creating stories together is a great way to have fun with imagination - and to build your child’s creativity! 📖
+;
+5️⃣ With your child, come up with 5 words to use. They can be any words you want! For example: banana, spaceship, fish, water, painting, cooking, wedding. If you need to remember them, write them clearly on a paper with your child.
+
+🎂 Start your story with, “Once upon a time, there was a…” and use one of the words from the list in the first part. For example, “Once upon a time, there was a family who worked on a *banana* farm.”
+
+📝 Let your child make up the next part using another word from the list.
+;
+🔄 Take turns until you have used all the words and created a story. 
+
+🔔 Be creative and do not tell your child what to say. It does not need to be a real story to be fun!
+
+🎁 Ask your child what their favourite part of the story was, and tell them yours!",Calm,4 | 5| 6 | 7 | 8 | 9
+play_with_clothes,Playing with Clothes,"💡Help your child use their fingers, talk about clothes, and organise them! 
+
+Help your child exercise their fingers by showing them how buttons and zips work on clothes, and letting them practise using them! 👋
+;
+🔵 Talk about the colours of clothes! Ask your child to pick a colour and talk about all the things that are that colour: “What are all the things we can think of that are blue?”
+;
+😃 Encourage your child to help you sort clothes into piles for each family member.",Calm,3 | 4| 5|
+play_with_veggies,Playing with Vegetables,"🌱 Help your child learn by thinking and talking about vegetables!
+
+🍅 Mix together 2-3 different ingredients of your choice (like onions, tomatoes and corn example). Say: “Help me sort these vegetables into piles?” Try sorting them by size.
+;
+😃 Remind me!
+Talk about your child’s experiences. Ask questions and wait for answers. Follow your child’s interest. 
+“Can you help me remember what is at the market?” “Do they sell carrots at the market?” “Do the sell anything yellow at the market?” “What else do they sell?” “Can you think of other things they sell?”
+;
+💡Can you think of something similar?
+Say: We are going to think of some things that are similar or different from what I tell you. So listen carefully!”
+Here is a tomato. Can you think of something else that is red like a tomato? 🍅
+Can you think something else that is round like a tomato? ⚽",Calm,3 | 4| 5|
+animals,Animals,"🧸 Active animals: Take turns with your child doing animal actions: Hop like a frog, stretch like a cat, run like a dog, slither like a snake, flap like a bird
+;
+💡All the animals we can think of - think about groups of animals!
+What are all the animals we can think of that have feathers?
+What are all the animals we can think of that eat plants? 🌱
+What are all the animals we can think of that lay eggs?
+;
+😃 Counting rabbits
+🔟 Find 10 rocks and put them in a line, tell your child that they are rabbits!
+Ask your child to count the rabbits!
+Put the rabbits into 2 equal piles. Ask your child to give you 3 rabbits. Say “If you give me 3, how many rabbits do you have”",Active,4| 5|6
+active_counting,Active Counting,"👋 Clap, hop, jump: Play the following game with your child. Make it active!
+
+1️⃣ Clap hands 1 time. 2️⃣ Clap hands 2 times.
+1️⃣ Jump 1 time. 2️⃣ Jump 2 times.
+1️⃣ Hop 1 time.
+3️⃣ Hop 3 times.
+💡Can you hop, then jump, then clap? 
+🏆 Can you clap twice, jump once, and hop three times?
+
+;
+
+💡Remembering Instructions
+Take turns playing a game where you give 2-3 instructions that the other person has to remember to follow. Make sure physical movement is included!
+For example:
+Hop twice, turn around.
+Jump to the kitchen, pick up a spoon, then run back. ✅",Active,4| 5|6
+thinking_games,Thinking Games,"❗ Mama/Daddy says! Play this game of giving instructions:
+Mama/daddy says touch your head. Mama/daddy says open your mouth. Mama/daddy says turn around. Mama/daddy says touch your knees. Mama/daddy says jump twice. Mama/daddy says jump, then clap and sit.
+;
+👂 Go and stop: Play the game with your child
+Say: When I say “stop”, we freeze. When I say “go”, we can walk again.
+Once your child is familiar with the game, your child will lead.
+;
+🔵 🔴Blue-Red - now play this game!
+If I say touch something blue, you need to touch something red. If I say touch something red, you need to touch something blue.",Active,4| 5|6
+games_with_pictures,Games with Pictures!,"👂 Making up a story from an image
+For example, say: We are going to make up a story about this picture. I can start. This little girl is feeling very excited today. Why do you think she is feeling excited?
+😃 She is holding her bag and has a big smile. Where do you think she is going?
+;
+👀 Can you point to it?
+Using a book or a magazine, or anything with pictures, say:
+I am going to describe something on the page and you need to guess what it is and point to it. For example, “I see something that is [green and moves slowly].
+Can you guess what it is?” 💚",Calm,4| 5|6
+shapes_everywhere,Shapes Everywhere!,"📺 Squares, squares everywhere
+
+👀 Draw squares in the sand or dirt. Make some bigger and some smaller.
+Tell your child, “this is a square.” 
+Ask your child to try to draw a square. Hold your child’s hand to help if this is hard. 
+Look for things around the home or outdoors that are the same shape.
+
+Now do the same with circles! 🔴",Active | Quick,2 | 3| 4| 5|
+story_telling,Story Telling,"💡 Let’s make a story!
+
+Say: We are going to make up a story. I will start then you will help me continue it. 
+⏰ ”Once upon a time there was…”
+“What happened next?”
+“What happened after that?”
+;
+
+👂 Tell me the story!
+Say to your child: “I have a book here that we have read before. Can you remember the story and tell it to me just by looking at the pictures?” 
+👀 Show your child pictures in the book. Ask your child what is happening in the pictures and what happens next.",Calm,3| 4| 5|
+im_a_writer,I'm a Writer!,"📝 Have fun being creative with writing!
+
+You and your child can have fun writing with a pencil and paper, or with a stick and the sand!
+If your child doesn’t know how to write letters, encourage them to draw shapes, and try to copy the shapes of letters. 🔵▶️
+
+When they are more confident, encourage them to write letters and even words. 😃
+
+Show them the simple things that you write - like shopping lists! Show them the words and each of the letters. Let them try to copy the words! 📖",Active | Quick,4| 5|6
+a_friendly_chat,A Friendly Chat,"Talk to your child about something that they are interested in! 😃
+
+💚 Spending quality time with your child and talking to them every day is a good way to develop a strong relationship. 
+
+⚽ An easy way to start talking to your child is to ask them about something they are interested in, for example you could talk about topics such as: sports, books, movies, friends, music, celebrities, or school.
+
+👂 You may not find everything your child shares to be interesting, but it’s important to show enthusiasm and an eagerness to learn.",Quick | Calm,3 | 4 | 5 | 6 | 7 | 8 | 9
+get_active_child,Get Active,"Exercise is a great way to spend time together and it is so good for your health. 🌱 Find a sport or exercise that both you and your child want to do and try it out together! 
+
+⏰ Even walking for 10 minutes a day is good for you. 
+
+⚽ Together you can walk, run, play soccer, swim, dance, or do any other sport..
+
+🏆 Together, think of ways to make it even more fun. Can you jog to a certain point? Take turns being the coach? Can there be a small, free reward, like getting to decide the next activity?
+
+🌈 Exercise becomes easier and more enjoyable the more you do it. 
+
+🔄 If you or your child do not like the first exercise you pick, try a new exercise.",Active,4 | 5 | 6 | 7 | 8 | 9
+pass_ball_child,Pass the Ball,"Games are a great, fun way to spend time with your family! 
+
+3️⃣ This game is best with at least 3 people.
+
+⚽ Find a ball to play. If you cannot find a ball, choose an item you can safely throw around. For example, a bottle cap or a plastic cup.
+
+➡️ Start in a circle and pass the ball around. 
+
+👋 Start throwing the ball in new directions (up, down, straight, curved, rolling on the ground) and with different forces (hard, soft, medium). You can bounce the ball, throw it in the air, and catch it a few times before passing it. 
+
+✨ When everyone gets good at catching the ball, you can start moving around the room, still passing the ball. 
+
+⭐ Can you throw the ball under the leg? Behind the back? Over your head? Block a pass? Have fun with it!",Active|Group,4 | 5 | 6 | 7 | 8 | 9
+active_songs,Active Songs,"😃 Young children love physical games! But they need reminders about how to play 💡
+🎵 Songs with movements are fun and active and give instructions on how to move!
+;
+Sing songs to your child or a group of children in which they have to:
+✅ Start and stop ❌
+⬇️ Slow down and speed up ⬆️",Active|Group,2 | 3
+follow_the_leader,Follow the Leader!,"⭐ Choose someone to be the leader (tip: start with an adult like yourself)
+😃 Other players line up behind the leader. The leader moves around in any way they like!
+🏁 They can run, jump, crawl, walk on tip toes, and any other way they want!
+👀 The other players must copy what the leaders does, and the leader can change movements at any time.
+
+🔄 Players take turns being the leader!",Active|Group,2 | 3
+be_the_narrator,Be the Narrator,"👀 Say what your child is doing while they are playing
+
+👂 This will help them learn the words to describe their actions.
+
+😃 You can do it in a simple way, or in a silly way like a sports commentator, a news presenter, or a game show host
+
+💡 Ask questions like “what will you do next?” or “I see you want to put the ball in the jar. Is there another way to do that?”",Calm | Quick,2 | 3
+be_an_artist,Be an Artist!,"📝 Give your child some paper and a pen or pencil, or some different pens or pencils.
+😃 Let your child draw whatever they want to!
+👀 Ask questions about what they are drawing, the size of the thing they are drawing, and the colours they are using.
+
+🏆 If possible, put your child’s picture up on the wall when they are finished. Give praise to your child!",Calm,2 | 3
