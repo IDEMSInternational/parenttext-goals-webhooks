@@ -6,13 +6,10 @@ from rpft.parsers.sheets import CSVSheetReader, XLSXSheetReader
 from models import GoalDataGlobal, GoalModuleLinkGlobal, ModuleDataGlobal, LTPActivities
 
 def get_sheet(name, model, testing=False):
-    path = f"data/{name}.csv"
-    if testing:
-        path = f"test_data/{name}.csv"
-    reader = CSVSheetReader(path)
-    content = reader.get_main_sheet()
+    reader = CSVSheetReader("test_data" if testing else "data")
+    content = reader.get_sheet(name)
     rowparser = RowParser(model, CellParser())
-    sheetparser = SheetParser(rowparser, content)
+    sheetparser = SheetParser(rowparser, content.table)
     rows = sheetparser.parse_all()
     return {row.ID: row for row in rows}
 
