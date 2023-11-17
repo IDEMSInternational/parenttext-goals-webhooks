@@ -1,27 +1,25 @@
-import unittest
-import json
+from unittest import TestCase
 
-from sheets import (
-    get_module_data_global_sheet,
-    get_goal_module_link_global_sheet,
-    get_goal_data_global_sheet,
-    get_ltp_activities_sheet,
-)
+from sheets import DataSource
 
-class TestRetrieve(unittest.TestCase):
 
+class TestRetrieve(TestCase):
     def test_retrieve(self):
-    	get_module_data_global_sheet()
-    	get_goal_module_link_global_sheet()
-    	get_goal_data_global_sheet()
-    	get_ltp_activities_sheet()
+        db = DataSource()
+        self.assertGreater(len(db.goal_topic_links()), 0)
+        self.assertGreater(len(db.goals()), 0)
+        self.assertGreater(len(db.ltp_activities()), 0)
+        self.assertGreater(len(db.modules()), 0)
 
 
-class TestIDValidity(unittest.TestCase):
+class TestIDValidity(TestCase):
+    def setUp(self):
+        self.db = DataSource()
 
     def test_module_IDs(self):
-        module_data = get_module_data_global_sheet()
-        link_data = get_goal_module_link_global_sheet()
+        module_data = self.db.modules()
+        link_data = self.db.goal_topic_links()
+
         for ID, row in module_data.items():
             self.assertTrue(hasattr(row, "topic_ID"), row)
             self.assertTrue(hasattr(row, "name"), row)
@@ -30,15 +28,17 @@ class TestIDValidity(unittest.TestCase):
         # we can also check that the module ID is from that list
 
     def test_ltp_headers(self):
-        data = get_ltp_activities_sheet()
+        data = self.db.ltp_activities()
+
         for ID, row in data.items():
             self.assertTrue(hasattr(row, "name"), row)
 
     def test_link_IDs(self):
-        link_data = get_goal_module_link_global_sheet()
-        module_data = get_module_data_global_sheet()
+        link_data = self.db.goal_topic_links()
+        module_data = self.db.modules()
         topic_IDs = {e.topic_ID for e in module_data.values()}
-        goal_data = get_goal_data_global_sheet()
+        goal_data = self.db.goals()
+
         for ID, row in link_data.items():
             self.assertIn(ID, topic_IDs, row)
             if row.goal_id_c:

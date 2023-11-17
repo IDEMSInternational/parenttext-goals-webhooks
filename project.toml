@@ -1,0 +1,21 @@
+[_]
+schema-version = "0.2"
+id = "international.idems.parenttext-goals-api"
+name = "ParentText Goals API"
+version = "0.1.0"
+
+[io.buildpacks]
+exclude = [
+    ".gcloudignore",
+    ".git",
+    ".github",
+    ".gitignore",
+    ".venv",
+    "README.md",
+    "__pycache__",
+    "build_container.py",
+    "data",
+    "project.toml",
+    "run_webhooks.py",
+    "test*",
+]
