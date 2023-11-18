@@ -1,8 +1,5 @@
 [_]
 schema-version = "0.2"
-id = "international.idems.parenttext-goals-api"
-name = "ParentText Goals API"
-version = "0.1.0"
 
 [io.buildpacks]
 exclude = [
