@@ -2,11 +2,11 @@ name: Publish container image
 on:
   workflow_dispatch:
     inputs:
-      image_tag:
+      version:
         required: true
         type: string
 env:
-  IMAGE_TAG: ghcr.io/idems/${{ inputs.image_tag }}
+  IMAGE_TAG: ghcr.io/${{ github.repository }}:${{ inputs.version }}
 jobs:
   deploy:
     runs-on: ubuntu-latest
