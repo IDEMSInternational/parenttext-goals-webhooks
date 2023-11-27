@@ -1,4 +1,8 @@
 import subprocess
+import sys
+
+
+image_tag = sys.argv[1]
 
 subprocess.run(
     [
@@ -10,6 +14,6 @@ subprocess.run(
         "GOOGLE_FUNCTION_SIGNATURE_TYPE=http",
         "--env",
         "GOOGLE_FUNCTION_TARGET=serve",
-        "pt-goals-api:0.1.0",
+        image_tag,
     ]
 )
