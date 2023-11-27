@@ -2,24 +2,25 @@ name: Publish container image
 on:
   workflow_dispatch:
     inputs:
-      image_tag:
+      version:
         required: true
         type: string
 env:
-  IMAGE_TAG: ${{ inputs.image_tag }}
+  REGISTRY: ${{ vars.CONTAINER_REGISTRY }}
+  IMAGE_TAG: ${{ vars.CONTAINER_REGISTRY }}/${{ vars.CONTAINER_REPO }}:${{ inputs.version }}
 jobs:
-  deploy:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
     steps:
       - uses: actions/checkout@v4
+      - name: Log in to registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login $REGISTRY -u $ --password-stdin
       - name: Set up pack
         uses: buildpacks/github-actions/setup-pack@v5.0.0
       - name: Build
         run: python build_container.py $IMAGE_TAG
-      - name: Log in to registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u $ --password-stdin
       - name: Publish
         run: docker push $IMAGE_TAG
