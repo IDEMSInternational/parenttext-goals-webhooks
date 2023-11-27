@@ -1,0 +1,20 @@
+name: Publish container image
+on:
+  workflow_dispatch:
+    inputs:
+      image_tag:
+        required: true
+        type: string
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up pack
+        uses: buildpacks/github-actions/setup-pack@v5.0.0
+      - name: Build
+        run: python build_container.py ${{ inputs.image_tag }}
+      - name: Log in to registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u $ --password-stdin
+      - name: Publish
+        run: docker push ${{ inputs.image_tag }}

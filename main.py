@@ -1,8 +1,5 @@
-from hooks import Hooks
 import functions_framework
-import uuid
-import math
-from datetime import datetime
+from hooks import Hooks
 
 
 @functions_framework.http

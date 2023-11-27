@@ -3,11 +3,14 @@ from rpft.parsers.common.rowparser import ParserModel
 
 from typing import List
 
+
 class Language(ParserModel):
     eng: str = ""
-    zul: str = ""
     hau: str = ""
     msa: str = ""
+    zho: str = ""
+    zul: str = ""
+
 
 class GoalDataGlobal(DataRowModel):
     priority_c: str = ""
@@ -17,6 +20,7 @@ class GoalDataGlobal(DataRowModel):
     name_c: Language = Language()
     name_t: Language = Language()
 
+
 class GoalModuleLinkGlobal(DataRowModel):
     goal_id_c: str = ""
     priority_in_goal_c: str = ""
@@ -25,6 +29,7 @@ class GoalModuleLinkGlobal(DataRowModel):
     goal_id_t: str = ""
     priority_in_goal_t: str = ""
 
+
 class ModuleDataGlobal(DataRowModel):
     topic_ID: str = ""
     priority_in_topic: str = ""
@@ -32,6 +37,7 @@ class ModuleDataGlobal(DataRowModel):
     child_gender: List[str] = []
     name: Language = Language()
     name_c: Language = Language()
+
 
 class LTPActivities(DataRowModel):
     name: str = ""

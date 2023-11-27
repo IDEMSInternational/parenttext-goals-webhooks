@@ -1,12 +1,6 @@
-import csv
 import copy
 
-from sheets import (
-    get_module_data_global_sheet,
-    get_goal_module_link_global_sheet,
-    get_goal_data_global_sheet,
-    get_ltp_activities_sheet,
-)
+from sheets import DataSource
 
 
 def map_ids(rows):
@@ -16,7 +10,7 @@ def map_ids(rows):
 def filter_rows(filter_expression, rows):
     new_row_data = []
     for row in rows:
-        if eval(filter_expression, {}, dict(row)) == True:
+        if eval(filter_expression, {}, dict(row)) is True:
             new_row_data.append(row)
     return new_row_data
 
@@ -54,63 +48,53 @@ def get_ids_list(request_json, data):
 
 
 class Hooks:
-
-    def __init__(self, testing=False):
-        self.testing = testing
+    def __init__(self, data_dir="data"):
+        self.db = DataSource(source=data_dir)
 
     def get_modules_list(self, request_json):
         general_topicids = self.get_general_topicids(request_json)
         explicit_topicids = self.get_explicit_topicids(request_json, general_topicids)
         text = " ".join(explicit_topicids)
+
         return {"text": text}, 200
 
-
     def get_explicit_topicids(self, request_json, topicsid_list):
-        module_data = get_module_data_global_sheet(self.testing)
         all_topics = []
+
         for topic_id in topicsid_list:
             new_subtopics = []
-            topics = [m for m in module_data.values() if m.topic_ID == topic_id]
+            topics = [m for m in self.db.modules().values() if m.topic_ID == topic_id]
             new_subtopics = filter_and_sort(request_json, topics)
             all_topics += new_subtopics
-        return map_ids(all_topics)
 
+        return map_ids(all_topics)
 
     def get_general_topicids(self, request_json):
         # Get the list of topic IDs associated with the specified goal.
-        goal_data = get_goal_module_link_global_sheet(self.testing)
         goal_id_column = request_json["goal_id_column"]
         goal_priority_column = request_json["goal_priority_column"]
         goal_id = request_json["goal_id"]
         topics_list = []
-        for _, row in goal_data.items():
+        for _, row in self.db.goal_topic_links().items():
             if getattr(row, goal_id_column) == goal_id:
                 topics_list.append(row)
         topics_list = sort_rows([goal_priority_column], topics_list)
         return map_ids(topics_list)
 
-
     def get_goals_list(self, request_json):
-        goal_data = get_goal_data_global_sheet(self.testing)
-        return get_ids_list(request_json, goal_data)
-
+        return get_ids_list(request_json, self.db.goals())
 
     def get_ltp_activities_list(self, request_json):
-        ltp_data = get_ltp_activities_sheet(self.testing)
-        return get_ids_list(request_json, ltp_data)
-
+        return get_ids_list(request_json, self.db.ltp_activities())
 
     def get_goals_names_list_txt(self, request_json):
         goals = self.get_goals_list(request_json)
         text = " ".join(goals)
         return {"text": text}, 200
 
-
     def get_goal_name(self, request_json):
-        goal_data = get_goal_data_global_sheet(self.testing)
-        text = self.get_name(request_json, goal_data)
+        text = self.get_name(request_json, self.db.goals())
         return {"text": text}, 200
-
 
     def get_numbered_names(self, request_json, data):
         ids = request_json["ids"].split()
@@ -119,24 +103,17 @@ class Hooks:
         numbered = "\n".join(numbered_names)
         return numbered
 
-
     def get_numbered_module_names(self, request_json):
-        module_data = get_module_data_global_sheet(self.testing)
-        text = self.get_numbered_names(request_json, module_data)
+        text = self.get_numbered_names(request_json, self.db.modules())
         return {"text": text}, 200
-
 
     def get_numbered_goal_names(self, request_json):
-        goal_data = get_goal_data_global_sheet(self.testing)
-        text = self.get_numbered_names(request_json, goal_data)
+        text = self.get_numbered_names(request_json, self.db.goals())
         return {"text": text}, 200
-
 
     def get_module_name(self, request_json):
-        module_data = get_module_data_global_sheet(self.testing)
-        text = self.get_name(request_json, module_data)
+        text = self.get_name(request_json, self.db.modules())
         return {"text": text}, 200
-
 
     def get_name(self, request_json, data, goal_id=None):
         column_base = request_json["column"]
