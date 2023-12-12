@@ -9,11 +9,9 @@ language,learning,1,learning,1
 reading,learning,2,learning,2
 maths,learning,3,learning,3
 engage_school,learning,4,learning,4
-play,develop,4,develop,4
-learn_experience,develop,5,develop,5
-toddler_change,develop,1,develop,1
-young_child_change,develop,2,develop,2
-child_change,develop,3,develop,3
+play,develop,2,develop,2
+learn_experience,develop,3,develop,3
+dev_change,develop,1,develop,1
 manage_my_stress,structure,1,structure,1
 keeping_it_positive,structure,2,structure,2
 create_routines,structure,3,structure,3

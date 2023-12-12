@@ -15,9 +15,9 @@ maths_2to3_yc,maths,,2|3,male|female,Get Your Child Ready for Maths,Persiapkan D
 engage_school_3to6_yc,engage_school,,3| 4 | 5 | 6,male|female,Engage with Your Child’s School,Membina Hubungan bersama Sekolah Anak Anda
 play_yc,play,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,The Power of Play,Kuasa Bermain
 learn_experience_yc,learn_experience,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Learning From Experience,Belajar Daripada Pengalaman
-toddler_change_yc,toddler_change,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,How Your Toddler is Changing,Bagaimana Anak Bertatih Anda sedang Berubah
-young_child_change_yc,young_child_change,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,How Your Young Child is Changing,Bagaimana Anak Kecil Anda sedang Berubah
-child_change_yc,child_change,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,How Your Child is Changing,Bagaimana Your Child sedang Berubah
+toddler_change_yc,dev_change,,2|3,male|female,How Your Toddler is Changing,Bagaimana Anak Bertatih Anda sedang Berubah
+young_child_change_yc,dev_change,,4|5|6,male|female,How Your Young Child is Changing,Bagaimana Anak Kecil Anda sedang Berubah
+child_change_yc,dev_change,,7|8|9,male|female,How Your Child is Changing,Bagaimana Your Child sedang Berubah
 manage_my_stress_yc,manage_my_stress,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Manage My Stress,Uruskan Tekanan Saya
 keeping_it_positive_yc,keeping_it_positive,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Keeping it Positive,Mengekalkan Sifat Positif
 create_routines_yc,create_routines,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Create Routines with My Child,Cipta Jadual Harian dengan Anak Saya
