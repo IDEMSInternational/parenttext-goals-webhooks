@@ -20,6 +20,14 @@ class TestGetGoalsList(unittest.TestCase):
         expected = "relation develop learning structure behave safety budget wellbeing"
         self.check_case(request, expected)
 
+    def test_filter_and_sort(self):
+        request = """{
+            "filter_expression": "'yes' in relationship",
+            "sort_columns" : ["priority_c"]
+        }"""
+        expected = "relation learning develop structure behave safety ipv budget"
+        self.check_case(request, expected)
+
 
 class TestGetLTPActivitiesList(unittest.TestCase):
     def check_case(self, json_str, expected):
