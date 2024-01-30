@@ -106,6 +106,16 @@ class TestGetGoalNames(unittest.TestCase):
         out = Hooks(data_dir=DATA_DIR).get_goal_name(request_json)
         self.assertEqual(out[0]["text"], expected)
 
+    def test_get_entries(self):
+        request = """{
+            "column": "checkin_c",
+            "id": "relation"
+        }"""
+        expected = "relation_c"
+        request_json = json.loads(request)
+        out = Hooks(data_dir=DATA_DIR).get_goal_entry(request_json)
+        self.assertEqual(out[0]["text"], expected)
+
     def test_numbered(self):
         request = """{
             "column": "name_c",

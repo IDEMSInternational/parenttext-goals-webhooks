@@ -30,6 +30,8 @@ def serve(request):
         return h.get_modules_list(request_json)
     if path == "get_goal_name":
         return h.get_goal_name(request_json)
+    if path == "get_goal_entry":
+        return h.get_goal_entry(request_json)
     if path == "get_numbered_goal_names":
         return h.get_numbered_goal_names(request_json)
     if path == "get_module_name":
