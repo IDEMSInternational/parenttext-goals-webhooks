@@ -1,10 +1,10 @@
-"ID","priority_c","priority_t","relationship","name_c.eng","name_t.eng","name_c.zul","name_t.zul","name_c.hau","name_t.hau"
-"relation",1,1,"yes|no","Improve My Relationship with My Child","Improve My Relationship with My Teen","Thuthukisa Ubudlelwano Bami Nengane Yami","Thuthukisa Ubudlelwano Bami Nengane Yami","Kukhulisa Buhlobo Bami Nemntfwanami","Kukhulisa Buhlobo Bami Nemntfwanami Losatfombile"
-"develop",3,2,"yes|no","Support My Child's Development","Understand Teen Development","Sekela Ukuthuthuka Kwengane Yami","Qonda Ukuthuthuka Kwengane","Kwesekela Kukhula Kwemntfwanami","Kucondzisisa Kukhula Kwemntfwanami Losatfombile"
-"learning",2,3,"yes|no","Prepare My Child for Success in School","Support My Teen's Education",,,,
-"structure",4,4,"yes|no","Give My Child Structure","Create Structure for My Teen",,,,
-"behave",5,7,"yes|no","Manage My Child's Behaviour","Manage My Teen's Behaviour",,,,
-"safety",6,8,"yes|no","Keep My Child Safe & Healthy","Keep My Teen Safe",,,,
-"ipv",7,9,"yes","Have a Healthy Relationship with My Partner","Have a Healthy Relationship with My Partner",,,,
-"budget",8,5,"yes|no","Build a Family Budget and Save Money","Family Budgeting & Ways to Save Money",,,,
-"wellbeing",,6,"yes|no",,"Care for My Teen's Wellbeing",,,,
+"ID","priority_c","priority_t","relationship","checkin_c","checkin_t","name_c.eng","name_t.eng","name_c.zul","name_t.zul","name_c.hau","name_t.hau"
+"relation",1,1,"yes|no","relation_c","relation_t","Improve My Relationship with My Child","Improve My Relationship with My Teen","Thuthukisa Ubudlelwano Bami Nengane Yami","Thuthukisa Ubudlelwano Bami Nengane Yami","Kukhulisa Buhlobo Bami Nemntfwanami","Kukhulisa Buhlobo Bami Nemntfwanami Losatfombile"
+"develop",3,2,"yes|no","develop","develop","Support My Child's Development","Understand Teen Development","Sekela Ukuthuthuka Kwengane Yami","Qonda Ukuthuthuka Kwengane","Kwesekela Kukhula Kwemntfwanami","Kucondzisisa Kukhula Kwemntfwanami Losatfombile"
+"learning",2,3,"yes|no","learning","learning","Prepare My Child for Success in School","Support My Teen's Education",,,,
+"structure",4,4,"yes|no","structure","structure","Give My Child Structure","Create Structure for My Teen",,,,
+"behave",5,7,"yes|no","behave","behave","Manage My Child's Behaviour","Manage My Teen's Behaviour",,,,
+"safety",6,8,"yes|no","safety","safety","Keep My Child Safe & Healthy","Keep My Teen Safe",,,,
+"ipv",7,9,"yes","ipv","ipv","Have a Healthy Relationship with My Partner","Have a Healthy Relationship with My Partner",,,,
+"budget",8,5,"yes|no","budget","budget","Build a Family Budget and Save Money","Family Budgeting & Ways to Save Money",,,,
+"wellbeing",,6,"yes|no",,,,"Care for My Teen's Wellbeing",,,,

@@ -20,6 +20,14 @@ class TestGetGoalsList(unittest.TestCase):
         expected = "relation develop learning structure behave safety budget wellbeing"
         self.check_case(request, expected)
 
+    def test_filter_and_sort(self):
+        request = """{
+            "filter_expression": "'yes' in relationship",
+            "sort_columns" : ["priority_c"]
+        }"""
+        expected = "relation learning develop structure behave safety ipv budget"
+        self.check_case(request, expected)
+
 
 class TestGetLTPActivitiesList(unittest.TestCase):
     def check_case(self, json_str, expected):
@@ -104,6 +112,32 @@ class TestGetGoalNames(unittest.TestCase):
         expected = "Keep My Child Safe & Healthy"
         request_json = json.loads(request)
         out = Hooks(data_dir=DATA_DIR).get_goal_name(request_json)
+        self.assertEqual(out[0]["text"], expected)
+
+    def test_get_entries(self):
+        request = """{
+            "column": "checkin_c",
+            "id": "relation"
+        }"""
+        expected = "relation_c"
+        request_json = json.loads(request)
+        out = Hooks(data_dir=DATA_DIR).get_goal_entry(request_json)
+        self.assertEqual(out[0]["text"], expected)
+
+    def test_get_entries_nested(self):
+        request = """{
+            "column": "name_c",
+            "id": "relation"
+        }"""
+        expected = {
+            "eng" : "Improve My Relationship with My Child",
+            "zul" : "Thuthukisa Ubudlelwano Bami Nengane Yami",
+            "hau" : "Kukhulisa Buhlobo Bami Nemntfwanami",
+            "msa" : "",
+            "zho" : "",
+        }
+        request_json = json.loads(request)
+        out = Hooks(data_dir=DATA_DIR).get_goal_entry(request_json)
         self.assertEqual(out[0]["text"], expected)
 
     def test_numbered(self):

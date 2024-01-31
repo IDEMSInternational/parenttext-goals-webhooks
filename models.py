@@ -17,6 +17,9 @@ class GoalDataGlobal(DataRowModel):
     priority_p: str = ""
     priority_t: str = ""
     relationship: List[str] = []
+    checkin_c: str = ""
+    checkin_p: str = ""
+    checkin_t: str = ""
     name_c: Language = Language()
     name_t: Language = Language()
 

@@ -103,6 +103,29 @@ Output:
 {"text" : "Keep My Child Safe & Healthy"}
 ```
 
+### `get_goal_entry`:
+
+Given an ID of a goal and a column name, return the entry in the respective column.
+The column should be a simple column (no nesting, i.e. no dots in the column name)
+of type `str`.
+
+**Example.**
+
+Input:
+
+```
+{
+    "column": "checkin_c",
+    "id": "relation"
+}
+```
+
+Output:
+
+```
+{"text" : "relation_c"}
+```
+
 ### `get_module_name`: #4 from above
 
 Given an ID of a module, and a language and column, look up the translated name in the respective column.
