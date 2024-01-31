@@ -124,6 +124,22 @@ class TestGetGoalNames(unittest.TestCase):
         out = Hooks(data_dir=DATA_DIR).get_goal_entry(request_json)
         self.assertEqual(out[0]["text"], expected)
 
+    def test_get_entries_nested(self):
+        request = """{
+            "column": "name_c",
+            "id": "relation"
+        }"""
+        expected = {
+            "eng" : "Improve My Relationship with My Child",
+            "zul" : "Thuthukisa Ubudlelwano Bami Nengane Yami",
+            "hau" : "Kukhulisa Buhlobo Bami Nemntfwanami",
+            "msa" : "",
+            "zho" : "",
+        }
+        request_json = json.loads(request)
+        out = Hooks(data_dir=DATA_DIR).get_goal_entry(request_json)
+        self.assertEqual(out[0]["text"], expected)
+
     def test_numbered(self):
         request = """{
             "column": "name_c",

@@ -1,5 +1,7 @@
 import copy
 
+from rpft.parsers.common.rowparser import ParserModel
+
 from sheets import DataSource
 
 
@@ -102,6 +104,8 @@ class Hooks:
         data = self.db.goals()
         row = data[goal_id]
         content = getattr(row, column)
+        if isinstance(content, ParserModel):
+            content = content.dict()
         return {"text": content}, 200
 
     def get_numbered_names(self, request_json, data):

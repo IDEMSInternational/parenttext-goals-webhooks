@@ -103,7 +103,7 @@ Output:
 {"text" : "Keep My Child Safe & Healthy"}
 ```
 
-### `get_goal_column_entry`:
+### `get_goal_entry`:
 
 Given an ID of a goal and a column name, return the entry in the respective column.
 The column should be a simple column (no nesting, i.e. no dots in the column name)
