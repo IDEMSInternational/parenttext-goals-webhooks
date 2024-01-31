@@ -134,6 +134,7 @@ class TestGetGoalNames(unittest.TestCase):
             "zul" : "Thuthukisa Ubudlelwano Bami Nengane Yami",
             "hau" : "Kukhulisa Buhlobo Bami Nemntfwanami",
             "msa" : "",
+            "spa" : "",
             "zho" : "",
         }
         request_json = json.loads(request)
