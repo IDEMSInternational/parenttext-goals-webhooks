@@ -8,6 +8,7 @@ class Language(ParserModel):
     eng: str = ""
     hau: str = ""
     msa: str = ""
+    spa: str = ""
     zho: str = ""
     zul: str = ""
 
