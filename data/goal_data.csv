@@ -1,9 +1,2 @@
-ID,priority_c,priority_p,relationship,name_c.eng,name_c.msa
-relation,1,1,yes|no,Improve My Relationship with My Child,Perbaiki Hubungan Saya dengan Anak Saya
-develop,3,3,yes|no,Understand Child Development,Memahami Perkembangan Anak
-learning,2,2,yes|no,Prepare My Child for Success in School,Persiapkan Diri Anak Saya untuk Menempa Kejayaan di Sekolah
-structure,4,4,yes|no,Give My Child Structure,Memberikan Persekitaran yang Seimbang kepada Anak Saya
-behave,5,5,yes|no,Supporting Positive Child Behaviour,Menyokong Tingkah Laku Anak yang Positif
-safety,6,6,yes|no,Keep My Child Safe & Healthy,Pastikan Anak Saya Selamat & Sihat
-ipv,7,,yes,Have a Healthy Relationship with My Spouse,Jalinkan Hubungan Sihat dengan Pasangan Saya
-budget,8,,yes|no,Build a Family Budget and Save Money,Merancang Perbelanjaan Keluarga dan Menjimatkan Wang
+ID,priority_c,relationship,name_c.eng
+core,1,yes|no,Tips

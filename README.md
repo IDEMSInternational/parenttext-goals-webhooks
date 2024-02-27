@@ -2,6 +2,10 @@
 
 Webhooks for parent text to compose lists of goals and modules satisfying certain criteria.
 
+Deployment branch for `crisis-global`.
+
+Function name: `parenttext-individualize-module-list-crisis-global`
+
 ## Setup
 
 ```

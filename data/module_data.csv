@@ -1,49 +1,11 @@
-ID,topic_ID,priority_in_topic,age,child_gender,name_c.eng,name_c.msa
-take_a_pause,take_a_pause,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Take a Pause,Berhenti Seketika
-one_on_one_yc,one_on_one,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Spend One-on-one Time with My Child,Luangkan Masa Bersama Seorang dengan Seorang bersama Anak Saya
-kind_to_myself_yc,kind_to_myself,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Be Kind to Myself,Berlaku Baik terhadap Diri Saya Sendiri
-give_praise_yc,give_praise,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Give Praise,Memberi Pujian
-talk_feelings_yc,talk_feelings,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Talk about Feelings,Bercakap tentang Perasaan
-spirituality_yc,spirituality,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Parenting Values & Spirituality,Nilai Keibubapaan & Kerohanian
-language_yc,language,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Help Your Child’s Language Skills,Bantu Kemahiran Berbahasa Anak Anda
-reading1_4to6_yc,reading,1,4 | 5 | 6,male|female,"Help Your Child Learn to Read, Part 1","Bantu Anak Anda Belajar Membaca, Bahagian 1"
-reading2_4to6_yc,reading,2,4 | 5 | 6,male|female,"Help Your Child Learn to Read, Part 2","Bantu Anak Anda Belajar Membaca, Bahagian 2"
-maths1_4to6_yc,maths,1,4 | 5 | 6,male|female,"Get Your Child Ready for Maths, Part 1","Persiapkan Diri Anak Anda untuk Matematik, Bahagian 1"
-maths2_4to6_yc,maths,2,4 | 5 | 6,male|female,"Get Your Child Ready for Maths, Part 2","Persiapkan Diri Anak Anda untuk Matematik, Bahagian 2"
-reading_2to3_yc,reading,,2|3,male|female,Help Your Child Learn to Read,Bantu Anak Anda Belajar Membaca
-maths_2to3_yc,maths,,2|3,male|female,Get Your Child Ready for Maths,Persiapkan Diri Anak Anda untuk Matematik
-engage_school_3to6_yc,engage_school,,3| 4 | 5 | 6,male|female,Engage with Your Child’s School,Membina Hubungan bersama Sekolah Anak Anda
-play_yc,play,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,The Power of Play,Kuasa Bermain
-learn_experience_yc,learn_experience,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Learning From Experience,Belajar Daripada Pengalaman
-toddler_change_yc,dev_change,,2|3,male|female,How Your Toddler is Changing,Bagaimana Anak Bertatih Anda sedang Berubah
-young_child_change_yc,dev_change,,4|5|6,male|female,How Your Young Child is Changing,Bagaimana Anak Kecil Anda sedang Berubah
-child_change_yc,dev_change,,7|8|9,male|female,How Your Child is Changing,Bagaimana Your Child sedang Berubah
-manage_my_stress_yc,manage_my_stress,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Manage My Stress,Uruskan Tekanan Saya
-keeping_it_positive_yc,keeping_it_positive,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Keeping it Positive,Mengekalkan Sifat Positif
-create_routines_yc,create_routines,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Create Routines with My Child,Cipta Jadual Harian dengan Anak Saya
-create_family_rules_yc,create_family_rules,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Creating Family Rules,Mewujudkan Peraturan Keluarga
-know_role_yc,know_role,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Know Everyone’s Role,Ketahui Peranan Semua Orang
-redirect_yc,redirect,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Redirect Misbehaviour,Alihkan Salah Laku
-ignore_demanding_yc,ignore_demanding,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Ignore Demanding Behaviours,Abaikan Tingkah Laku yang Mendesak
-managing_anger_yc,managing_anger,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Managing Anger,Menguruskan Kemarahan
-teach_consequences_yc,teach_consequences,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Teach my Child Consequences,Mengajar Anak Saya Tentang Akibat
-solve_problems_yc,solve_problems,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Solve Problems with My Child,Menyelesaikan Masalah dengan My Child
-safe_touch_2to5_yc_m,safe_touch,,2|3| 4 | 5,male,Teach Safe Touch,Mengajar Sentuhan Selamat
-safe_touch_2to5_yc_f,safe_touch,,2|3| 4 | 5,female,Teach Safe Touch,Mengajar Sentuhan Selamat
-safe_touch_6to9_yc,safe_touch,, 6 | 7 | 8 | 9,male|female,Teach Safe Touch,Mengajar Sentuhan Selamat
-com_safety_2to4_yc,com_safety,,2|3| 4,male|female,Community Safety,Keselamatan Komuniti
-com_safety_5to9_yc,com_safety,, 5|6 | 7 | 8 | 9,male|female,Community Safety,Keselamatan Komuniti
-crises_2to6_yc,crises,,2|3| 4 | 5 | 6,male|female,Respond to Crises,Bertindak Balas Terhadap Krisis
-crises_7to9_yc,crises,,7 | 8 | 9,male|female,Respond to Crises,Bertindak Balas Terhadap Krisis
-online_safety_yc,online_safety,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Know Online Safety Basics,Ketahui Asas Keselamatan Dalam Talian
-habits_trust_online_yc,habits_trust_online,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Build Habits and Trust Online,Bina Tabiat dan Kepercayaan dalam Talian
-nutrition_health_yc,nutrition_health,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Strengthen My Child’s Nutrition and Health ,Kuatkan Pemakanan dan Kesihatan Anak Saya 
-ipv_equals,ipv_equals,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Creating Respect at Home,Mewujudkan Rasa Hormat di Rumah
-ipv_supportive,ipv_supportive,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Be a Supportive Spouse and Parent,Menjadi Pasangan dan Ibu Bapa yang Memberi Sokongan
-ipv_sharing,ipv_sharing,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Share Family Responsibilities,Kongsi Tanggungjawab Keluarga
-ipv_conflicts,ipv_conflicts,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Resolve Conflicts Peacefully,Selesaikan Konflik dengan Aman
-ipv_listen,ipv_listen,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Listen and Talk with Each Other,Dengar dan Bincang Sesama Sendiri
-budget_needs_yc,budget_needs,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Understand Needs and Wants,Memahami Keperluan dan Kehendak
-budget_expenses_yc,budget_expenses,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Talk about Monthly Expenses,Berbincang tentang Perbelanjaan Bulanan
-budget_monthly_yc,budget_monthly,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Make a Monthly Budget,Buat Belanjawan Bulanan
-budget_savings_yc,budget_savings,,2|3| 4 | 5 | 6 | 7 | 8 | 9,male|female,Make a Saving Plan,Buat Pelan Simpanan
+ID,topic_ID,priority_in_topic,age,child_gender,name.eng
+care_for_yourself,care_for_yourself,,0|1|2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,Care for Yourself
+make_a_routine,make_a_routine,,0|1|2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,Make a Routine for Time Together
+help_children_cope,help_children_cope,,0|1|2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,Help Children Cope with Crisis
+when_someone_dies,when_someone_dies,,0|1|2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,Help our Children when Someone Dies
+protect_sexual_violence,protect_sexual_violence,,0|1|2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,Protect our Children from Sexual Violence
+keep_children_safe,keep_children_safe,,0|1|2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,Keep Children Safe
+prepare_to_travel,prepare_to_travel,,0|1|2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,Prepare to Travel
+travel_safely,travel_safely,,0|1|2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,Travel Safely
+protect_from_traffickers,protect_from_traffickers,,0|1|2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,Protect Your Children from Traffickers
+care_in_a_shelter,care_in_a_shelter,,0|1|2|3| 4 | 5 | 6 | 7 | 8 | 9|10|11|12|13|14|15|16|17,male|female,Care for your Children in a Shelter
