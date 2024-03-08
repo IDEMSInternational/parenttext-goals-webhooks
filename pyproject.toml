@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parenttext-goals-webhooks"
+version = "0.2.0-dev.1"
+description = "Spreadsheet-backed API for ParentText goals"
+authors = [
+    {name = "IDEMS International", email = "communications@idems.international"},
+]
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = []
+license = {text = "GPL-3.0-or-later"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "fastapi~=0.110.0",
+    "pydantic~=1.10.14",
+    "rpft @ https://github.com/IDEMSInternational/rapidpro-flow-toolkit/archive/refs/heads/upgrade-pydantic.tar.gz",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "flake8",
+    "isort",
+    "uvicorn",
+]
+
+[project.urls]
+Homepage = "https://github.com/IDEMSInternational/parenttext-goals-webhooks"
+Repository = "https://github.com/IDEMSInternational/parenttext-goals-webhooks"

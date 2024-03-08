@@ -10,6 +10,7 @@ import argparse
 import requests
 import json
 
+
 class WebhookTester:
 
     def __init__(self, url):

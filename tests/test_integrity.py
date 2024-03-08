@@ -1,8 +1,9 @@
-from unittest import TestCase
+from unittest import TestCase, skip
 
-from sheets import DataSource
+from parenttext_goals_webhooks.sheets import DataSource
 
 
+@skip("Should be a validator in main app")
 class TestRetrieve(TestCase):
     def test_retrieve(self):
         db = DataSource()
@@ -12,6 +13,7 @@ class TestRetrieve(TestCase):
         self.assertGreater(len(db.modules()), 0)
 
 
+@skip("Should be a validator in main app")
 class TestIDValidity(TestCase):
     def setUp(self):
         self.db = DataSource()

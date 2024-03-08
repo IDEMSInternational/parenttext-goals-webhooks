@@ -2,7 +2,7 @@ import copy
 
 from rpft.parsers.common.rowparser import ParserModel
 
-from sheets import DataSource
+from parenttext_goals_webhooks.sheets import DataSource
 
 
 def map_ids(rows):
@@ -32,12 +32,10 @@ def sort_rows(sort_columns, rows):
 
 
 def filter_and_sort(request_json, rows):
-    if "filter_expression" in request_json:
-        filter_expression = request_json["filter_expression"]
-        rows = filter_rows(filter_expression, rows)
-    if "sort_columns" in request_json:
-        sort_columns = request_json["sort_columns"]
-        rows = sort_rows(sort_columns, rows)
+    if request_json.filter_expression:
+        rows = filter_rows(request_json.filter_expression, rows)
+    if request_json.sort_columns:
+        rows = sort_rows(request_json.sort_columns, rows)
     return rows
 
 
@@ -73,9 +71,9 @@ class Hooks:
 
     def get_general_topicids(self, request_json):
         # Get the list of topic IDs associated with the specified goal.
-        goal_id_column = request_json["goal_id_column"]
-        goal_priority_column = request_json["goal_priority_column"]
-        goal_id = request_json["goal_id"]
+        goal_id_column = request_json.goal_id_column
+        goal_priority_column = request_json.goal_priority_column
+        goal_id = request_json.goal_id
         topics_list = []
         for _, row in self.db.goal_topic_links().items():
             if getattr(row, goal_id_column) == goal_id:
@@ -99,8 +97,8 @@ class Hooks:
         return {"text": text}, 200
 
     def get_goal_entry(self, request_json):
-        column = request_json["column"]
-        goal_id = request_json["id"]
+        column = request_json.column
+        goal_id = request_json.id
         data = self.db.goals()
         row = data[goal_id]
         content = getattr(row, column)
@@ -109,7 +107,7 @@ class Hooks:
         return {"text": content}, 200
 
     def get_numbered_names(self, request_json, data):
-        ids = request_json["ids"].split()
+        ids = request_json.ids.split()
         names = [self.get_name(request_json, data, goal_id) for goal_id in ids]
         numbered_names = [f"{i+1}. {name}" for i, name in enumerate(names)]
         numbered = "\n".join(numbered_names)
@@ -128,9 +126,9 @@ class Hooks:
         return {"text": text}, 200
 
     def get_name(self, request_json, data, goal_id=None):
-        column_base = request_json["column"]
-        language = request_json["language"]
-        goal_id = goal_id or request_json["id"]
+        column_base = request_json.column
+        language = request_json.language
+        goal_id = goal_id or request_json.id
         row = data[goal_id]
         string = getattr(getattr(row, column_base), language)
         return string
