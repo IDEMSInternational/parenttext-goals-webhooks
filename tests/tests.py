@@ -17,18 +17,12 @@ class BaseTestCase(TestCase):
     def setUp(self):
         self.hooks = Hooks(data_dir=DATA_DIR)
 
-    def assertTextEqual(self, actual, expected):
-        self.assertEqual(
-            actual[0]["text"],
-            expected,
-        )
-
 
 class TestGetGoalsList(BaseTestCase):
     def test_filter(self):
         q = ListQuery(filter_expression="'no' in relationship")
 
-        self.assertTextEqual(
+        self.assertEqual(
             self.hooks.get_goals_list(q),
             "relation develop learning structure behave safety budget wellbeing",
         )
@@ -39,7 +33,7 @@ class TestGetGoalsList(BaseTestCase):
             sort_columns=["priority_c"],
         )
 
-        self.assertTextEqual(
+        self.assertEqual(
             self.hooks.get_goals_list(q),
             "relation learning develop structure behave safety ipv budget",
         )
@@ -49,7 +43,7 @@ class TestGetLTPActivitiesList(BaseTestCase):
     def test_filter(self):
         q = ListQuery(filter_expression="'Calm' in act_type and 17 in act_age")
 
-        self.assertTextEqual(
+        self.assertEqual(
             self.hooks.get_ltp_activities_list(q),
             "friendly_chat reflect_positive checkin_chat",
         )
@@ -74,7 +68,7 @@ class TestGetModulesList(BaseTestCase):
             ]
         )
 
-        self.assertTextEqual(self.hooks.get_modules_list(q), expected)
+        self.assertEqual(self.hooks.get_modules_list(q), expected)
 
     def test_filter_and_sort(self):
         q = ModulesListQuery(
@@ -94,7 +88,7 @@ class TestGetModulesList(BaseTestCase):
                 "engage_school_3to6_yc",
             ]
         )
-        self.assertTextEqual(self.hooks.get_modules_list(q), expected)
+        self.assertEqual(self.hooks.get_modules_list(q), expected)
 
     def test_get_general_topicids(self):
         q = ModulesListQuery(
@@ -116,7 +110,7 @@ class TestGetGoalNames(BaseTestCase):
             id="safety",
         )
 
-        self.assertTextEqual(
+        self.assertEqual(
             self.hooks.get_goal_name(q), "Keep My Child Safe & Healthy"
         )
 
@@ -126,7 +120,7 @@ class TestGetGoalNames(BaseTestCase):
             id="relation",
         )
 
-        self.assertTextEqual(self.hooks.get_goal_entry(q), "relation_c")
+        self.assertEqual(self.hooks.get_goal_entry(q), "relation_c")
 
     def test_get_entries_nested(self):
         q = EntryQuery(
@@ -142,7 +136,7 @@ class TestGetGoalNames(BaseTestCase):
             "zho": "",
         }
 
-        self.assertTextEqual(self.hooks.get_goal_entry(q), expected)
+        self.assertEqual(self.hooks.get_goal_entry(q), expected)
 
     def test_numbered(self):
         q = NumberedNamesQuery(
@@ -156,7 +150,7 @@ class TestGetGoalNames(BaseTestCase):
             "3. Support My Child's Development"
         )
 
-        self.assertTextEqual(self.hooks.get_numbered_goal_names(q), expected)
+        self.assertEqual(self.hooks.get_numbered_goal_names(q), expected)
 
 
 class TestGetModuleNames(BaseTestCase):
@@ -167,7 +161,7 @@ class TestGetModuleNames(BaseTestCase):
             id="take_a_pause",
         )
 
-        self.assertTextEqual(self.hooks.get_module_name(q), "yyy")
+        self.assertEqual(self.hooks.get_module_name(q), "yyy")
 
     def test_numbered(self):
         q = NumberedNamesQuery(
@@ -176,7 +170,7 @@ class TestGetModuleNames(BaseTestCase):
             ids="take_a_pause one_on_one_yc",
         )
 
-        self.assertTextEqual(
+        self.assertEqual(
             self.hooks.get_numbered_module_names(q),
             "1. xxx\n" "2. One on One",
         )
