@@ -160,9 +160,4 @@ cython_debug/
 #.idea/
 
 # Project
-.github/
-.flake8
 .pre-commit-config.yaml
-docker-compose.yml
-/tests/
-/data/

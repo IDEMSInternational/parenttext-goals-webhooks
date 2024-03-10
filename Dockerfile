@@ -1,4 +1,4 @@
-FROM python:3.11-slim-bookworm AS builder
+FROM python:3.11-bookworm AS builder
 WORKDIR /work
 RUN pip install --upgrade build
 COPY . .

@@ -3,12 +3,14 @@ from enum import Enum
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+from parenttext_goals_webhooks import api_version
 from parenttext_goals_webhooks.hooks import Hooks
+
 
 app = FastAPI(
     title="ParentText Goals API",
     summary="Provides information about goals, modules and activities.",
-    version="0.2.0-dev1"
+    version=api_version(),
 )
 
 
