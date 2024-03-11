@@ -2,8 +2,9 @@ version: "3"
 
 services:
   api:
-    image: pt-goals-api:latest
+    build:
+      context: .
     volumes:
-      - ./data:/workspace/data
+      - ./data:/opt/idems/api/data
     ports:
-      - "8080:8080"
+      - "8000:8000"
