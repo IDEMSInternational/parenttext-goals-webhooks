@@ -81,6 +81,18 @@ class NameQuery(EntryQuery):
 class NumberedNamesQuery(NameQuery):
     ids: str = ""
 
+    class Config:
+        schema_extra = {
+            "examples": [
+                {
+                    "column": "name_c",
+                    "language": "eng",
+                    "ids": "safety",
+                }
+            ]
+        }
+
+
 
 class Result(BaseModel):
     text: str
