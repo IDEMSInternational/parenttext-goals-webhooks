@@ -1,274 +1,121 @@
-ID,name,text,act_type,act_age
-cooking_with_maths,Cooking with Maths,"Cooking can help your child start learning maths!
-💚 Invite your child to help you cook for your family, or to choose something they would like to cook
-;
-🍅 Ask your child to count different ingredients. Help them if it’s difficult!
+ID,name,text,act_type,act_age,attached_single_doc
+friendly_chat,A Friendly Chat,"Talk to your children about something that they are interested in! 😃
 
-🔟 Help your child to understand adding and subtracting quantities 
+⚽ An easy way to start talking to your children is to ask them about something they are interested in. For example, you could talk about local stories, traditions, sports, favourite books, movies, friends, music, famous people or school-related topics.
 
-📝 Encourage your child to recognise numbers on packaging
+👂 You may not find everything your children share to be interesting, but it’s important to show enthusiasm and an eagerness to learn. 
 
- 👀 Ask your child about the different sizes of ingredients - e.g. which is bigger/biggest?
-;
-🔄 Think about when you will cook together again! You can also practise understanding numbers and quantities during other activities like shopping or building/making things",Active,3| 4 | 5 | 6
-follow_instructions,Following Instructions,"👂 Play a game in which your child listens to and tries to remember strings of instructions.
-This will be useful in school, at home, and later in life!
-;
-Start with just one instruction using an object in your home. For example “touch the red ball” 🔴
+Paying attention to what matters to your children can make a big difference in your relationship and their happiness. ",Quick | Calm ,8,https://docs.google.com/document/d/13C1aMXQuSciBM4Y8NvSmieTmeuige6ck8YkjNYTgFgo
+reflect_positive,Reflect on the Positive,"Spread Positivity! 🌈
 
-Slowly add more instructions (e.g “then pick up the cup ☕), but tell your child that they can only start once you’ve finished giving the instructions.
-See how many your child can follow without forgetting!
-;
-🔄 Now swap roles! It’s your child’s turn to give you instructions! They can use the same objects if they want.
-You can also try this game with a group of children! Make sure they take turns :)",Calm | Quick | Group,3 | 4 | 5
-one_on_one_time,One-on-One Time,"💚 Spending time just with your child and taking an interest in them can improve your relationship 
+💡 Together, take a minute to think about all the things you did today. 
 
-;
-👀 When you child is playing alone or occupying themselves quietly, join them and show interest in what they are doing
+☀️ Take turns sharing one positive or fun thing that happened. This could be something small or big, like feeling good because you cleaned the house, took a pause to take some deep breaths, learnt a new dance move, or spent time with your family and friends.
 
-👂Ask questions about their activity, and listen to them
+⏰ Try doing this every day - even more on the days it feels like you have not done anything special. ",Calm | Quick,8,
+whats_new,What’s New?,"Learning is fun! 🎓
 
-Let your child lead the activity, follow them to build their confidence and autonomy 😃
-
-👀 Say what you see - describing everything and supporting your child’s actions
-;
-Be positive, praise your child, and enjoy spending this time with them 😃💚",Calm,2| 3 | 4 | 5 | 6 | 7 | 8 | 9
-play_books_4to6,Playtime with Books,"📖 Book sharing will help your child learn and is a fun, playful activity to spend quality time together
-
-⏰ Choose a time when you won’t be disturbed, and try to stop any distractions - e.g. turn off the TV and put away phones
-
-📖 If your child wants to choose a book, that’s fine, otherwise choose for them
-;
-
-💚 Sit close together and follow your child attention and lead 
-Point at things, name and repeat words. Help your child learn more about what interests them in the book 👀 
-If there are words or numbers in the book, ask and help your child recognise letters numbers, and simple words 💡 
-
-Link things in the books to your child life, and use words about emotions and talk about them! 😃
-;
-🔄 If possible, start a regular routine to read together when your child isn’t too tired or hungry
-Reading together is one of the best ways to help your child learn and prepare for success in school! 🎓",Calm,4 | 5 | 6 
-play_books_2to3,Playtime with Books,"📖 Book sharing will help your child learn and is a fun, playful activity to spend quality time together
-
-⏰ Choose a time when you won’t be disturbed, and try to stop any distractions - e.g. turn off the TV and put away phones
-
-📖 If your child wants to choose a book, that’s fine, otherwise choose for them
-;
-
-💚 Sit close together and follow your child attention and lead 
-Point at things, name and repeat words. Help your child learn more about what interests them in the book 👀 
-
-Link things in the books to your child's life, and use words about emotions and talk about them! 😃
-;
-🔄 If possible, start a regular routine to read together when your child isn’t too tired or hungry
-Reading together is one of the best ways to help your child learn and prepare for success in school! 🎓",Calm,2 | 3 |
-i_spy,I Spy!,"👀 I spy is a fun game to play with your child that will help them learn about letters and words!
-;
-
-Choose an object or a thing around you, and don’t tell your child what it is. It should be something that your child knows the word for. For example “ball” ⚽
-
-👀 Then say “I spy with my little eye, something beginning with *and then say the first letter of the word* which in this case is “b”
-
-Your child should look around and guess what the object is. When they guess it right, praise them and swap roles! If they can’t get it, give them some clues, like “it’s round” or “it’s black and white”. ✅
-;
-
-Play this game with as many objects as possible and as many different letters! Help your child to learn about the different letters and sounds in words. This will help them learn to read at home and school. 🎓",Calm | Quick | Group,4 | 5 | 6 | 7 | 8 | 9
-categorise_organise,Categorising and Organising,"Help your child to learn by sorting objects and things! 🔵🔷
-
-Your child will learn by understanding how things fit and group together (eg, bear = animal, mango = fruit, blue = colour) 🧸
-
-Find a book with different pictures and help your child to find things in a particular category (e.g. “Find all of the animals”) 👀
-
-Find safe objects in the house, get your child to group them by colour, size, or types of object (cups, plates). Then make more complicated categories (e.g. small cups, big cups) ☕
-;
-🔄 You can play the categorising game anywhere! Just look around and ask your child to find things from the category you say!",Quick | Group,2 | 3 | 4 | 5
-what_letter_is_this,What Letter is This?,"Playing games with letters can help your child learn the alphabet and how letters are put together to make words.
-
-📝 Write a letter on a piece of card or paper (e.g. “p”)
-
-👂 Say the letter out loud and ask your child to say it too!
-
-Ask your child to say some words that begin with the letter “p”, give them clues like “What starts with “p”? Plant… what else? 🌱
-
-👀 Ask your child to look for objects in your house that begin with a letter (eg “p” for plate). Help them find things.
-;
-🔄 Try a new letter every day!",Quick | Group,3 | 4 | 5
-riddles,Riddles Help Children Learn,"Riddles and puzzles are a fun way to build thinking skills! 💡
-;
-
-Do you remember any riddles from your childhood? If you can’t then make one up, they can be very simple! 😃
-Like “What can you see at night but not in the day” Answer: “The moon” 🌙
-
-If your child is finding them difficult, try an easy one like: “What is round, bouncy and can be thrown or kicked?” Answer: “A ball” ⚽
-
-Your child can also try making riddles! 💡
-;
-You can have fun with riddles anywhere at any time - like travelling on a bus or in a car 🚗",Quick | Group | Calm,3 | 4 | 5 | 6 | 7 | 8 | 9
-whats_new_child,What's New?,"Learning is fun! 🎓
-
-❓ Ask your child to think of a new, fun skill you could learn together. 
-For example: keeping a ball in the air with your foot, juggling, making soup, moonwalking, whistling, saying the alphabet backwards, learning all the states in Malaysia. 
+❓ Ask your children to think of a new, fun skill you could learn together. 
+For example, keeping a ball in the air with your foot, learning dance steps, cooking a simple meal together, practising local language phrases, sharing stories from your culture, playing local games and sports, or learning about all the countries in your region.
 
 🔄 Take turns trying out the new skill. Make sure to praise each other and learn and play together!
+💛 Approach learning the skill in a kind and fun way, and do not judge your children or yourself for your ability in the skill. ",Active,8,
+checkin_chat,Check-in Chat,"Actively checking in on one another helps to keep relationships healthy! ⭐
+Ask each other questions like: “What made you happy today?” 👂 “What was difficult today?” 👂 “How can I help you?” 👂
+For this to help, your children need to feel safe while sharing things with you. Be open to their responses. 💚 
 
-💛 Approach learning the skill in a kind and fun way, and do not judge your child or yourself for your ability in the skill. 
+Older children tend to be more honest when they trust that what they say will not be used against them later.
+Be kind to yourself if your children do not want to share their problems with you. 💙 Often, children are afraid to share as they are scared they will get in trouble. Getting upset with them won’t help - keep showing you love them and give them time! 🌷",Quick | Calm,8,
+express_yourself,Express Yourself,"Dancing makes people happy!
+🌈 This game can be played in pairs or as a group - stand facing each other or in a circle.
+🎵 Together, choose a song, a fun sound, or a clapping pattern to follow and choose a person to start the game by creating one dance move.
+👀 The person to their right must copy that dance move and add their own move to it.
+✨ Go around the circle, each person adding a new dance move.
 
-😃 Once you have mastered the skill, choose another skill to learn together.",Active,5| 6 | 7 | 8 | 9
-make_story_child,Make up a Story,"Creating stories together is a great way to have fun with imagination - and to build your child’s creativity! 📖
-;
-5️⃣ With your child, come up with 5 words to use. They can be any words you want! For example: banana, spaceship, fish, water, painting, cooking, wedding. If you need to remember them, write them clearly on a paper with your child.
+🔄 The first one who forgets someone's dance moves or does it in the wrong order chooses the next song, sound, or pattern and starts the game again.
 
-🎂 Start your story with, “Once upon a time, there was a…” and use one of the words from the list in the first part. For example, “Once upon a time, there was a family who worked on a *banana* farm.”
+🎉 Have fun trying out new dance moves with this game!",Quick | Active ,8,
+2truth_1lie,"2 Truths, 1 Lie","This is a fun, quick game, and the point of it is to learn things about each other. Make your answers as interesting as possible! 🎨
+💡 Everyone thinks of 3 facts about themselves. 2 must be true, and 1 must be a lie. 
+🔷 Here are some examples: I hate bananas, I enjoy dancing, and my favourite subject in school was maths.
+👀 Share your facts with your children and ask them to guess which one is a lie. 
+🔄 Now ask them to do the same, and guess theirs.
+Did you learn anything new about your children, or did they learn anything new about you? 💛",Quick | Calm ,8,
+yes_no_maybe,"Yes, No or Maybe","Are you tired of hearing your children say yes, no, or maybe to all of your questions? Turn your chat into a game, and don’t allow one-word answers. 🎈
 
-📝 Let your child make up the next part using another word from the list.
-;
-🔄 Take turns until you have used all the words and created a story. 
+🔴 Older children are known to give one-word answers to avoid talking. 
+💡 When you would like to really know how your children are doing, you can turn your chat into a game. 
+⭐ Take turns asking each other questions. The only rule is that you cannot use one-word responses like Yes, No, Maybe, Fine, and Okay.
+⚽ You can ask about things your children like or what they did today. For example, how was your day? What are you excited about? Is there anything worrying you?
+🔄 It is important to let your children ask a question as well. Trust is built when your children can see that you are also sharing your life with them and not only trying to learn about their life.",Quick | Calm ,8,
+get_active,Get Active,"Exercise is a great way to spend time together, and it is so good for your health. 🌱 Find a sport or exercise activity that both you and your children want to do and try it out together! Be mindful of the safety of the space you are using for exercise. 
 
-🔔 Be creative and do not tell your child what to say. It does not need to be a real story to be fun!
+⏰ Even walking for 10 minutes a day is good for you. 
+⚽Together, try walking, running, dancing, stretching, playing games like hide-and-seek, or any other physical activities you enjoy.
 
-🎁 Ask your child what their favourite part of the story was, and tell them yours!",Calm,4 | 5| 6 | 7 | 8 | 9
-play_with_clothes,Playing with Clothes,"💡Help your child use their fingers, talk about clothes, and organise them! 
+🏆 Together, think of ways to make it even more fun. Can you run to a certain point? Take turns being the coach? Can there be a small, free reward like getting to decide the next activity?
+🌈 Exercise becomes easier and more enjoyable the more you do it. 
+🔄 If you or your children do not like the first type of exercise you pick, try a new way to exercise.",Active,8,
+take_a_pause,Take a Pause With Your Children,"Take a pause with your children. This helps them deal with stress in a healthy way!
+⏰ You could take a pause together at any time, or you could try at a specific time like before meals or bedtime.
+👂 Sit down together and close your eyes. Listen to your breath as it goes in and out. Notice how you feel. 
+⭐ Take 5 more deep breaths.
 
-Help your child exercise their fingers by showing them how buttons and zips work on clothes, and letting them practise using them! 👋
-;
-🔵 Talk about the colours of clothes! Ask your child to pick a colour and talk about all the things that are that colour: “What are all the things we can think of that are blue?”
-;
-😃 Encourage your child to help you sort clothes into piles for each family member.",Calm,3 | 4| 5|
-play_with_veggies,Playing with Vegetables,"🌱 Help your child learn by thinking and talking about vegetables!
+👀 When you are ready, open your eyes again. Do you feel any different? 
+⏸ Ask your children what it was like to take a pause. Listen and accept whatever they say about it.",Calm | Quick,8,
+who_i_am,This Is Who I Am,"Self-esteem is the way you value yourself, either in a positive or negative way. Helping your children have high self-esteem is a recipe for success! 🏆
+⭐Share with your children 3 things you like about yourself!
+3️⃣ Ask your children to tell you 3 things they like about themselves. 
+For example, I am great at treating others kindly. I am great at styling my hair. I am great at football. ⚽
+If any of your children do not feel comfortable sharing these, ask them to write them down. 📝",Calm | Quick,8,
+setting_goal,Weekly Goal Setting,"Let’s set some goals ⭐
 
-🍅 Mix together 2-3 different ingredients of your choice (like onions, tomatoes and corn example). Say: “Help me sort these vegetables into piles?” Try sorting them by size.
-;
-😃 Remind me!
-Talk about your child’s experiences. Ask questions and wait for answers. Follow your child’s interest. 
-“Can you help me remember what is at the market?” “Do they sell carrots at the market?” “Do the sell anything yellow at the market?” “What else do they sell?” “Can you think of other things they sell?”
-;
-💡Can you think of something similar?
-Say: We are going to think of some things that are similar or different from what I tell you. So listen carefully!”
-Here is a tomato. Can you think of something else that is red like a tomato? 🍅
-Can you think something else that is round like a tomato? ⚽",Calm,3 | 4| 5|
-animals,Animals,"🧸 Active animals: Take turns with your child doing animal actions: Hop like a frog, stretch like a cat, run like a dog, slither like a snake, flap like a bird
-;
-💡All the animals we can think of - think about groups of animals!
-What are all the animals we can think of that have feathers?
-What are all the animals we can think of that eat plants? 🌱
-What are all the animals we can think of that lay eggs?
-;
-😃 Counting rabbits
-🔟 Find 10 rocks and put them in a line, tell your child that they are rabbits!
-Ask your child to count the rabbits!
-Put the rabbits into 2 equal piles. Ask your child to give you 3 rabbits. Say “If you give me 3, how many rabbits do you have”",Active,4| 5|6
-active_counting,Active Counting,"👋 Clap, hop, jump: Play the following game with your child. Make it active!
+⏰ It can be helpful to set smaller weekly goals that are easier to reach, especially when life feels uncertain. 
+ 
+💡Ask each of your children for one goal that they would like to achieve this week. 
 
-1️⃣ Clap hands 1 time. 2️⃣ Clap hands 2 times.
-1️⃣ Jump 1 time. 2️⃣ Jump 2 times.
+🔄 Make sure this goal is *specific* and *achievable* to reach in 1 week, like: practising deep breathing for 5 minutes every day, exercising for 10 minutes three times a week, journaling feelings every night, or spending quality time with family or friends daily.
+
+💚 You can also share your own weekly goals with your children and support each other so you can both achieve your goals.
+
+🎉 Make sure to praise and celebrate your children for their hard work towards reaching their goals.
+
+🔔 If your children do not reach their goals, that is okay. Discuss with them the steps they still need to take or how they could reach it a different way.",Calm,8,
+one_on_one_time,One-on-One Time,"💚 Spending time just with your children and taking an interest in them can improve your relationship. 
+
+👀 When your children are playing alone or occupying themselves, join them and show interest in what they are doing.
+
+👂Ask questions about their activity and listen to them.
+
+Let your children lead the activity and follow them to build their confidence and autonomy. 😃
+👀 Say what you see - describing everything and supporting your children’s actions.
+
+Be positive, praise your children and enjoy spending this time with them. 😃💚",Calm,8,
+animals,Animals,"🧸 **Active Animals** 
+Take turns with your children doing animal actions. You might hop like a frog, stretch like a cat, run like a dog, slither like a snake, or flap like a bird. Add your own actions and animals! 
+
+💡**All the Animals We Can Think Of** 
+Think about groups of animals and talk about them with your children! 
+What are all the animals we can think of that have feathers? What are all the animals we can think of that eat plants? 🌱 What animals can we think of that lay eggs?",Active | Quick,8,
+active_counting,Active Counting,"👋 Clap, hop, jump: Play the following game with your children. Make it active!
+
+1️⃣ Clap hands 1 time. 
+2️⃣ Clap hands 2 times.
+1️⃣ Jump 1 time. 
+2️⃣ Jump 2 times.
 1️⃣ Hop 1 time.
 3️⃣ Hop 3 times.
-💡Can you hop, then jump, then clap? 
+💡 Can you hop, then jump, then clap? 
 🏆 Can you clap twice, jump once, and hop three times?
 
-;
-
-💡Remembering Instructions
+💡 Remembering Instructions
 Take turns playing a game where you give 2-3 instructions that the other person has to remember to follow. Make sure physical movement is included!
 For example:
 Hop twice, turn around.
-Jump to the kitchen, pick up a spoon, then run back. ✅",Active,4| 5|6
-thinking_games,Thinking Games,"❗ Mama/Daddy says! Play this game of giving instructions:
-Mama/daddy says touch your head. Mama/daddy says open your mouth. Mama/daddy says turn around. Mama/daddy says touch your knees. Mama/daddy says jump twice. Mama/daddy says jump, then clap and sit.
-;
-👂 Go and stop: Play the game with your child
-Say: When I say “stop”, we freeze. When I say “go”, we can walk again.
-Once your child is familiar with the game, your child will lead.
-;
-🔵 🔴Blue-Red - now play this game!
-If I say touch something blue, you need to touch something red. If I say touch something red, you need to touch something blue.",Active,4| 5|6
-games_with_pictures,Games with Pictures!,"👂 Making up a story from an image
-For example, say: We are going to make up a story about this picture. I can start. This little girl is feeling very excited today. Why do you think she is feeling excited?
-😃 She is holding her bag and has a big smile. Where do you think she is going?
-;
-👀 Can you point to it?
-Using a book or a magazine, or anything with pictures, say:
-I am going to describe something on the page and you need to guess what it is and point to it. For example, “I see something that is [green and moves slowly].
-Can you guess what it is?” 💚",Calm,4| 5|6
-shapes_everywhere,Shapes Everywhere!,"📺 Squares, squares everywhere
-
-👀 Draw squares in the sand or dirt. Make some bigger and some smaller.
-Tell your child, “this is a square.” 
-Ask your child to try to draw a square. Hold your child’s hand to help if this is hard. 
-Look for things around the home or outdoors that are the same shape.
-
-Now do the same with circles! 🔴",Active | Quick,2 | 3| 4| 5|
-story_telling,Story Telling,"💡 Let’s make a story!
-
-Say: We are going to make up a story. I will start then you will help me continue it. 
-⏰ ”Once upon a time there was…”
-“What happened next?”
-“What happened after that?”
-;
-
-👂 Tell me the story!
-Say to your child: “I have a book here that we have read before. Can you remember the story and tell it to me just by looking at the pictures?” 
-👀 Show your child pictures in the book. Ask your child what is happening in the pictures and what happens next.",Calm,3| 4| 5|
-im_a_writer,I'm a Writer!,"📝 Have fun being creative with writing!
-
-You and your child can have fun writing with a pencil and paper, or with a stick and the sand!
-If your child doesn’t know how to write letters, encourage them to draw shapes, and try to copy the shapes of letters. 🔵▶️
-
-When they are more confident, encourage them to write letters and even words. 😃
-
-Show them the simple things that you write - like shopping lists! Show them the words and each of the letters. Let them try to copy the words! 📖",Active | Quick,4| 5|6
-a_friendly_chat,A Friendly Chat,"Talk to your child about something that they are interested in! 😃
-
-💚 Spending quality time with your child and talking to them every day is a good way to develop a strong relationship. 
-
-⚽ An easy way to start talking to your child is to ask them about something they are interested in, for example you could talk about topics such as: sports, books, movies, friends, music, celebrities, or school.
-
-👂 You may not find everything your child shares to be interesting, but it’s important to show enthusiasm and an eagerness to learn.",Quick | Calm,3 | 4 | 5 | 6 | 7 | 8 | 9
-get_active_child,Get Active,"Exercise is a great way to spend time together and it is so good for your health. 🌱 Find a sport or exercise that both you and your child want to do and try it out together! 
-
-⏰ Even walking for 10 minutes a day is good for you. 
-
-⚽ Together you can walk, run, play soccer, swim, dance, or do any other sport..
-
-🏆 Together, think of ways to make it even more fun. Can you jog to a certain point? Take turns being the coach? Can there be a small, free reward, like getting to decide the next activity?
-
-🌈 Exercise becomes easier and more enjoyable the more you do it. 
-
-🔄 If you or your child do not like the first exercise you pick, try a new exercise.",Active,4 | 5 | 6 | 7 | 8 | 9
-pass_ball_child,Pass the Ball,"Games are a great, fun way to spend time with your family! 
-
-3️⃣ This game is best with at least 3 people.
-
-⚽ Find a ball to play. If you cannot find a ball, choose an item you can safely throw around. For example, a bottle cap or a plastic cup.
-
-➡️ Start in a circle and pass the ball around. 
-
-👋 Start throwing the ball in new directions (up, down, straight, curved, rolling on the ground) and with different forces (hard, soft, medium). You can bounce the ball, throw it in the air, and catch it a few times before passing it. 
-
-✨ When everyone gets good at catching the ball, you can start moving around the room, still passing the ball. 
-
-⭐ Can you throw the ball under the leg? Behind the back? Over your head? Block a pass? Have fun with it!",Active|Group,4 | 5 | 6 | 7 | 8 | 9
-active_songs,Active Songs,"😃 Young children love physical games! But they need reminders about how to play 💡
+Jump to the kitchen, pick up a spoon, then run back. ✅",Active,8,
+active_songs,Active Songs,"😃 Young children love physical games but they need reminders about how to play. 💡
 🎵 Songs with movements are fun and active and give instructions on how to move!
-;
-Sing songs to your child or a group of children in which they have to:
+
+Sing songs to your children in which they have to follow instructions like:
 ✅ Start and stop ❌
-⬇️ Slow down and speed up ⬆️",Active|Group,2 | 3
-follow_the_leader,Follow the Leader!,"⭐ Choose someone to be the leader (tip: start with an adult like yourself)
-😃 Other players line up behind the leader. The leader moves around in any way they like!
-🏁 They can run, jump, crawl, walk on tip toes, and any other way they want!
-👀 The other players must copy what the leaders does, and the leader can change movements at any time.
-
-🔄 Players take turns being the leader!",Active|Group,2 | 3
-be_the_narrator,Be the Narrator,"👀 Say what your child is doing while they are playing
-
-👂 This will help them learn the words to describe their actions.
-
-😃 You can do it in a simple way, or in a silly way like a sports commentator, a news presenter, or a game show host
-
-💡 Ask questions like “what will you do next?” or “I see you want to put the ball in the jar. Is there another way to do that?”",Calm | Quick,2 | 3
-be_an_artist,Be an Artist!,"📝 Give your child some paper and a pen or pencil, or some different pens or pencils.
-😃 Let your child draw whatever they want to!
-👀 Ask questions about what they are drawing, the size of the thing they are drawing, and the colours they are using.
-
-🏆 If possible, put your child’s picture up on the wall when they are finished. Give praise to your child!",Calm,2 | 3
+⬇️ Slow down and speed up ⬆️",Active,8,
