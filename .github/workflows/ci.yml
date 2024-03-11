@@ -6,10 +6,3 @@ on:
 jobs:
   test:
     uses: ./.github/workflows/test.yml
-  deploy:
-    needs: test
-    uses: ./.github/workflows/deploy.yml
-    with:
-      function_name: ${{ vars.GCP_FUNCTION_NAME_TEST }}
-      region: ${{ vars.GCP_REGION }}
-    secrets: inherit

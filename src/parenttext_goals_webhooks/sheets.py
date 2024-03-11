@@ -1,9 +1,11 @@
-from rpft.parsers.common.sheetparser import SheetParser
 from rpft.parsers.common.cellparser import CellParser
 from rpft.parsers.common.rowparser import RowParser
+from rpft.parsers.common.sheetparser import SheetParser
 from rpft.parsers.sheets import CSVSheetReader
 
-from models import GoalDataGlobal, GoalModuleLinkGlobal, ModuleDataGlobal, LTPActivities
+from parenttext_goals_webhooks.models import (GoalDataGlobal,
+                                              GoalModuleLinkGlobal,
+                                              LTPActivities, ModuleDataGlobal)
 
 
 class DataSource:
