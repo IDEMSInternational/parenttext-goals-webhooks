@@ -129,11 +129,12 @@ class TestGetGoalNames(BaseTestCase):
         )
         expected = {
             "eng": "Improve My Relationship with My Child",
-            "zul": "Thuthukisa Ubudlelwano Bami Nengane Yami",
+            "fra": "",
             "hau": "Kukhulisa Buhlobo Bami Nemntfwanami",
             "msa": "",
             "spa": "",
             "zho": "",
+            "zul": "Thuthukisa Ubudlelwano Bami Nengane Yami",
         }
 
         self.assertEqual(self.hooks.get_goal_entry(q), expected)
