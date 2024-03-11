@@ -6,6 +6,7 @@ from typing import List
 
 class Language(ParserModel):
     eng: str = ""
+    fra: str = ""
     hau: str = ""
     msa: str = ""
     spa: str = ""
@@ -49,3 +50,4 @@ class LTPActivities(DataRowModel):
     act_type: List[str] = []
     act_age: List[int] = []
     use_in_demo: str = ""
+    attached_single_doc: str = ""
