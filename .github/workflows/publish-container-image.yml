@@ -15,7 +15,7 @@ jobs:
       - name: Log in to registry
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login $REGISTRY -u $ --password-stdin
       - name: Install setuptools-scm
-        run: python install --upgrade setuptools-scm
+        run: pip install --upgrade setuptools-scm
       - name: Build
         run: |
           IMAGE_TAG=${REPO}:$(python -m setuptools_scm --strip-dev)
