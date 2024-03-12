@@ -11,4 +11,4 @@ EXPOSE 8000
 WORKDIR /opt/idems/api
 COPY --from=builder /work/dist/parenttext_goals_webhooks-*.whl .
 RUN pip install uvicorn *.whl
-CMD ["uvicorn", "parenttext_goals_webhooks.main:app", "--host", "0.0.0.0", "--port", "8000"]
+ENTRYPOINT ["uvicorn", "parenttext_goals_webhooks.main:app", "--host", "0.0.0.0", "--port", "8000"]
