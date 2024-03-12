@@ -17,7 +17,7 @@ classifiers = [
 dependencies = [
     "fastapi~=0.110.0",
     "pydantic~=1.10.14",
-    "rpft @ https://github.com/IDEMSInternational/rapidpro-flow-toolkit/archive/refs/heads/upgrade-pydantic.tar.gz",
+    "rpft @ https://github.com/IDEMSInternational/rapidpro-flow-toolkit/archive/refs/heads/main.tar.gz",
 ]
 description = "Spreadsheet-backed API for ParentText goals"
 dynamic = ["version"]
