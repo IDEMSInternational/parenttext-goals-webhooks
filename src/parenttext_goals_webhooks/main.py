@@ -5,6 +5,7 @@ from pydantic import BaseModel
 
 from parenttext_goals_webhooks import api_version
 from parenttext_goals_webhooks.hooks import Hooks
+from parenttext_goals_webhooks.sheets import DataSource, JSONDataSource
 
 
 app = FastAPI(
@@ -104,6 +105,16 @@ class Tags(Enum):
     activities = "activities"
 
 
+def hooks():
+    global _hooks
+
+    try:
+        return _hooks
+    except NameError:
+        _hooks = Hooks(db=JSONDataSource())
+        return _hooks
+
+
 @app.post(
     "/get_goals_list",
     tags=[Tags.goals],
@@ -113,7 +124,7 @@ def get_goals_list(q: ListQuery) -> Result:
     """
     List goal IDs, filtered by `filter_expression` and sorted by `sort_columns`.
     """
-    return Result(text=Hooks().get_goals_list(q))
+    return Result(text=hooks().get_goals_list(q))
 
 
 @app.post(
@@ -132,7 +143,7 @@ def get_modules_list(q: ModulesListQuery) -> Result:
     Modules will be filtered by `filter_expression`. After filtering, if more than one
     module exists for the same topic, `sort_columns` will be used to order the modules.
     """
-    return Result(text=Hooks().get_modules_list(q))
+    return Result(text=hooks().get_modules_list(q))
 
 
 @app.post(
@@ -145,7 +156,7 @@ def get_goal_name(q: NameQuery) -> Result:
     Given an ID of a goal, and a language and column, look up the translated name in the
     respective column.
     """
-    return Result(text=Hooks().get_goal_name(q))
+    return Result(text=hooks().get_goal_name(q))
 
 
 @app.post(
@@ -160,7 +171,7 @@ def get_goal_entry(q: EntryQuery) -> Result:
     The column should be a simple column (no nesting, i.e. no dots in the column name)
     of type `str`.
     """
-    return Result(text=Hooks().get_goal_entry(q))
+    return Result(text=hooks().get_goal_entry(q))
 
 
 @app.post(
@@ -173,7 +184,7 @@ def get_numbered_goal_names(q: NumberedNamesQuery) -> Result:
     Given a space separated list of goal IDs, a language, and column, look up the
     translated name in the respective column, and produce a numbered list of names.
     """
-    return Result(text=Hooks().get_numbered_goal_names(q))
+    return Result(text=hooks().get_numbered_goal_names(q))
 
 
 @app.post(
@@ -186,7 +197,7 @@ def get_module_name(q: NameQuery) -> Result:
     Given an ID of a module, and a language and column, look up the translated name in
     the respective column.
     """
-    return Result(text=Hooks().get_module_name(q))
+    return Result(text=hooks().get_module_name(q))
 
 
 @app.post(
@@ -199,7 +210,7 @@ def get_numbered_module_names(q: NumberedNamesQuery) -> Result:
     Given a space separated list of module IDs, a language, and column, look up the
     translated name in the respective column, and produce a numbered list of names.
     """
-    return Result(text=Hooks().get_numbered_module_names(q))
+    return Result(text=hooks().get_numbered_module_names(q))
 
 
 @app.post(
@@ -212,4 +223,4 @@ def get_ltp_activities_list(q: ListQuery) -> Result:
     Get list of LTP activity IDs, filtered by `filter_expression` and sorted by
     `sort_columns`.
     """
-    return Result(text=Hooks().get_ltp_activities_list(q))
+    return Result(text=hooks().get_ltp_activities_list(q))
