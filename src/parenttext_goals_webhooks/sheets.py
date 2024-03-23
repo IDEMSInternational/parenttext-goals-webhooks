@@ -1,6 +1,9 @@
 import json
+import subprocess
+from contextlib import contextmanager
 from dataclasses import dataclass
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
 from rpft.parsers.common.cellparser import CellParser
 from rpft.parsers.common.rowparser import RowParser
@@ -56,8 +59,9 @@ class JSONDataSource:
 
     def __init__(self, root="data", config="api.json"):
         self.resources = {}
+        self.root = Path(root)
 
-        with open(Path(root) / config, "r") as f:
+        with open(self.root / config, "r") as f:
             sheets = json.load(f).get("sheets")
 
         sources = [Source(**source) for source in sheets.get("goals_api_sources")]
@@ -97,7 +101,11 @@ class JSONDataSource:
         return self._get("ltp_activities")
 
 
-class Repo:
-
-    def __init__(self):
-        pass
+@contextmanager
+def temp_repo(url, ref):
+    with TemporaryDirectory() as tmp:
+        subprocess.run(
+            ["git", "clone", "--depth", "1", "--branch", ref, url, tmp],
+            capture_output=True,
+        )
+        yield tmp
