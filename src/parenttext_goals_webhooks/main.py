@@ -17,20 +17,36 @@ logging.basicConfig(level=logging.INFO)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    init()
+    yield
+    destroy()
+
+
+def init():
     global hooks
     url = settings.repo_url
     ref = settings.repo_ref
 
     if url and ref:
         with temp_repo(url, ref) as repo:
-            logger.info({"msg": "Content repo cloned", "url": url, "ref": ref})
+            logger.info({"msg": "Content repo cloned", "url": url, "ref": ref, "local": str(repo)})
             root = Path(repo) / settings.repo_path
             hooks = Hooks(db=JSONDataSource(root=root, config=settings.config_file))
-            logger.info({"msg": "Content loaded", "path": str(root)})
+            logger.info({"msg": "Content loaded", "csv_mode": False, "path": str(root)})
     else:
-        hooks = Hooks(db=JSONDataSource())
+        cls = DataSource if settings.csv_mode else JSONDataSource
+        hooks = Hooks(db=cls())
+        logger.info(
+            {
+                "msg": "Content loaded",
+                "csv_mode": settings.csv_mode,
+                "path": "data",
+            }
+        )
 
-    yield
+
+def destroy():
+    pass
 
 
 class Settings(BaseSettings):
@@ -38,6 +54,7 @@ class Settings(BaseSettings):
     repo_ref: str = ""
     repo_path: str = ""
     config_file: str = "api.json"
+    csv_mode: bool = False
 
 
 hooks = None
