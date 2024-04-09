@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "version": "0.1.0"
+  },
+  "sheets": {
+    "goals_api_sources": [
+      {
+        "book": "localised.json",
+        "model": "ModuleDataGlobal",
+        "resource": "modules",
+        "sheet": "module_data"
+      },
+      {
+        "book": "localised.json",
+        "model": "GoalModuleLinkGlobal",
+        "resource": "goal_topic_links",
+        "sheet": "goal_topic_link"
+      },
+      {
+        "book": "localised.json",
+        "model": "GoalDataGlobal",
+        "resource": "goals",
+        "sheet": "goal_data"
+      },
+      {
+        "book": "localised.json",
+        "model": "LTPActivities",
+        "resource": "ltp_activities",
+        "sheet": "ltp_activities"
+      }
+    ]
+  }
+}

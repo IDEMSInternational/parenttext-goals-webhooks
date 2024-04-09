@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "version": "0.1.0"
+  },
+  "sheets": {
+    "ltp_activities_1": [
+      {
+        "ID": "friendly_chat",
+        "name": "A friendly chat",
+        "text": "Talk to your teen about something that they are interested in! 😃\n\n⚽ An easy way to start talking to your teen is to ask them about something they are interested in. For example, you could talk about sports, books, movies, friends, music, celebrities, or school.\n\n👂 You may not find everything your teen shares to be interesting, but it’s important to show enthusiasm and an eagerness to learn. ",
+        "act_type": "Quick|Calm ",
+        "act_age": "10|11|12|13|14|15|16|17",
+        "use_in_demo": ""
+      },
+      {
+        "ID": "create_recipe",
+        "name": "Create your own Recipe",
+        "text": "Let your teen come up with a new meal idea! \n\n🍚 Create a new dish with Your Teen using ingredients they love!\n\n🔵 Together, choose two ingredients, and ask your teen to prepare a meal using them. For example: chicken and spinach, tomatoes and rice, maize and pumpkin.\n\n📝 If you enjoy the meal, make it something your family eats weekly, and ask your teen to write it down for you. Give the meal a name and explain how to make it. \n\n✨ If your teen notices that you are learning from their cooking, it will boost their confidence!",
+        "act_type": "Active",
+        "act_age": "10|11|12|13|14|15|16|17",
+        "use_in_demo": "demo"
+      },
+      {
+        "ID": "reflect_positive",
+        "name": "Reflect on the positive",
+        "text": "Spread Positivity! 🌈\n\n💡 Together, take a minute to think about all the things you did today. \n\n☀️ Take turns sharing one positive or fun thing that happened. This could be something small, like feeling good because you cleaned the house, or something big, like spending time with family and friends. \n\n⏰ Try doing this every day - even more on the days it feels like you have not done anything special. ",
+        "act_type": "Calm|Quick",
+        "act_age": "10|11|12|13|14|15|16|17",
+        "use_in_demo": ""
+      },
+      {
+        "ID": "whats_new",
+        "name": "What’s new?",
+        "text": "Learning is fun! 🎓\n\n❓ Ask your teen to think of a new, fun skill you could learn together. \nFor example: keeping a ball in the air with your foot, juggling, making soup, moonwalking, whistling, saying the alphabet backwards, learning all the countries in Africa. \n\n🔄 Take turns trying out the new skill.  Make sure to praise each other and learn and play together!\n\n💛 Approach learning the skill in a kind and fun way, and do not judge your teen or yourself for your ability in the skill. ",
+        "act_type": "Active",
+        "act_age": "10|11|12|13|14|15|16|17",
+        "use_in_demo": ""
+      }
+    ],
+    "ltp_activities_2": [
+      {
+        "ID": "dance_moves",
+        "name": "Dance moves",
+        "text": "Let's get moving! 👋 Dancing is a great way to exercise, have fun, and bond with your teen at the same time! You both get to express yourselves in a fun, relaxed way.  🎵 \n\nThis game can be played in pairs or a group with everyone taking turns being the leader:\n\n📱 Let your teen choose a song they like and create a set of dance moves.\n\n👀 First person does a dance move and everyone else copies it.\n\n☀️ Don’t worry about perfecting the dance moves, it’s all about having fun together!\n\n💡 If you want to, you can perform your dance for the household!",
+        "act_type": "Quick|Active|Group",
+        "act_age": "10|11|12|13|14|15|16|17",
+        "use_in_demo": "demo"
+      },
+      {
+        "ID": "dance_activity",
+        "name": "Dance Activity",
+        "text": "Try something new and learn a dance challenge with your teen! ✨ Have fun!\n\n⭐ Dancing is a great way to have fun together while being creative and moving your body!\n\n📱 If your teen uses the app TikTok, suggest doing a dance challenge together.\n\n😃 Ask your teen to choose their favourite dance and learn it with them.\n\n🎉 It’s okay if you can’t dance well, have fun and try not to take it too seriously! \n\n💡 You do not have to post the video to learn the dance. You can keep it as a memory between you and your teen. ",
+        "act_type": "Quick|Active",
+        "act_age": "10|11|12|13|14|15|16|17",
+        "use_in_demo": ""
+      },
+      {
+        "ID": "checkin_chat",
+        "name": "Check-in chat",
+        "text": "Actively checking in on one another helps to keep relationships healthy! ⭐\n\nAsk each other questions: “What made you happy today?” 👂 “What was difficult today?” 👂 “How can I help you?” 👂\n\nFor this to help, your teen needs to feel safe while sharing things with you. Be open to their responses. 💚 Teens tend to be more honest when they trust that what they say will not be used against them later.\n\nGo easy on yourself if your teen does not want to share their problems with you. 💙 Often, teens are afraid to share as they are scared they will get in trouble. Getting upset with them won’t help - keep showing you love them and give them time! 🌷",
+        "act_type": "Quick|Calm",
+        "act_age": "10|11|12|13|14|15|16|17",
+        "use_in_demo": ""
+      }
+    ]
+  }
+}

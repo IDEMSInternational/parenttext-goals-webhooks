@@ -1,0 +1,966 @@
+{
+  "meta": {
+    "version": "0.1.0"
+  },
+  "sheets": {
+    "ltp_activities": [
+      {
+        "ID": "cooking_with_maths",
+        "name": "Cooking with Maths",
+        "text": "Cooking can help your child start learning maths!\n💚 Invite your child to help you cook for your family, or to choose something they would like to cook\n;\n🍅 Ask your child to count different ingredients. Help them if it’s difficult!\n\n🔟 Help your child to understand adding and subtracting quantities \n\n📝 Encourage your child to recognise numbers on packaging\n\n 👀 Ask your child about the different sizes of ingredients - e.g. which is bigger/biggest?\n;\n🔄 Think about when you will cook together again! You can also practise understanding numbers and quantities during other activities like shopping or building/making things",
+        "act_type": "Active",
+        "act_age": "3| 4 | 5 | 6"
+      },
+      {
+        "ID": "follow_instructions",
+        "name": "Following Instructions",
+        "text": "👂 Play a game in which your child listens to and tries to remember strings of instructions.\nThis will be useful in school, at home, and later in life!\n;\nStart with just one instruction using an object in your home. For example “touch the red ball” 🔴\n\nSlowly add more instructions (e.g “then pick up the cup ☕), but tell your child that they can only start once you’ve finished giving the instructions.\nSee how many your child can follow without forgetting!\n;\n🔄 Now swap roles! It’s your child’s turn to give you instructions! They can use the same objects if they want.\nYou can also try this game with a group of children! Make sure they take turns :)",
+        "act_type": "Calm | Quick | Group",
+        "act_age": "3 | 4 | 5"
+      },
+      {
+        "ID": "one_on_one_time",
+        "name": "One-on-One Time",
+        "text": "💚 Spending time just with your child and taking an interest in them can improve your relationship \n\n;\n👀 When you child is playing alone or occupying themselves quietly, join them and show interest in what they are doing\n\n👂Ask questions about their activity, and listen to them\n\nLet your child lead the activity, follow them to build their confidence and autonomy 😃\n\n👀 Say what you see - describing everything and supporting your child’s actions\n;\nBe positive, praise your child, and enjoy spending this time with them 😃💚",
+        "act_type": "Calm",
+        "act_age": "2| 3 | 4 | 5 | 6 | 7 | 8 | 9"
+      },
+      {
+        "ID": "play_books_4to6",
+        "name": "Playtime with Books",
+        "text": "📖 Book sharing will help your child learn and is a fun, playful activity to spend quality time together\n\n⏰ Choose a time when you won’t be disturbed, and try to stop any distractions - e.g. turn off the TV and put away phones\n\n📖 If your child wants to choose a book, that’s fine, otherwise choose for them\n;\n\n💚 Sit close together and follow your child attention and lead \nPoint at things, name and repeat words. Help your child learn more about what interests them in the book 👀 \nIf there are words or numbers in the book, ask and help your child recognise letters numbers, and simple words 💡 \n\nLink things in the books to your child life, and use words about emotions and talk about them! 😃\n;\n🔄 If possible, start a regular routine to read together when your child isn’t too tired or hungry\nReading together is one of the best ways to help your child learn and prepare for success in school! 🎓",
+        "act_type": "Calm",
+        "act_age": "4 | 5 | 6 "
+      },
+      {
+        "ID": "play_books_2to3",
+        "name": "Playtime with Books",
+        "text": "📖 Book sharing will help your child learn and is a fun, playful activity to spend quality time together\n\n⏰ Choose a time when you won’t be disturbed, and try to stop any distractions - e.g. turn off the TV and put away phones\n\n📖 If your child wants to choose a book, that’s fine, otherwise choose for them\n;\n\n💚 Sit close together and follow your child attention and lead \nPoint at things, name and repeat words. Help your child learn more about what interests them in the book 👀 \n\nLink things in the books to your child's life, and use words about emotions and talk about them! 😃\n;\n🔄 If possible, start a regular routine to read together when your child isn’t too tired or hungry\nReading together is one of the best ways to help your child learn and prepare for success in school! 🎓",
+        "act_type": "Calm",
+        "act_age": "2 | 3 |"
+      },
+      {
+        "ID": "i_spy",
+        "name": "I Spy!",
+        "text": "👀 I spy is a fun game to play with your child that will help them learn about letters and words!\n;\n\nChoose an object or a thing around you, and don’t tell your child what it is. It should be something that your child knows the word for. For example “ball” ⚽\n\n👀 Then say “I spy with my little eye, something beginning with *and then say the first letter of the word* which in this case is “b”\n\nYour child should look around and guess what the object is. When they guess it right, praise them and swap roles! If they can’t get it, give them some clues, like “it’s round” or “it’s black and white”. ✅\n;\n\nPlay this game with as many objects as possible and as many different letters! Help your child to learn about the different letters and sounds in words. This will help them learn to read at home and school. 🎓",
+        "act_type": "Calm | Quick | Group",
+        "act_age": "4 | 5 | 6 | 7 | 8 | 9"
+      },
+      {
+        "ID": "categorise_organise",
+        "name": "Categorising and Organising",
+        "text": "Help your child to learn by sorting objects and things! 🔵🔷\n\nYour child will learn by understanding how things fit and group together (eg, bear = animal, mango = fruit, blue = colour) 🧸\n\nFind a book with different pictures and help your child to find things in a particular category (e.g. “Find all of the animals”) 👀\n\nFind safe objects in the house, get your child to group them by colour, size, or types of object (cups, plates). Then make more complicated categories (e.g. small cups, big cups) ☕\n;\n🔄 You can play the categorising game anywhere! Just look around and ask your child to find things from the category you say!",
+        "act_type": "Quick | Group",
+        "act_age": "2 | 3 | 4 | 5"
+      },
+      {
+        "ID": "what_letter_is_this",
+        "name": "What Letter is This?",
+        "text": "Playing games with letters can help your child learn the alphabet and how letters are put together to make words.\n\n📝 Write a letter on a piece of card or paper (e.g. “p”)\n\n👂 Say the letter out loud and ask your child to say it too!\n\nAsk your child to say some words that begin with the letter “p”, give them clues like “What starts with “p”? Plant… what else? 🌱\n\n👀 Ask your child to look for objects in your house that begin with a letter (eg “p” for plate). Help them find things.\n;\n🔄 Try a new letter every day!",
+        "act_type": "Quick | Group",
+        "act_age": "3 | 4 | 5"
+      },
+      {
+        "ID": "riddles",
+        "name": "Riddles Help Children Learn",
+        "text": "Riddles and puzzles are a fun way to build thinking skills! 💡\n;\n\nDo you remember any riddles from your childhood? If you can’t then make one up, they can be very simple! 😃\nLike “What can you see at night but not in the day” Answer: “The moon” 🌙\n\nIf your child is finding them difficult, try an easy one like: “What is round, bouncy and can be thrown or kicked?” Answer: “A ball” ⚽\n\nYour child can also try making riddles! 💡\n;\nYou can have fun with riddles anywhere at any time - like travelling on a bus or in a car 🚗",
+        "act_type": "Quick | Group | Calm",
+        "act_age": "3 | 4 | 5 | 6 | 7 | 8 | 9"
+      },
+      {
+        "ID": "whats_new_child",
+        "name": "What's New?",
+        "text": "Learning is fun! 🎓\n\n❓ Ask your child to think of a new, fun skill you could learn together. \nFor example: keeping a ball in the air with your foot, juggling, making soup, moonwalking, whistling, saying the alphabet backwards, learning all the states in Malaysia. \n\n🔄 Take turns trying out the new skill. Make sure to praise each other and learn and play together!\n\n💛 Approach learning the skill in a kind and fun way, and do not judge your child or yourself for your ability in the skill. \n\n😃 Once you have mastered the skill, choose another skill to learn together.",
+        "act_type": "Active",
+        "act_age": "5| 6 | 7 | 8 | 9"
+      },
+      {
+        "ID": "make_story_child",
+        "name": "Make up a Story",
+        "text": "Creating stories together is a great way to have fun with imagination - and to build your child’s creativity! 📖\n;\n5️⃣ With your child, come up with 5 words to use. They can be any words you want! For example: banana, spaceship, fish, water, painting, cooking, wedding. If you need to remember them, write them clearly on a paper with your child.\n\n🎂 Start your story with, “Once upon a time, there was a…” and use one of the words from the list in the first part. For example, “Once upon a time, there was a family who worked on a *banana* farm.”\n\n📝 Let your child make up the next part using another word from the list.\n;\n🔄 Take turns until you have used all the words and created a story. \n\n🔔 Be creative and do not tell your child what to say. It does not need to be a real story to be fun!\n\n🎁 Ask your child what their favourite part of the story was, and tell them yours!",
+        "act_type": "Calm",
+        "act_age": "4 | 5| 6 | 7 | 8 | 9"
+      },
+      {
+        "ID": "play_with_clothes",
+        "name": "Playing with Clothes",
+        "text": "💡Help your child use their fingers, talk about clothes, and organise them! \n\nHelp your child exercise their fingers by showing them how buttons and zips work on clothes, and letting them practise using them! 👋\n;\n🔵 Talk about the colours of clothes! Ask your child to pick a colour and talk about all the things that are that colour: “What are all the things we can think of that are blue?”\n;\n😃 Encourage your child to help you sort clothes into piles for each family member.",
+        "act_type": "Calm",
+        "act_age": "3 | 4| 5|"
+      },
+      {
+        "ID": "play_with_veggies",
+        "name": "Playing with Vegetables",
+        "text": "🌱 Help your child learn by thinking and talking about vegetables!\n\n🍅 Mix together 2-3 different ingredients of your choice (like onions, tomatoes and corn example). Say: “Help me sort these vegetables into piles?” Try sorting them by size.\n;\n😃 Remind me!\nTalk about your child’s experiences. Ask questions and wait for answers. Follow your child’s interest. \n“Can you help me remember what is at the market?” “Do they sell carrots at the market?” “Do the sell anything yellow at the market?” “What else do they sell?” “Can you think of other things they sell?”\n;\n💡Can you think of something similar?\nSay: We are going to think of some things that are similar or different from what I tell you. So listen carefully!”\nHere is a tomato. Can you think of something else that is red like a tomato? 🍅\nCan you think something else that is round like a tomato? ⚽",
+        "act_type": "Calm",
+        "act_age": "3 | 4| 5|"
+      },
+      {
+        "ID": "animals",
+        "name": "Animals",
+        "text": "🧸 Active animals: Take turns with your child doing animal actions: Hop like a frog, stretch like a cat, run like a dog, slither like a snake, flap like a bird\n;\n💡All the animals we can think of - think about groups of animals!\nWhat are all the animals we can think of that have feathers?\nWhat are all the animals we can think of that eat plants? 🌱\nWhat are all the animals we can think of that lay eggs?\n;\n😃 Counting rabbits\n🔟 Find 10 rocks and put them in a line, tell your child that they are rabbits!\nAsk your child to count the rabbits!\nPut the rabbits into 2 equal piles. Ask your child to give you 3 rabbits. Say “If you give me 3, how many rabbits do you have”",
+        "act_type": "Active",
+        "act_age": "4| 5|6"
+      },
+      {
+        "ID": "active_counting",
+        "name": "Active Counting",
+        "text": "👋 Clap, hop, jump: Play the following game with your child. Make it active!\n\n1️⃣ Clap hands 1 time. 2️⃣ Clap hands 2 times.\n1️⃣ Jump 1 time. 2️⃣ Jump 2 times.\n1️⃣ Hop 1 time.\n3️⃣ Hop 3 times.\n💡Can you hop, then jump, then clap? \n🏆 Can you clap twice, jump once, and hop three times?\n\n;\n\n💡Remembering Instructions\nTake turns playing a game where you give 2-3 instructions that the other person has to remember to follow. Make sure physical movement is included!\nFor example:\nHop twice, turn around.\nJump to the kitchen, pick up a spoon, then run back. ✅",
+        "act_type": "Active",
+        "act_age": "4| 5|6"
+      },
+      {
+        "ID": "thinking_games",
+        "name": "Thinking Games",
+        "text": "❗ Mama/Daddy says! Play this game of giving instructions:\nMama/daddy says touch your head. Mama/daddy says open your mouth. Mama/daddy says turn around. Mama/daddy says touch your knees. Mama/daddy says jump twice. Mama/daddy says jump, then clap and sit.\n;\n👂 Go and stop: Play the game with your child\nSay: When I say “stop”, we freeze. When I say “go”, we can walk again.\nOnce your child is familiar with the game, your child will lead.\n;\n🔵 🔴Blue-Red - now play this game!\nIf I say touch something blue, you need to touch something red. If I say touch something red, you need to touch something blue.",
+        "act_type": "Active",
+        "act_age": "4| 5|6"
+      },
+      {
+        "ID": "games_with_pictures",
+        "name": "Games with Pictures!",
+        "text": "👂 Making up a story from an image\nFor example, say: We are going to make up a story about this picture. I can start. This little girl is feeling very excited today. Why do you think she is feeling excited?\n😃 She is holding her bag and has a big smile. Where do you think she is going?\n;\n👀 Can you point to it?\nUsing a book or a magazine, or anything with pictures, say:\nI am going to describe something on the page and you need to guess what it is and point to it. For example, “I see something that is [green and moves slowly].\nCan you guess what it is?” 💚",
+        "act_type": "Calm",
+        "act_age": "4| 5|6"
+      },
+      {
+        "ID": "shapes_everywhere",
+        "name": "Shapes Everywhere!",
+        "text": "📺 Squares, squares everywhere\n\n👀 Draw squares in the sand or dirt. Make some bigger and some smaller.\nTell your child, “this is a square.” \nAsk your child to try to draw a square. Hold your child’s hand to help if this is hard. \nLook for things around the home or outdoors that are the same shape.\n\nNow do the same with circles! 🔴",
+        "act_type": "Active | Quick",
+        "act_age": "2 | 3| 4| 5|"
+      },
+      {
+        "ID": "story_telling",
+        "name": "Story Telling",
+        "text": "💡 Let’s make a story!\n\nSay: We are going to make up a story. I will start then you will help me continue it. \n⏰ ”Once upon a time there was…”\n“What happened next?”\n“What happened after that?”\n;\n\n👂 Tell me the story!\nSay to your child: “I have a book here that we have read before. Can you remember the story and tell it to me just by looking at the pictures?” \n👀 Show your child pictures in the book. Ask your child what is happening in the pictures and what happens next.",
+        "act_type": "Calm",
+        "act_age": "3| 4| 5|"
+      },
+      {
+        "ID": "im_a_writer",
+        "name": "I'm a Writer!",
+        "text": "📝 Have fun being creative with writing!\n\nYou and your child can have fun writing with a pencil and paper, or with a stick and the sand!\nIf your child doesn’t know how to write letters, encourage them to draw shapes, and try to copy the shapes of letters. 🔵▶️\n\nWhen they are more confident, encourage them to write letters and even words. 😃\n\nShow them the simple things that you write - like shopping lists! Show them the words and each of the letters. Let them try to copy the words! 📖",
+        "act_type": "Active | Quick",
+        "act_age": "4| 5|6"
+      },
+      {
+        "ID": "a_friendly_chat",
+        "name": "A Friendly Chat",
+        "text": "Talk to your child about something that they are interested in! 😃\n\n💚 Spending quality time with your child and talking to them every day is a good way to develop a strong relationship. \n\n⚽ An easy way to start talking to your child is to ask them about something they are interested in, for example you could talk about topics such as: sports, books, movies, friends, music, celebrities, or school.\n\n👂 You may not find everything your child shares to be interesting, but it’s important to show enthusiasm and an eagerness to learn.",
+        "act_type": "Quick | Calm",
+        "act_age": "3 | 4 | 5 | 6 | 7 | 8 | 9"
+      },
+      {
+        "ID": "get_active_child",
+        "name": "Get Active",
+        "text": "Exercise is a great way to spend time together and it is so good for your health. 🌱 Find a sport or exercise that both you and your child want to do and try it out together! \n\n⏰ Even walking for 10 minutes a day is good for you. \n\n⚽ Together you can walk, run, play soccer, swim, dance, or do any other sport..\n\n🏆 Together, think of ways to make it even more fun. Can you jog to a certain point? Take turns being the coach? Can there be a small, free reward, like getting to decide the next activity?\n\n🌈 Exercise becomes easier and more enjoyable the more you do it. \n\n🔄 If you or your child do not like the first exercise you pick, try a new exercise.",
+        "act_type": "Active",
+        "act_age": "4 | 5 | 6 | 7 | 8 | 9"
+      },
+      {
+        "ID": "pass_ball_child",
+        "name": "Pass the Ball",
+        "text": "Games are a great, fun way to spend time with your family! \n\n3️⃣ This game is best with at least 3 people.\n\n⚽ Find a ball to play. If you cannot find a ball, choose an item you can safely throw around. For example, a bottle cap or a plastic cup.\n\n➡️ Start in a circle and pass the ball around. \n\n👋 Start throwing the ball in new directions (up, down, straight, curved, rolling on the ground) and with different forces (hard, soft, medium). You can bounce the ball, throw it in the air, and catch it a few times before passing it. \n\n✨ When everyone gets good at catching the ball, you can start moving around the room, still passing the ball. \n\n⭐ Can you throw the ball under the leg? Behind the back? Over your head? Block a pass? Have fun with it!",
+        "act_type": "Active|Group",
+        "act_age": "4 | 5 | 6 | 7 | 8 | 9"
+      },
+      {
+        "ID": "active_songs",
+        "name": "Active Songs",
+        "text": "😃 Young children love physical games! But they need reminders about how to play 💡\n🎵 Songs with movements are fun and active and give instructions on how to move!\n;\nSing songs to your child or a group of children in which they have to:\n✅ Start and stop ❌\n⬇️ Slow down and speed up ⬆️",
+        "act_type": "Active|Group",
+        "act_age": "2 | 3"
+      },
+      {
+        "ID": "follow_the_leader",
+        "name": "Follow the Leader!",
+        "text": "⭐ Choose someone to be the leader (tip: start with an adult like yourself)\n😃 Other players line up behind the leader. The leader moves around in any way they like!\n🏁 They can run, jump, crawl, walk on tip toes, and any other way they want!\n👀 The other players must copy what the leaders does, and the leader can change movements at any time.\n\n🔄 Players take turns being the leader!",
+        "act_type": "Active|Group",
+        "act_age": "2 | 3"
+      },
+      {
+        "ID": "be_the_narrator",
+        "name": "Be the Narrator",
+        "text": "👀 Say what your child is doing while they are playing\n\n👂 This will help them learn the words to describe their actions.\n\n😃 You can do it in a simple way, or in a silly way like a sports commentator, a news presenter, or a game show host\n\n💡 Ask questions like “what will you do next?” or “I see you want to put the ball in the jar. Is there another way to do that?”",
+        "act_type": "Calm | Quick",
+        "act_age": "2 | 3"
+      },
+      {
+        "ID": "be_an_artist",
+        "name": "Be an Artist!",
+        "text": "📝 Give your child some paper and a pen or pencil, or some different pens or pencils.\n😃 Let your child draw whatever they want to!\n👀 Ask questions about what they are drawing, the size of the thing they are drawing, and the colours they are using.\n\n🏆 If possible, put your child’s picture up on the wall when they are finished. Give praise to your child!",
+        "act_type": "Calm",
+        "act_age": "2 | 3"
+      }
+    ],
+    "goal_topic_link": [
+      {
+        "ID": "take_a_pause",
+        "goal_id_c": "",
+        "priority_in_goal_c": "",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "one_on_one",
+        "goal_id_c": "relation",
+        "priority_in_goal_c": "1",
+        "goal_id_p": "relation",
+        "priority_in_goal_p": "1"
+      },
+      {
+        "ID": "kind_to_myself",
+        "goal_id_c": "relation",
+        "priority_in_goal_c": "2",
+        "goal_id_p": "relation",
+        "priority_in_goal_p": "2"
+      },
+      {
+        "ID": "give_praise",
+        "goal_id_c": "relation",
+        "priority_in_goal_c": "3",
+        "goal_id_p": "relation",
+        "priority_in_goal_p": "3"
+      },
+      {
+        "ID": "talk_feelings",
+        "goal_id_c": "relation",
+        "priority_in_goal_c": "4",
+        "goal_id_p": "relation",
+        "priority_in_goal_p": "4"
+      },
+      {
+        "ID": "spirituality",
+        "goal_id_c": "relation",
+        "priority_in_goal_c": "5",
+        "goal_id_p": "relation",
+        "priority_in_goal_p": "5"
+      },
+      {
+        "ID": "language",
+        "goal_id_c": "learning",
+        "priority_in_goal_c": "1",
+        "goal_id_p": "learning",
+        "priority_in_goal_p": "1"
+      },
+      {
+        "ID": "reading",
+        "goal_id_c": "learning",
+        "priority_in_goal_c": "2",
+        "goal_id_p": "learning",
+        "priority_in_goal_p": "2"
+      },
+      {
+        "ID": "maths",
+        "goal_id_c": "learning",
+        "priority_in_goal_c": "3",
+        "goal_id_p": "learning",
+        "priority_in_goal_p": "3"
+      },
+      {
+        "ID": "engage_school",
+        "goal_id_c": "learning",
+        "priority_in_goal_c": "4",
+        "goal_id_p": "learning",
+        "priority_in_goal_p": "4"
+      },
+      {
+        "ID": "play",
+        "goal_id_c": "develop",
+        "priority_in_goal_c": "2",
+        "goal_id_p": "develop",
+        "priority_in_goal_p": "2"
+      },
+      {
+        "ID": "learn_experience",
+        "goal_id_c": "develop",
+        "priority_in_goal_c": "3",
+        "goal_id_p": "develop",
+        "priority_in_goal_p": "3"
+      },
+      {
+        "ID": "dev_change",
+        "goal_id_c": "develop",
+        "priority_in_goal_c": "1",
+        "goal_id_p": "develop",
+        "priority_in_goal_p": "1"
+      },
+      {
+        "ID": "manage_my_stress",
+        "goal_id_c": "structure",
+        "priority_in_goal_c": "1",
+        "goal_id_p": "structure",
+        "priority_in_goal_p": "1"
+      },
+      {
+        "ID": "keeping_it_positive",
+        "goal_id_c": "structure",
+        "priority_in_goal_c": "2",
+        "goal_id_p": "structure",
+        "priority_in_goal_p": "2"
+      },
+      {
+        "ID": "create_routines",
+        "goal_id_c": "structure",
+        "priority_in_goal_c": "3",
+        "goal_id_p": "structure",
+        "priority_in_goal_p": "3"
+      },
+      {
+        "ID": "create_family_rules",
+        "goal_id_c": "structure",
+        "priority_in_goal_c": "4",
+        "goal_id_p": "structure",
+        "priority_in_goal_p": "4"
+      },
+      {
+        "ID": "know_role",
+        "goal_id_c": "structure",
+        "priority_in_goal_c": "5",
+        "goal_id_p": "structure",
+        "priority_in_goal_p": "5"
+      },
+      {
+        "ID": "redirect",
+        "goal_id_c": "behave",
+        "priority_in_goal_c": "2",
+        "goal_id_p": "behave",
+        "priority_in_goal_p": "2"
+      },
+      {
+        "ID": "ignore_demanding",
+        "goal_id_c": "behave",
+        "priority_in_goal_c": "3",
+        "goal_id_p": "behave",
+        "priority_in_goal_p": "3"
+      },
+      {
+        "ID": "managing_anger",
+        "goal_id_c": "behave",
+        "priority_in_goal_c": "1",
+        "goal_id_p": "behave",
+        "priority_in_goal_p": "1"
+      },
+      {
+        "ID": "teach_consequences",
+        "goal_id_c": "behave",
+        "priority_in_goal_c": "4",
+        "goal_id_p": "behave",
+        "priority_in_goal_p": "4"
+      },
+      {
+        "ID": "solve_problems",
+        "goal_id_c": "behave",
+        "priority_in_goal_c": "5",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "safe_touch",
+        "goal_id_c": "safety",
+        "priority_in_goal_c": "1",
+        "goal_id_p": "safety",
+        "priority_in_goal_p": "1"
+      },
+      {
+        "ID": "com_safety",
+        "goal_id_c": "safety",
+        "priority_in_goal_c": "2",
+        "goal_id_p": "safety",
+        "priority_in_goal_p": "2"
+      },
+      {
+        "ID": "crises",
+        "goal_id_c": "safety",
+        "priority_in_goal_c": "3",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "online_safety",
+        "goal_id_c": "safety",
+        "priority_in_goal_c": "4",
+        "goal_id_p": "safety",
+        "priority_in_goal_p": "4"
+      },
+      {
+        "ID": "habits_trust_online",
+        "goal_id_c": "safety",
+        "priority_in_goal_c": "5",
+        "goal_id_p": "safety",
+        "priority_in_goal_p": "5"
+      },
+      {
+        "ID": "nutrition_health",
+        "goal_id_c": "safety",
+        "priority_in_goal_c": "6",
+        "goal_id_p": "safety",
+        "priority_in_goal_p": "6"
+      },
+      {
+        "ID": "ipv_equals",
+        "goal_id_c": "ipv",
+        "priority_in_goal_c": "1",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "ipv_supportive",
+        "goal_id_c": "ipv",
+        "priority_in_goal_c": "2",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "ipv_sharing",
+        "goal_id_c": "ipv",
+        "priority_in_goal_c": "3",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "ipv_conflicts",
+        "goal_id_c": "ipv",
+        "priority_in_goal_c": "4",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "ipv_listen",
+        "goal_id_c": "ipv",
+        "priority_in_goal_c": "5",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "budget_needs",
+        "goal_id_c": "budget",
+        "priority_in_goal_c": "1",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "budget_expenses",
+        "goal_id_c": "budget",
+        "priority_in_goal_c": "2",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "budget_monthly",
+        "goal_id_c": "budget",
+        "priority_in_goal_c": "3",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      },
+      {
+        "ID": "budget_savings",
+        "goal_id_c": "budget",
+        "priority_in_goal_c": "4",
+        "goal_id_p": "",
+        "priority_in_goal_p": ""
+      }
+    ],
+    "goal_data": [
+      {
+        "ID": "relation",
+        "priority_c": "1",
+        "priority_p": "1",
+        "relationship": "yes|no",
+        "name_c.eng": "Improve My Relationship with My Child",
+        "name_c.msa": "Perbaiki Hubungan Saya dengan Anak Saya"
+      },
+      {
+        "ID": "develop",
+        "priority_c": "3",
+        "priority_p": "3",
+        "relationship": "yes|no",
+        "name_c.eng": "Understand Child Development",
+        "name_c.msa": "Memahami Perkembangan Anak"
+      },
+      {
+        "ID": "learning",
+        "priority_c": "2",
+        "priority_p": "2",
+        "relationship": "yes|no",
+        "name_c.eng": "Prepare My Child for Success in School",
+        "name_c.msa": "Persiapkan Diri Anak Saya untuk Menempa Kejayaan di Sekolah"
+      },
+      {
+        "ID": "structure",
+        "priority_c": "4",
+        "priority_p": "4",
+        "relationship": "yes|no",
+        "name_c.eng": "Give My Child Structure",
+        "name_c.msa": "Memberikan Persekitaran yang Seimbang kepada Anak Saya"
+      },
+      {
+        "ID": "behave",
+        "priority_c": "5",
+        "priority_p": "5",
+        "relationship": "yes|no",
+        "name_c.eng": "Supporting Positive Child Behaviour",
+        "name_c.msa": "Menyokong Tingkah Laku Anak yang Positif"
+      },
+      {
+        "ID": "safety",
+        "priority_c": "6",
+        "priority_p": "6",
+        "relationship": "yes|no",
+        "name_c.eng": "Keep My Child Safe & Healthy",
+        "name_c.msa": "Pastikan Anak Saya Selamat & Sihat"
+      },
+      {
+        "ID": "ipv",
+        "priority_c": "7",
+        "priority_p": "",
+        "relationship": "yes",
+        "name_c.eng": "Have a Healthy Relationship with My Spouse",
+        "name_c.msa": "Jalinkan Hubungan Sihat dengan Pasangan Saya"
+      },
+      {
+        "ID": "budget",
+        "priority_c": "8",
+        "priority_p": "",
+        "relationship": "yes|no",
+        "name_c.eng": "Build a Family Budget and Save Money",
+        "name_c.msa": "Merancang Perbelanjaan Keluarga dan Menjimatkan Wang"
+      }
+    ],
+    "module_data": [
+      {
+        "ID": "take_a_pause",
+        "topic_ID": "take_a_pause",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Take a Pause",
+        "name_c.msa": "Berhenti Seketika"
+      },
+      {
+        "ID": "one_on_one_yc",
+        "topic_ID": "one_on_one",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Spend One-on-one Time with My Child",
+        "name_c.msa": "Luangkan Masa Bersama Seorang dengan Seorang bersama Anak Saya"
+      },
+      {
+        "ID": "kind_to_myself_yc",
+        "topic_ID": "kind_to_myself",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Be Kind to Myself",
+        "name_c.msa": "Berlaku Baik terhadap Diri Saya Sendiri"
+      },
+      {
+        "ID": "give_praise_yc",
+        "topic_ID": "give_praise",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Give Praise",
+        "name_c.msa": "Memberi Pujian"
+      },
+      {
+        "ID": "talk_feelings_yc",
+        "topic_ID": "talk_feelings",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Talk about Feelings",
+        "name_c.msa": "Bercakap tentang Perasaan"
+      },
+      {
+        "ID": "spirituality_yc",
+        "topic_ID": "spirituality",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Parenting Values & Spirituality",
+        "name_c.msa": "Nilai Keibubapaan & Kerohanian"
+      },
+      {
+        "ID": "language_yc",
+        "topic_ID": "language",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Help Your Child’s Language Skills",
+        "name_c.msa": "Bantu Kemahiran Berbahasa Anak Anda"
+      },
+      {
+        "ID": "reading1_4to6_yc",
+        "topic_ID": "reading",
+        "priority_in_topic": "1",
+        "age": "4 | 5 | 6",
+        "child_gender": "male|female",
+        "name_c.eng": "Help Your Child Learn to Read, Part 1",
+        "name_c.msa": "Bantu Anak Anda Belajar Membaca, Bahagian 1"
+      },
+      {
+        "ID": "reading2_4to6_yc",
+        "topic_ID": "reading",
+        "priority_in_topic": "2",
+        "age": "4 | 5 | 6",
+        "child_gender": "male|female",
+        "name_c.eng": "Help Your Child Learn to Read, Part 2",
+        "name_c.msa": "Bantu Anak Anda Belajar Membaca, Bahagian 2"
+      },
+      {
+        "ID": "maths1_4to6_yc",
+        "topic_ID": "maths",
+        "priority_in_topic": "1",
+        "age": "4 | 5 | 6",
+        "child_gender": "male|female",
+        "name_c.eng": "Get Your Child Ready for Maths, Part 1",
+        "name_c.msa": "Persiapkan Diri Anak Anda untuk Matematik, Bahagian 1"
+      },
+      {
+        "ID": "maths2_4to6_yc",
+        "topic_ID": "maths",
+        "priority_in_topic": "2",
+        "age": "4 | 5 | 6",
+        "child_gender": "male|female",
+        "name_c.eng": "Get Your Child Ready for Maths, Part 2",
+        "name_c.msa": "Persiapkan Diri Anak Anda untuk Matematik, Bahagian 2"
+      },
+      {
+        "ID": "reading_2to3_yc",
+        "topic_ID": "reading",
+        "priority_in_topic": "",
+        "age": "2|3",
+        "child_gender": "male|female",
+        "name_c.eng": "Help Your Child Learn to Read",
+        "name_c.msa": "Bantu Anak Anda Belajar Membaca"
+      },
+      {
+        "ID": "maths_2to3_yc",
+        "topic_ID": "maths",
+        "priority_in_topic": "",
+        "age": "2|3",
+        "child_gender": "male|female",
+        "name_c.eng": "Get Your Child Ready for Maths",
+        "name_c.msa": "Persiapkan Diri Anak Anda untuk Matematik"
+      },
+      {
+        "ID": "engage_school_3to6_yc",
+        "topic_ID": "engage_school",
+        "priority_in_topic": "",
+        "age": "3| 4 | 5 | 6",
+        "child_gender": "male|female",
+        "name_c.eng": "Engage with Your Child’s School",
+        "name_c.msa": "Membina Hubungan bersama Sekolah Anak Anda"
+      },
+      {
+        "ID": "play_yc",
+        "topic_ID": "play",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "The Power of Play",
+        "name_c.msa": "Kuasa Bermain"
+      },
+      {
+        "ID": "learn_experience_yc",
+        "topic_ID": "learn_experience",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Learning From Experience",
+        "name_c.msa": "Belajar Daripada Pengalaman"
+      },
+      {
+        "ID": "toddler_change_yc",
+        "topic_ID": "dev_change",
+        "priority_in_topic": "",
+        "age": "2|3",
+        "child_gender": "male|female",
+        "name_c.eng": "How Your Toddler is Changing",
+        "name_c.msa": "Bagaimana Anak Bertatih Anda sedang Berubah"
+      },
+      {
+        "ID": "young_child_change_yc",
+        "topic_ID": "dev_change",
+        "priority_in_topic": "",
+        "age": "4|5|6",
+        "child_gender": "male|female",
+        "name_c.eng": "How Your Young Child is Changing",
+        "name_c.msa": "Bagaimana Anak Kecil Anda sedang Berubah"
+      },
+      {
+        "ID": "child_change_yc",
+        "topic_ID": "dev_change",
+        "priority_in_topic": "",
+        "age": "7|8|9",
+        "child_gender": "male|female",
+        "name_c.eng": "How Your Child is Changing",
+        "name_c.msa": "Bagaimana Your Child sedang Berubah"
+      },
+      {
+        "ID": "manage_my_stress_yc",
+        "topic_ID": "manage_my_stress",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Manage My Stress",
+        "name_c.msa": "Uruskan Tekanan Saya"
+      },
+      {
+        "ID": "keeping_it_positive_yc",
+        "topic_ID": "keeping_it_positive",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Keeping it Positive",
+        "name_c.msa": "Mengekalkan Sifat Positif"
+      },
+      {
+        "ID": "create_routines_yc",
+        "topic_ID": "create_routines",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Create Routines with My Child",
+        "name_c.msa": "Cipta Jadual Harian dengan Anak Saya"
+      },
+      {
+        "ID": "create_family_rules_yc",
+        "topic_ID": "create_family_rules",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Creating Family Rules",
+        "name_c.msa": "Mewujudkan Peraturan Keluarga"
+      },
+      {
+        "ID": "know_role_yc",
+        "topic_ID": "know_role",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Know Everyone’s Role",
+        "name_c.msa": "Ketahui Peranan Semua Orang"
+      },
+      {
+        "ID": "redirect_yc",
+        "topic_ID": "redirect",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Redirect Misbehaviour",
+        "name_c.msa": "Alihkan Salah Laku"
+      },
+      {
+        "ID": "ignore_demanding_yc",
+        "topic_ID": "ignore_demanding",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Ignore Demanding Behaviours",
+        "name_c.msa": "Abaikan Tingkah Laku yang Mendesak"
+      },
+      {
+        "ID": "managing_anger_yc",
+        "topic_ID": "managing_anger",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Managing Anger",
+        "name_c.msa": "Menguruskan Kemarahan"
+      },
+      {
+        "ID": "teach_consequences_yc",
+        "topic_ID": "teach_consequences",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Teach my Child Consequences",
+        "name_c.msa": "Mengajar Anak Saya Tentang Akibat"
+      },
+      {
+        "ID": "solve_problems_yc",
+        "topic_ID": "solve_problems",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Solve Problems with My Child",
+        "name_c.msa": "Menyelesaikan Masalah dengan My Child"
+      },
+      {
+        "ID": "safe_touch_2to5_yc_m",
+        "topic_ID": "safe_touch",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5",
+        "child_gender": "male",
+        "name_c.eng": "Teach Safe Touch",
+        "name_c.msa": "Mengajar Sentuhan Selamat"
+      },
+      {
+        "ID": "safe_touch_2to5_yc_f",
+        "topic_ID": "safe_touch",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5",
+        "child_gender": "female",
+        "name_c.eng": "Teach Safe Touch",
+        "name_c.msa": "Mengajar Sentuhan Selamat"
+      },
+      {
+        "ID": "safe_touch_6to9_yc",
+        "topic_ID": "safe_touch",
+        "priority_in_topic": "",
+        "age": " 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Teach Safe Touch",
+        "name_c.msa": "Mengajar Sentuhan Selamat"
+      },
+      {
+        "ID": "com_safety_2to4_yc",
+        "topic_ID": "com_safety",
+        "priority_in_topic": "",
+        "age": "2|3| 4",
+        "child_gender": "male|female",
+        "name_c.eng": "Community Safety",
+        "name_c.msa": "Keselamatan Komuniti"
+      },
+      {
+        "ID": "com_safety_5to9_yc",
+        "topic_ID": "com_safety",
+        "priority_in_topic": "",
+        "age": " 5|6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Community Safety",
+        "name_c.msa": "Keselamatan Komuniti"
+      },
+      {
+        "ID": "crises_2to6_yc",
+        "topic_ID": "crises",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6",
+        "child_gender": "male|female",
+        "name_c.eng": "Respond to Crises",
+        "name_c.msa": "Bertindak Balas Terhadap Krisis"
+      },
+      {
+        "ID": "crises_7to9_yc",
+        "topic_ID": "crises",
+        "priority_in_topic": "",
+        "age": "7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Respond to Crises",
+        "name_c.msa": "Bertindak Balas Terhadap Krisis"
+      },
+      {
+        "ID": "online_safety_yc",
+        "topic_ID": "online_safety",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Know Online Safety Basics",
+        "name_c.msa": "Ketahui Asas Keselamatan Dalam Talian"
+      },
+      {
+        "ID": "habits_trust_online_yc",
+        "topic_ID": "habits_trust_online",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Build Habits and Trust Online",
+        "name_c.msa": "Bina Tabiat dan Kepercayaan dalam Talian"
+      },
+      {
+        "ID": "nutrition_health_yc",
+        "topic_ID": "nutrition_health",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Strengthen My Child’s Nutrition and Health ",
+        "name_c.msa": "Kuatkan Pemakanan dan Kesihatan Anak Saya "
+      },
+      {
+        "ID": "ipv_equals",
+        "topic_ID": "ipv_equals",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Creating Respect at Home",
+        "name_c.msa": "Mewujudkan Rasa Hormat di Rumah"
+      },
+      {
+        "ID": "ipv_supportive",
+        "topic_ID": "ipv_supportive",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Be a Supportive Spouse and Parent",
+        "name_c.msa": "Menjadi Pasangan dan Ibu Bapa yang Memberi Sokongan"
+      },
+      {
+        "ID": "ipv_sharing",
+        "topic_ID": "ipv_sharing",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Share Family Responsibilities",
+        "name_c.msa": "Kongsi Tanggungjawab Keluarga"
+      },
+      {
+        "ID": "ipv_conflicts",
+        "topic_ID": "ipv_conflicts",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Resolve Conflicts Peacefully",
+        "name_c.msa": "Selesaikan Konflik dengan Aman"
+      },
+      {
+        "ID": "ipv_listen",
+        "topic_ID": "ipv_listen",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Listen and Talk with Each Other",
+        "name_c.msa": "Dengar dan Bincang Sesama Sendiri"
+      },
+      {
+        "ID": "budget_needs_yc",
+        "topic_ID": "budget_needs",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Understand Needs and Wants",
+        "name_c.msa": "Memahami Keperluan dan Kehendak"
+      },
+      {
+        "ID": "budget_expenses_yc",
+        "topic_ID": "budget_expenses",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Talk about Monthly Expenses",
+        "name_c.msa": "Berbincang tentang Perbelanjaan Bulanan"
+      },
+      {
+        "ID": "budget_monthly_yc",
+        "topic_ID": "budget_monthly",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Make a Monthly Budget",
+        "name_c.msa": "Buat Belanjawan Bulanan"
+      },
+      {
+        "ID": "budget_savings_yc",
+        "topic_ID": "budget_savings",
+        "priority_in_topic": "",
+        "age": "2|3| 4 | 5 | 6 | 7 | 8 | 9",
+        "child_gender": "male|female",
+        "name_c.eng": "Make a Saving Plan",
+        "name_c.msa": "Buat Pelan Simpanan"
+      }
+    ]
+  }
+}

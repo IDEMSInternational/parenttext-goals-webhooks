@@ -4,7 +4,8 @@ services:
   api:
     build:
       context: .
-    volumes:
-      - ./data:/opt/idems/api/data
+    env_file: .env
     ports:
       - "8000:8000"
+    volumes:
+      - ./data:/opt/idems/api/data

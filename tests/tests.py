@@ -9,13 +9,18 @@ from parenttext_goals_webhooks.main import (
     NameQuery,
     NumberedNamesQuery,
 )
+from parenttext_goals_webhooks.sheets import DataSource, JSONDataSource
+import parenttext_goals_webhooks.models as models
 
 DATA_DIR = Path(__file__).parent / "sheets"
 
 
 class BaseTestCase(TestCase):
     def setUp(self):
-        self.hooks = Hooks(data_dir=DATA_DIR)
+        self.hooks = Hooks(self.datasource())
+
+    def datasource(self):
+        return DataSource(source=DATA_DIR)
 
 
 class TestGetGoalsList(BaseTestCase):
@@ -110,9 +115,7 @@ class TestGetGoalNames(BaseTestCase):
             id="safety",
         )
 
-        self.assertEqual(
-            self.hooks.get_goal_name(q), "Keep My Child Safe & Healthy"
-        )
+        self.assertEqual(self.hooks.get_goal_name(q), "Keep My Child Safe & Healthy")
 
     def test_get_entries(self):
         q = EntryQuery(
@@ -175,3 +178,47 @@ class TestGetModuleNames(BaseTestCase):
             self.hooks.get_numbered_module_names(q),
             "1. xxx\n" "2. One on One",
         )
+
+
+class BaseTestHooksJSON(BaseTestCase):
+    def datasource(self):
+        return JSONDataSource(root=DATA_DIR)
+
+
+class TestGetGoalsListJSON(BaseTestHooksJSON, TestGetGoalsList):
+    pass
+
+
+class TestGetGoalNamesJSON(BaseTestHooksJSON, TestGetGoalNames):
+    pass
+
+
+class TestGetLTPActivitiesListJSON(BaseTestHooksJSON, TestGetLTPActivitiesList):
+    pass
+
+
+class TestGetModuleNamesJSON(BaseTestHooksJSON, TestGetModuleNames):
+    pass
+
+
+class TestGetModulesListJSON(BaseTestHooksJSON, TestGetModulesList):
+    pass
+
+
+class TestJSONDataSource(TestCase):
+    def test_load_from_json(self):
+        ds = JSONDataSource(root=DATA_DIR)
+
+        self.assertEqual(len(ds.goals()), 9)
+        self.assertEqual(type(ds.goals()["relation"]), models.GoalDataGlobal)
+
+        self.assertEqual(len(ds.goal_topic_links()), 56)
+        self.assertEqual(
+            type(ds.goal_topic_links()["take_a_pause"]), models.GoalModuleLinkGlobal
+        )
+
+        self.assertEqual(len(ds.ltp_activities()), 7)
+        self.assertEqual(type(ds.ltp_activities()["dance_moves"]), models.LTPActivities)
+
+        self.assertEqual(len(ds.modules()), 80)
+        self.assertEqual(type(ds.modules()["take_a_pause"]), models.ModuleDataGlobal)

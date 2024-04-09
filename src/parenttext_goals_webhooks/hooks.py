@@ -48,8 +48,9 @@ def get_ids_list(request_json, data):
 
 
 class Hooks:
-    def __init__(self, data_dir="data"):
-        self.db = DataSource(source=data_dir)
+
+    def __init__(self, db):
+        self.db = db
 
     def get_modules_list(self, request_json):
         general_topicids = self.get_general_topicids(request_json)
