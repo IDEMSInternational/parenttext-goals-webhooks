@@ -1,0 +1,42 @@
+name: Deploy to Google Cloud Run
+on:
+  workflow_call:
+    inputs:
+      image:
+        required: true
+        type: string
+      region:
+        required: true
+        type: string
+      service_env:
+        required: true
+        type: string
+      service_name:
+        required: true
+        type: string
+    secrets:
+      credentials:
+        required: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.credentials }}
+      - name: Set up gcloud
+        uses: google-github-actions/setup-gcloud@v2
+      - name: Deploy to environment
+        id: deploy
+        run: |
+          gcloud run deploy ${{ inputs.service_name }} \
+            --region=${{ inputs.region }} \
+            --image=${{ inputs.image }} \
+            --port=8000 \
+            --allow-unauthenticated \
+            --set-env-vars=${{ inputs.service_env }}

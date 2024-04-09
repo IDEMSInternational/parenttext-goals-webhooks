@@ -1,9 +1,19 @@
 name: Publish container image
 on:
-  workflow_dispatch:
-env:
-  REGISTRY: ${{ vars.CONTAINER_REGISTRY }}
-  REPO: ${{ vars.CONTAINER_REGISTRY }}/${{ vars.CONTAINER_REPO }}
+  workflow_call:
+    inputs:
+      registry:
+        default: ""
+        required: false
+        type: string
+      repository:
+        required: true
+        type: string
+    secrets:
+      username:
+        required: true
+      password:
+        required: true
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -13,17 +23,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Log in to registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login $REGISTRY -u $ --password-stdin
+        uses: docker/login-action@v3
+        with:
+          password: ${{ secrets.password }}
+          registry: ${{ inputs.registry }}
+          username: ${{ secrets.username }}
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: 3.11
       - name: Install setuptools-scm
         run: pip install --upgrade setuptools setuptools-scm
-      - name: Build
+      - name: Discover image tag version
+        id: tag
+        env:
+          REPO: ${{ inputs.CONTAINER_REPO }}
         run: |
-          IMAGE_TAG=${REPO}:$(python -m setuptools_scm --strip-dev)
-          echo "IMAGE_TAG=${IMAGE_TAG}" >> "${GITHUB_ENV}"
-          docker build --tag ${IMAGE_TAG} .
+          echo "image_tag=${REPO}:$(python -m setuptools_scm --strip-dev)" >> "${GITHUB_OUTPUT}"
       - name: Publish
-        run: docker push ${IMAGE_TAG}
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: ${{ steps.tag.outputs.image_tag }}
+    outputs:
+      image_tag: ${{ steps.tag.outputs.image_tag }}

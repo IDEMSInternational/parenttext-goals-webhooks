@@ -1,0 +1,26 @@
+name: Release
+on:
+  workflow_dispatch:
+  # to be uncommented after testing
+  # release:
+  #   types:
+  #     - released
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+  build:
+    needs: test
+    uses: ./.github/workflows/publish-container-image.yml
+    with:
+      password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      repository: ${{ vars.CONTAINER_REPO }}
+      username: ${{ secrets.DOCKERHUB_USERNAME }}
+  deploy:
+    needs: build
+    uses: ./.github/workflows/deploy.yml
+    with:
+      credentials: ${{ secrets.GCP_CREDENTIALS }}
+      image: ${{ needs.build.outputs.image_tag }}
+      region: ${{ var.GCP_REGION }}
+      service_env: ${{ var.GCP_SERVICE_ENV }}
+      service_name: ${{ var.GCP_SERVICE_NAME }}
