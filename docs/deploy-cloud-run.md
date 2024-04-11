@@ -15,11 +15,15 @@ Add the following roles to the service account:
 
 Click _CONTINUE_, then click _DONE_.
 
-Create service account keys. Download them. Reformat the contents of the credentials file so that they occupy only a single line. A tool called `jq` can be used to accomplish this.
+Create service account keys. Go to _IAM and admin_ > _Service accounts_; view details for the newly created service account. On the details page, select the _KEYS_ tab. Click _ADD KEY_ > _Create new key_. Make sure the _JSON_ option is selected, then click the _CREATE_ button. The new keys should be automatically downloaded.
+
+Reformat the contents of the credentials file so that they occupy only a single line. A tool called `jq` can be used to accomplish this.
 
 ```
 jq -c . {credentials_file} > single_line_credentials.json
 ```
+
+The credentials will be required when the Github Actions workflow is set up.
 
 ### Github
 
@@ -45,7 +49,7 @@ jobs:
 
 Create repository variables to give the deployment action the information it needs. Go to _Settings_ > _Secrets and variables_ > _Actions_; select the _Variables_ tab. Create each variable by clicking on the _New repository variable_ button. Create the following variables.
 
-- GOALS\_API\_IMAGE: the container image to deploy e.g. `idems/parenttext-goals-webhooks:0.4.0`
+- GOALS\_API\_IMAGE: the container image to deploy e.g. `idems/parenttext-goals-webhooks:0.4.1`
 - GCP_REGION: Google Cloud region to deploy to e.g. `europe-west1`
 - GCP\_SERVICE\_ENV: Settings for the API i.e. the contents of the `.env` file, but with newlines replaced with commas.
 - GCP\_SERVICE\_NAME: Name of the Cloud Run service e.g. `pt-goals-example`
