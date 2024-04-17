@@ -5,11 +5,13 @@ from typing import List
 
 
 class Language(ParserModel):
+    afr: str = ""
     eng: str = ""
     fra: str = ""
     hau: str = ""
     msa: str = ""
     spa: str = ""
+    xho: str = ""
     zho: str = ""
     zul: str = ""
 
