@@ -131,11 +131,13 @@ class TestGetGoalNames(BaseTestCase):
             id="relation",
         )
         expected = {
+            "afr": "",
             "eng": "Improve My Relationship with My Child",
             "fra": "",
             "hau": "Kukhulisa Buhlobo Bami Nemntfwanami",
             "msa": "",
             "spa": "",
+            "xho": "",
             "zho": "",
             "zul": "Thuthukisa Ubudlelwano Bami Nengane Yami",
         }
