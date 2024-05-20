@@ -61,10 +61,10 @@ Create a repository secret to store the Google Cloud service account credentials
 
 ## Deploy
 
-Convert the spreadsheet(s) with goal data to JSON format.
+Convert the spreadsheet(s) with goal data to JSON format. The JSON file can be saved anywhere in the repository, under any name.
 
 ```
-rpft convert -f google_sheets {sheet_id} goals/localized.json
+rpft convert -f google_sheets {sheet_id} content/localized.json
 ```
 
 Commit JSON file to ParentText deployment repository.
