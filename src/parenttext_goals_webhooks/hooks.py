@@ -2,8 +2,6 @@ import copy
 
 from rpft.parsers.common.rowparser import ParserModel
 
-from parenttext_goals_webhooks.sheets import DataSource
-
 
 def map_ids(rows):
     return list(map(lambda x: x.ID, rows))

@@ -18,8 +18,10 @@ class Language(ParserModel):
 
 class GoalDataGlobal(DataRowModel):
     priority_c: str = ""
+    priority2_c: str = ""
     priority_p: str = ""
     priority_t: str = ""
+    priority2_t: str = ""
     relationship: List[str] = []
     checkin_c: str = ""
     checkin_p: str = ""
