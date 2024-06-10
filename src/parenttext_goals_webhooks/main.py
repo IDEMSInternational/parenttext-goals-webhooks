@@ -29,7 +29,14 @@ def init():
 
     if url and ref:
         with temp_repo(url, ref) as repo:
-            logger.info({"msg": "Content repo cloned", "url": url, "ref": ref, "local": str(repo)})
+            logger.info(
+                {
+                    "msg": "Content repo cloned",
+                    "url": url,
+                    "ref": ref,
+                    "local": str(repo),
+                }
+            )
             root = Path(repo) / settings.repo_path
             hooks = Hooks(db=JSONDataSource(root=root, config=settings.config_file))
             logger.info({"msg": "Content loaded", "csv_mode": False, "path": str(root)})
