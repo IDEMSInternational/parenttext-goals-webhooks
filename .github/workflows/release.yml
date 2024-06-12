@@ -24,3 +24,4 @@ jobs:
       region: ${{ vars.GCP_REGION }}
       service_env: ${{ vars.GCP_SERVICE_ENV }}
       service_name: ${{ vars.GCP_SERVICE_NAME }}
+      service_identity: ${{ vars.GCP_SERVICE_IDENTITY }}
