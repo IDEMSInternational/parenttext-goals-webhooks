@@ -28,6 +28,7 @@ class GoalDataGlobal(DataRowModel):
     checkin_t: str = ""
     name_c: Language = Language()
     name_t: Language = Language()
+    parent_gender: str = ""
 
 
 class GoalModuleLinkGlobal(DataRowModel):
