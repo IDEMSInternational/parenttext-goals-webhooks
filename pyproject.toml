@@ -4,7 +4,7 @@ requires = ["setuptools>=64", "setuptools-scm>=8"]
 
 [project]
 authors = [
-    {name = "IDEMS International", email = "communications@idems.international"},
+    {name = "IDEMS International", email = "contact@idems.international"},
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
