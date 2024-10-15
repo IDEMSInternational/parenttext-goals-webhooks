@@ -26,8 +26,6 @@ class TestIDValidity(TestCase):
             self.assertTrue(hasattr(row, "topic_ID"), row)
             self.assertTrue(hasattr(row, "name"), row)
             self.assertIn(row.topic_ID, link_data, row)
-        # TODO: If we have a list of all modules in RapidPro,
-        # we can also check that the module ID is from that list
 
     def test_ltp_headers(self):
         data = self.db.ltp_activities()

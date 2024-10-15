@@ -4,7 +4,9 @@ from enum import Enum
 from pathlib import Path
 
 from fastapi import FastAPI
-from pydantic import BaseModel, BaseSettings
+from pydantic import BaseModel
+from pydantic_settings import BaseSettings
+
 
 from parenttext_goals_webhooks import api_version
 from parenttext_goals_webhooks.hooks import Hooks
@@ -79,7 +81,7 @@ class ListQuery(BaseModel):
     sort_columns: list[str] = list()
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "examples": [
                 {
                     "filter_expression": "'no' in relationship",
