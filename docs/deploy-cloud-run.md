@@ -6,6 +6,8 @@ Github Actions can be used to deploy the Goals API to Cloud Run when goals data 
 
 ### GCP
 
+Two different service accounts are required, one to deploy the API (deployer) and another to run it (runner).
+
 Create a service account that will be used for the deployment. In your project, go to _IAM and admin_ > _Service accounts_. Click on _CREATE SERVICE ACCOUNT_. Give the account an appropriate name and ID. Click _CREATE AND CONTINUE_.
 
 Add the following roles to the service account:
@@ -24,6 +26,8 @@ jq -c . {credentials_file} > single_line_credentials.json
 ```
 
 The credentials will be required when the Github Actions workflow is set up.
+
+The runner account is created in a similar fashion, but no additional roles need to be applied and no credentials need to be created. The name of the runner account will be passed to the deployer later.
 
 ### Github
 
