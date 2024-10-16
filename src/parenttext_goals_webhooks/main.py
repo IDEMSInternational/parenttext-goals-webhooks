@@ -97,7 +97,7 @@ class ModulesListQuery(ListQuery):
     goal_priority_column: str = ""
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "examples": [
                 {
                     "filter_expression": "'female' in child_gender and 7 in age",
@@ -115,7 +115,7 @@ class EntryQuery(BaseModel):
     id: str = ""
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "examples": [
                 {
                     "column": "checkin_c",
@@ -129,7 +129,7 @@ class NameQuery(EntryQuery):
     language: str = ""
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "examples": [
                 {
                     "column": "name_c",
@@ -144,7 +144,7 @@ class NumberedNamesQuery(NameQuery):
     ids: str = ""
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "examples": [
                 {
                     "column": "name_c",
