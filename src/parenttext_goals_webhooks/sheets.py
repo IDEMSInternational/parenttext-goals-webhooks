@@ -29,8 +29,8 @@ class DataSource:
             return {}
 
         parser = SheetParser(
-            RowParser(model, CellParser()),
             table,
+            row_parser=RowParser(model, CellParser()),
         )
         return {row.ID: row for row in parser.parse_all()}
 
@@ -75,8 +75,8 @@ class JSONDataSource:
             rows = {
                 o.ID: o
                 for o in SheetParser(
-                    RowParser(globals()[source.model], CellParser()),
                     table,
+                    row_parser=RowParser(globals()[source.model], CellParser()),
                 ).parse_all()
             }
 
