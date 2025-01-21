@@ -132,6 +132,7 @@ class TestGetGoalNames(BaseTestCase):
         )
         expected = {
             "afr": "",
+            "ara": "",
             "eng": "Improve My Relationship with My Child",
             "fra": "",
             "hau": "Kukhulisa Buhlobo Bami Nemntfwanami",
