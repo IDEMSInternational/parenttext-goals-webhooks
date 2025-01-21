@@ -15,10 +15,10 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
 ]
 dependencies = [
-    "fastapi~=0.110.0",
+    "fastapi",
     "pydantic",
     "pydantic-settings",
-    "rpft @ https://github.com/IDEMSInternational/rapidpro-flow-toolkit/archive/refs/heads/main.tar.gz",
+    "rpft @ git+https://github.com/IDEMSInternational/rapidpro-flow-toolkit.git@1.6.0",
 ]
 description = "Spreadsheet-backed API for ParentText goals"
 dynamic = ["version"]
