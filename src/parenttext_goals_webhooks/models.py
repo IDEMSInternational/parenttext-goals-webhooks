@@ -6,6 +6,7 @@ from typing import List
 
 class Language(ParserModel):
     afr: str = ""
+    ara: str = ""
     eng: str = ""
     fra: str = ""
     hau: str = ""
