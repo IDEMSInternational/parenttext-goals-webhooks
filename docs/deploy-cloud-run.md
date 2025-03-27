@@ -31,9 +31,9 @@ The runner account is created in a similar fashion, but no additional roles need
 
 ### Github
 
-Create a new workflow for the deployment.
+Create a new workflow for the deployment by saving the following content in a file under '.github/workflows' e.g. '.github/workflows/deploy\_goals\_api.yml'
 
-```
+```yaml
 name: Deploy goals API
 
 on:
@@ -42,6 +42,9 @@ on:
 jobs:
   pipeline:
     uses: IDEMSInternational/parenttext-goals-webhooks/.github/workflows/deploy.yml@c1db31107c4898ace2813f63ab504afe4b5c5a68
+    permissions:
+      contents: 'read'
+      id-token: 'write'
     secrets:
       credentials: ${{ secrets.GCP_CREDENTIALS }}
     with:
@@ -54,7 +57,7 @@ jobs:
 
 Create repository variables to give the deployment action the information it needs. Go to _Settings_ > _Secrets and variables_ > _Actions_; select the _Variables_ tab. Create each variable by clicking on the _New repository variable_ button. Create the following variables.
 
-- GOALS\_API\_IMAGE: the container image to deploy e.g. `idems/parenttext-goals-webhooks:0.6.0`
+- GOALS\_API\_IMAGE: the container image to deploy e.g. `idems/parenttext-goals-webhooks:0.8.0`
 - GCP_REGION: Google Cloud region to deploy to e.g. `europe-west1`
 - GCP\_SERVICE\_ENV: Settings for the API i.e. the contents of the `.env` file, but with newlines replaced with commas.
 - GCP\_SERVICE\_IDENTITY: The service account under which the API will be run.
