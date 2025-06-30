@@ -18,7 +18,7 @@ dependencies = [
     "fastapi",
     "pydantic",
     "pydantic-settings",
-    "rpft @ git+https://github.com/IDEMSInternational/rapidpro-flow-toolkit.git@1.6.0",
+    "rpft @ git+https://github.com/IDEMSInternational/rapidpro-flow-toolkit.git@1.13.0",
 ]
 description = "Spreadsheet-backed API for ParentText goals"
 dynamic = ["version"]

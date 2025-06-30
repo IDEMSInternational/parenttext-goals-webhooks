@@ -131,19 +131,12 @@ class TestGetGoalNames(BaseTestCase):
             id="relation",
         )
         expected = {
-            "afr": "",
-            "ara": "",
             "eng": "Improve My Relationship with My Child",
-            "fra": "",
             "hau": "Kukhulisa Buhlobo Bami Nemntfwanami",
-            "msa": "",
-            "spa": "",
-            "xho": "",
-            "zho": "",
             "zul": "Thuthukisa Ubudlelwano Bami Nengane Yami",
         }
 
-        self.assertEqual(self.hooks.get_goal_entry(q), expected)
+        self.assertEqual(dict(sorted(self.hooks.get_goal_entry(q).items())), expected)
 
     def test_numbered(self):
         q = NumberedNamesQuery(

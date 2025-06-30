@@ -118,9 +118,11 @@ class Hooks:
         return self.get_name(request_json, self.db.modules())
 
     def get_name(self, request_json, data, goal_id=None):
-        column_base = request_json.column
+        row = data[goal_id or request_json.id]
+        col = getattr(row, request_json.column)
         language = request_json.language
-        goal_id = goal_id or request_json.id
-        row = data[goal_id]
 
-        return getattr(getattr(row, column_base), language)
+        try:
+            return getattr(col, language)
+        except AttributeError:
+            return col.get(language, "")
