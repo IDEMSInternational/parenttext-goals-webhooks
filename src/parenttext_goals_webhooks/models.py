@@ -15,6 +15,7 @@ class Language(ParserModel):
     xho: str = ""
     zho: str = ""
     zul: str = ""
+    sin: str = ""
 
 
 class GoalDataGlobal(DataRowModel):
@@ -27,8 +28,8 @@ class GoalDataGlobal(DataRowModel):
     checkin_c: str = ""
     checkin_p: str = ""
     checkin_t: str = ""
-    name_c: Language = Language()
-    name_t: Language = Language()
+    name_c: dict = {}
+    name_t: dict = {}
     parent_gender: str = ""
 
 
