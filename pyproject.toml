@@ -8,7 +8,6 @@ authors = [
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
-    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
@@ -23,7 +22,7 @@ dependencies = [
 description = "Spreadsheet-backed API for ParentText goals"
 dynamic = ["version"]
 keywords = []
-license = {text = "GPL-3.0-or-later"}
+license = "GPL-3.0-or-later"
 name = "parenttext-goals-webhooks"
 readme = "README.md"
 requires-python = ">=3.11"
