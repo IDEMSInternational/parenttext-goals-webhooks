@@ -47,8 +47,8 @@ class ModuleDataGlobal(DataRowModel):
     priority_in_topic: str = ""
     age: List[int] = []
     child_gender: List[str] = []
-    name: Language = Language()
-    name_c: Language = Language()
+    name: dict = {}
+    name_c: dict = {}
 
 
 class LTPActivities(DataRowModel):
