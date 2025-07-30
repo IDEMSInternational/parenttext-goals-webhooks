@@ -1,8 +1,6 @@
 from rpft.parsers.creation.datarowmodel import DataRowModel
-from rpft.parsers.common.rowparser import ParserModel
 
 from typing import List
-
 
 
 class GoalDataGlobal(DataRowModel):
