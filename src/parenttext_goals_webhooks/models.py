@@ -1,21 +1,6 @@
 from rpft.parsers.creation.datarowmodel import DataRowModel
-from rpft.parsers.common.rowparser import ParserModel
 
 from typing import List
-
-
-class Language(ParserModel):
-    afr: str = ""
-    ara: str = ""
-    eng: str = ""
-    fra: str = ""
-    hau: str = ""
-    msa: str = ""
-    spa: str = ""
-    xho: str = ""
-    zho: str = ""
-    zul: str = ""
-    sin: str = ""
 
 
 class GoalDataGlobal(DataRowModel):
@@ -47,8 +32,8 @@ class ModuleDataGlobal(DataRowModel):
     priority_in_topic: str = ""
     age: List[int] = []
     child_gender: List[str] = []
-    name: Language = Language()
-    name_c: Language = Language()
+    name: dict = {}
+    name_c: dict = {}
 
 
 class LTPActivities(DataRowModel):
