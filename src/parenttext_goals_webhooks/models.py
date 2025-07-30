@@ -4,19 +4,6 @@ from rpft.parsers.common.rowparser import ParserModel
 from typing import List
 
 
-class Language(ParserModel):
-    afr: str = ""
-    ara: str = ""
-    eng: str = ""
-    fra: str = ""
-    hau: str = ""
-    msa: str = ""
-    spa: str = ""
-    xho: str = ""
-    zho: str = ""
-    zul: str = ""
-    sin: str = ""
-
 
 class GoalDataGlobal(DataRowModel):
     priority_c: str = ""
